@@ -5,3 +5,1092 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Jennifer Le Cuziat, sophrologue certifiée à L'Isle-Adam (95). Stress, anxiété, sommeil, phobies, enfants et adolescents. Cabinet sensoriel Val d'Oise. RDV au 06 99 74 05 27.">
 <meta name="robots" content="index, follow">
+<title>Jennifer Le Cuziat · Sophrologue L'Isle-Adam (95) · Cabinet Sensoriel</title>
+
+<!-- Balises Open Graph pour réseaux sociaux -->
+<meta property="og:title" content="Jennifer Le Cuziat · Sophrologue L'Isle-Adam">
+<meta property="og:description" content="Retrouvez votre équilibre grâce à la sophrologie. Cabinet sensoriel à L'Isle-Adam (95). Adultes, enfants, entreprises.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sophrologuelisleadam.fr">
+
+<style>
+/* ===== RESET & BASE ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#0F6E56;--teal2:#1D9E75;--teal3:#5DCAA5;--teal-light:#E1F5EE;--teal-dark:#0B2E24;
+  --cream:#FAF8F5;--warm:#F5EFE8;--gold:#BA7517;--text:#1a1a1a;--muted:#666;--border:#e8e5e0;
+  --shadow:0 2px 16px rgba(0,0,0,0.08);--radius:12px;
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--cream);color:var(--text);line-height:1.6}
+
+/* ===== NAV ===== */
+#nav{background:#fff;border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;height:64px;box-shadow:0 1px 8px rgba(0,0,0,0.06)}
+.nav-brand{display:flex;flex-direction:column;line-height:1.2}
+.nav-name{font-size:15px;font-weight:700;color:var(--teal)}
+.nav-sub{font-size:10px;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase}
+.nav-menu{display:flex;gap:6px;list-style:none;align-items:center}
+.nav-menu a{font-size:13px;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;transition:.15s}
+.nav-menu a:hover{background:var(--teal-light);color:var(--teal)}
+.nav-cta{background:var(--teal);color:#fff!important;padding:9px 20px!important;border-radius:24px!important;font-weight:600}
+.nav-cta:hover{background:var(--teal-dark)!important}
+.nav-admin-btn{font-size:11px;color:var(--muted);cursor:pointer;padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:none;margin-left:8px}
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:6px}
+.hamburger span{width:22px;height:2px;background:var(--teal);border-radius:2px;transition:.2s}
+
+/* ===== HERO ===== */
+#hero{background:linear-gradient(135deg,#074d38 0%,var(--teal) 45%,var(--teal3) 100%);color:#fff;padding:80px 60px 72px;position:relative;overflow:hidden}
+#hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:rgba(255,255,255,0.03);border-radius:50%}
+#hero::after{content:'';position:absolute;bottom:-100px;left:20%;width:300px;height:300px;background:rgba(255,255,255,0.025);border-radius:50%}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.28);border-radius:20px;padding:6px 18px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:24px}
+#hero h1{font-size:42px;font-weight:700;line-height:1.18;margin-bottom:18px;position:relative;z-index:1}
+#hero h1 em{font-style:normal;color:#9FE1CB}
+.hero-sub{font-size:16px;opacity:.88;line-height:1.65;margin-bottom:34px;max-width:540px;position:relative;z-index:1}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+.btn-w{background:#fff;color:var(--teal);padding:13px 28px;border-radius:28px;font-size:14px;font-weight:700;text-decoration:none;display:inline-block;transition:.15s}
+.btn-w:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.15)}
+.btn-g{background:transparent;color:#fff;padding:13px 28px;border-radius:28px;font-size:14px;border:1.5px solid rgba(255,255,255,0.5);text-decoration:none;display:inline-block;transition:.15s}
+.btn-g:hover{background:rgba(255,255,255,0.08)}
+.hero-kpis{display:flex;gap:40px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.18);flex-wrap:wrap;position:relative;z-index:1}
+.kpi strong{display:block;font-size:22px;font-weight:700}
+.kpi span{font-size:12px;opacity:.7}
+
+/* ===== GARANTIE BAR ===== */
+#garantie{background:var(--teal-light);border-bottom:1px solid rgba(29,158,117,.3);padding:14px 40px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+.g-item{font-size:12px;color:var(--teal);font-weight:600;display:flex;align-items:center;gap:5px}
+
+/* ===== SECTIONS ===== */
+.section{padding:72px 60px}
+.section-w{background:#fff}
+.s-label{font-size:11px;font-weight:700;color:var(--teal2);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+.s-title{font-size:28px;font-weight:700;margin-bottom:12px;line-height:1.25}
+.s-sub{font-size:15px;color:var(--muted);line-height:1.65;margin-bottom:40px;max-width:620px}
+
+/* ===== PROBLÈMES ===== */
+.pb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pb-card{background:var(--warm);border-radius:var(--radius);padding:22px;border-left:3px solid var(--teal2);transition:.2s}
+.pb-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.pb-ico{font-size:24px;margin-bottom:10px}
+.pb-title{font-size:14px;font-weight:700;margin-bottom:5px}
+.pb-desc{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* ===== PRESTATIONS ===== */
+.sv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sv-card{background:var(--warm);border-radius:14px;padding:26px;border:1px solid transparent;transition:.2s;cursor:pointer}
+.sv-card:hover{border-color:var(--teal2);background:var(--teal-light)}
+.sv-feat{background:var(--teal);color:#fff;grid-column:span 2;display:flex;align-items:center;gap:28px;justify-content:space-between}
+.sv-feat:hover{background:var(--teal-dark);border-color:transparent}
+.sv-ico{font-size:28px;margin-bottom:12px}
+.sv-name{font-size:16px;font-weight:700;margin-bottom:6px}
+.sv-desc{font-size:13px;opacity:.78;line-height:1.55}
+.sv-price{margin-top:14px;font-size:22px;font-weight:700;color:var(--teal)}
+.sv-feat .sv-price{color:#9FE1CB}
+.btn-book{background:#fff;color:var(--teal);padding:12px 24px;border-radius:24px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;display:inline-block;transition:.15s}
+.btn-book:hover{transform:translateY(-1px)}
+
+/* ===== AGENDA PUBLIC ===== */
+#agenda{padding:72px 60px}
+.agenda-wrap{background:#fff;border-radius:14px;border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow)}
+.agenda-header{background:var(--teal);color:#fff;padding:20px 28px;display:flex;align-items:center;justify-content:space-between}
+.agenda-nav{background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:14px}
+.agenda-month{font-size:18px;font-weight:700}
+.agenda-legend{display:flex;gap:16px;font-size:12px;padding:14px 28px;border-bottom:1px solid var(--border);background:#fafafa}
+.leg-item{display:flex;align-items:center;gap:6px}
+.leg-dot{width:12px;height:12px;border-radius:3px}
+.leg-libre{background:#9FE1CB}
+.leg-occupe{background:#F0997B}
+.leg-indispo{background:#e0e0e0}
+.agenda-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0}
+.ag-dow{padding:10px;text-align:center;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;border-bottom:1px solid var(--border);background:#fafafa}
+.ag-day{min-height:70px;padding:8px 6px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);font-size:12px;position:relative;cursor:default;transition:.15s}
+.ag-day.autre-mois{background:#f9f9f9;color:#ccc}
+.ag-day.libre{background:#f0faf6;cursor:pointer}
+.ag-day.libre:hover{background:var(--teal-light)}
+.ag-day.occupe{background:#fff8f6}
+.ag-day.today{background:linear-gradient(135deg,var(--teal-light),#fff)}
+.ag-day-num{font-weight:600;color:var(--text);font-size:12px;margin-bottom:4px}
+.ag-day.autre-mois .ag-day-num{color:#ccc}
+.ag-slot{font-size:10px;padding:2px 5px;border-radius:4px;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.slot-libre{background:#9FE1CB;color:#0B5C47;font-weight:600}
+.slot-occupe{background:#F5C4B3;color:#993C1D}
+.agenda-footer{padding:16px 28px;background:#fafafa;font-size:12px;color:var(--muted);border-top:1px solid var(--border)}
+
+/* ===== APROPOS ===== */
+.about-flex{display:flex;gap:36px;align-items:flex-start;margin-top:24px}
+.about-ava{width:110px;height:110px;border-radius:50%;background:var(--teal-light);border:3px solid var(--teal2);display:flex;align-items:center;justify-content:center;font-size:44px;flex-shrink:0}
+.about-txt{font-size:14px;color:#333;line-height:1.78}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cred{background:var(--teal-light);color:var(--teal);font-size:12px;padding:5px 12px;border-radius:14px;border:1px solid rgba(29,158,117,.3);font-weight:600}
+
+/* ===== TÉMOIGNAGES ===== */
+.testi-star{font-size:14px;color:#BA7517;margin-bottom:8px;letter-spacing:2px}
+.testi-feat{background:var(--teal-light);border:1px solid rgba(29,158,117,.3);border-radius:14px;padding:28px;margin-bottom:16px}
+.testi-feat .testi-q{font-size:15px}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.testi-card{background:var(--warm);border-radius:12px;padding:22px}
+.testi-q{font-size:13px;line-height:1.62;margin-bottom:12px;font-style:italic;color:#333}
+.testi-name{font-size:12px;font-weight:700;color:var(--teal)}
+
+/* Note RGPD avis */
+.rgpd-note{font-size:11px;color:var(--muted);margin-top:20px;padding:12px 16px;background:#f9f9f9;border-radius:8px;border-left:3px solid var(--border)}
+
+/* ===== TARIFS ===== */
+.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pr-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;position:relative;transition:.2s}
+.pr-card:hover{box-shadow:var(--shadow)}
+.pr-card.pop{border:2px solid var(--teal2)}
+.pop-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:11px;padding:4px 16px;border-radius:12px;white-space:nowrap;font-weight:700}
+.pr-name{font-size:14px;font-weight:700;margin-bottom:10px}
+.pr-amount{font-size:34px;font-weight:800;color:var(--teal)}
+.pr-unit{font-size:13px;color:var(--muted)}
+.pr-desc{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.55}
+.pr-feats{margin-top:16px}
+.pr-feat{font-size:13px;padding:4px 0;display:flex;gap:8px;align-items:flex-start}
+.chk{color:var(--teal2);font-weight:700;flex-shrink:0}
+.pr-btn{display:block;text-align:center;background:var(--teal);color:#fff;padding:12px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;margin-top:20px;transition:.15s}
+.pr-btn:hover{background:var(--teal-dark)}
+.mutuelle-note{margin-top:24px;background:var(--warm);border-radius:10px;padding:16px 20px;font-size:13px;color:var(--muted)}
+.mutuelle-note a{color:var(--teal)}
+
+/* ===== BLOG ===== */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.blog-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:.2s;cursor:pointer}
+.blog-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.blog-img{height:100px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;font-size:36px}
+.blog-body{padding:18px}
+.blog-tag{font-size:10px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.blog-title{font-size:13px;font-weight:700;line-height:1.45;margin-bottom:8px}
+.blog-exc{font-size:12px;color:var(--muted);line-height:1.5}
+.blog-link{font-size:12px;color:var(--teal);text-decoration:none;margin-top:8px;display:block;font-weight:600}
+
+/* ===== FORMULAIRE RDV ===== */
+.rdv-box{background:#fff;border-radius:14px;padding:40px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.form-lbl{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.form-inp,.form-sel,.form-ta{padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;color:var(--text);background:#fff;font-family:inherit;transition:.15s}
+.form-inp:focus,.form-sel:focus,.form-ta:focus{outline:none;border-color:var(--teal2);box-shadow:0 0 0 3px rgba(29,158,117,.12)}
+.form-ta{resize:none;line-height:1.6}
+.form-submit{width:100%;background:var(--teal);color:#fff;padding:15px;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:.15s}
+.form-submit:hover{background:var(--teal-dark)}
+.form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:12px;line-height:1.5}
+.form-rgpd{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--muted);margin-bottom:16px;padding:12px;background:#f9f9f9;border-radius:8px}
+.form-rgpd input{margin-top:2px;flex-shrink:0}
+
+/* ===== CTA BLOC ===== */
+.cta-bloc{background:linear-gradient(135deg,#0B5C47,var(--teal2));border-radius:16px;padding:52px 48px;text-align:center;color:#fff}
+.cta-bloc h3{font-size:26px;font-weight:700;margin-bottom:14px}
+.cta-bloc p{font-size:14px;opacity:.88;margin-bottom:28px;line-height:1.65}
+.cta-pills{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cpill{background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.28);border-radius:24px;padding:10px 20px;font-size:13px;display:flex;align-items:center;gap:6px}
+
+/* ===== FOOTER ===== */
+footer{background:var(--teal-dark);padding:48px 60px 28px;color:rgba(255,255,255,.6)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.f-brand{color:#fff;font-size:16px;font-weight:700;margin-bottom:6px}
+.f-sub{font-size:12px;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:16px}
+.f-col-title{font-size:12px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.8px;text-transform:uppercase;margin-bottom:12px}
+.f-links{display:flex;flex-direction:column;gap:8px}
+.f-links a{font-size:12px;color:rgba(255,255,255,.5);text-decoration:none}
+.f-links a:hover{color:rgba(255,255,255,.8)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* ===== RGPD BANNER ===== */
+#rgpd-banner{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid var(--teal2);padding:16px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;z-index:999;box-shadow:0 -4px 20px rgba(0,0,0,.12);flex-wrap:wrap}
+#rgpd-banner p{font-size:13px;color:var(--text);max-width:600px;line-height:1.5}
+#rgpd-banner a{color:var(--teal);text-decoration:underline}
+.rgpd-btns{display:flex;gap:10px;flex-shrink:0}
+.btn-accept{background:var(--teal);color:#fff;border:none;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer}
+.btn-refuse{background:#fff;color:var(--muted);border:1px solid var(--border);padding:9px 20px;border-radius:8px;font-size:13px;cursor:pointer}
+
+/* ===== ADMIN PANEL ===== */
+#admin-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:500;backdrop-filter:blur(3px)}
+#admin-panel{position:fixed;top:0;right:0;bottom:0;width:480px;background:#fff;z-index:501;overflow-y:auto;box-shadow:-4px 0 32px rgba(0,0,0,.2);transform:translateX(100%);transition:.3s ease}
+#admin-panel.open{transform:translateX(0)}
+.admin-header{background:var(--teal);color:#fff;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.admin-title{font-size:16px;font-weight:700}
+.admin-close{background:none;border:none;color:#fff;font-size:22px;cursor:pointer}
+.admin-tabs{display:flex;border-bottom:1px solid var(--border);background:#fafafa}
+.admin-tab{flex:1;padding:12px;text-align:center;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:.15s}
+.admin-tab.active{color:var(--teal);border-bottom-color:var(--teal);background:#fff}
+.admin-content{padding:24px}
+.admin-section{display:none}
+.admin-section.active{display:block}
+.admin-s-title{font-size:14px;font-weight:700;margin-bottom:16px;color:var(--text);display:flex;align-items:center;gap:8px}
+.admin-card{background:#f9f9f9;border-radius:10px;padding:16px;margin-bottom:14px;border:1px solid var(--border)}
+.admin-field{margin-bottom:12px}
+.admin-lbl{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;display:block}
+.admin-inp{width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit}
+.admin-inp:focus{outline:none;border-color:var(--teal2)}
+.admin-ta{width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit;min-height:80px;resize:none}
+.admin-btn{background:var(--teal);color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s}
+.admin-btn:hover{background:var(--teal-dark)}
+.admin-btn-del{background:#fff;color:#E24B4A;border:1px solid #F09595;padding:7px 14px;border-radius:7px;font-size:12px;cursor:pointer}
+.admin-btn-sec{background:#fff;color:var(--teal);border:1.5px solid var(--teal2);padding:9px 18px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer}
+.rdv-item{background:#fff;border-radius:10px;padding:14px;margin-bottom:10px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.rdv-info{flex:1}
+.rdv-name{font-size:14px;font-weight:700}
+.rdv-detail{font-size:12px;color:var(--muted);margin-top:3px}
+.rdv-badge{font-size:11px;padding:3px 10px;border-radius:8px;font-weight:600;white-space:nowrap}
+.badge-new{background:#E1F5EE;color:var(--teal)}
+.badge-conf{background:#e8f4ff;color:#185FA5}
+.badge-done{background:#f9f9f9;color:#888}
+.slot-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
+.toggle-lbl{font-size:13px;font-weight:600}
+.toggle-sub{font-size:11px;color:var(--muted)}
+.switch{width:42px;height:22px;background:var(--border);border-radius:11px;cursor:pointer;position:relative;transition:.2s;flex-shrink:0}
+.switch.on{background:var(--teal2)}
+.switch::after{content:'';position:absolute;top:3px;left:3px;width:16px;height:16px;background:#fff;border-radius:50%;transition:.2s}
+.switch.on::after{left:23px}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.stat-card{background:#f9f9f9;border-radius:10px;padding:16px;border:1px solid var(--border);text-align:center}
+.stat-n{font-size:26px;font-weight:800;color:var(--teal)}
+.stat-l{font-size:12px;color:var(--muted);margin-top:4px}
+.post-card{background:#f9f9f9;border-radius:10px;padding:14px;margin-bottom:12px;border:1px solid var(--border)}
+.post-net{font-size:11px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.post-txt{font-size:13px;line-height:1.55;color:#333}
+.post-actions{display:flex;gap:8px;margin-top:10px}
+.post-copy{background:#fff;border:1px solid var(--border);color:var(--teal);font-size:12px;padding:5px 12px;border-radius:6px;cursor:pointer;font-weight:600}
+
+/* ===== LOGIN ===== */
+#login-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:600;align-items:center;justify-content:center}
+#login-modal.show{display:flex}
+.login-box{background:#fff;border-radius:16px;padding:40px;width:340px;box-shadow:0 8px 48px rgba(0,0,0,.2)}
+.login-logo{text-align:center;font-size:32px;margin-bottom:8px}
+.login-title{text-align:center;font-size:18px;font-weight:700;margin-bottom:4px}
+.login-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:28px}
+.login-err{background:#FFF0F0;color:#E24B4A;font-size:13px;padding:10px 14px;border-radius:8px;margin-bottom:16px;display:none}
+
+/* ===== RÉSEAUX SOCIAUX ===== */
+#reseaux{padding:72px 60px;background:#fff}
+.rs-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rs-card{border-radius:14px;padding:28px;border:1px solid var(--border)}
+.rs-card.insta{border-color:#E1306C;background:#fff9fb}
+.rs-card.fb{border-color:#1877F2;background:#f5f9ff}
+.rs-card.lk{border-color:#0A66C2;background:#f4f8ff}
+.rs-icon{font-size:28px;margin-bottom:10px}
+.rs-name{font-size:15px;font-weight:700;margin-bottom:6px}
+.rs-tip{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:14px}
+.rs-example{background:rgba(0,0,0,.04);border-radius:8px;padding:12px;font-size:12px;line-height:1.6;font-style:italic;color:#333}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  #hero{padding:52px 28px 48px}
+  #hero h1{font-size:30px}
+  .section,.section-w,#agenda,#reseaux{padding:52px 28px}
+  #nav{padding:0 20px}
+  .nav-menu{display:none}
+  .hamburger{display:flex}
+  .pb-grid{grid-template-columns:1fr 1fr}
+  .sv-grid{grid-template-columns:1fr}
+  .sv-feat{flex-direction:column;gap:16px}
+  .testi-grid{grid-template-columns:1fr}
+  .pr-grid{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  #admin-panel{width:100%}
+  .rs-grid{grid-template-columns:1fr}
+  .hero-kpis{gap:24px}
+}
+@media(max-width:500px){
+  .pb-grid,.blog-grid{grid-template-columns:1fr}
+  #hero h1{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== BANDEAU RGPD (CNIL) ===== -->
+<div id="rgpd-banner">
+  <p>🍪 Ce site utilise uniquement des cookies fonctionnels strictement nécessaires à son fonctionnement. Aucune donnée personnelle n'est collectée sans votre accord explicite, conformément au <strong>RGPD</strong> et aux recommandations de la <strong>CNIL</strong>. <a href="#mentions">En savoir plus</a></p>
+  <div class="rgpd-btns">
+    <button class="btn-refuse" onclick="closeBanner()">Refuser</button>
+    <button class="btn-accept" onclick="acceptCookies()">Accepter</button>
+  </div>
+</div>
+
+<!-- ===== MODAL LOGIN ADMIN ===== -->
+<div id="login-modal">
+  <div class="login-box">
+    <div class="login-logo">🌿</div>
+    <div class="login-title">Espace modérateur</div>
+    <div class="login-sub">Accès réservé à Jennifer Le Cuziat</div>
+    <div class="login-err" id="login-err">Identifiants incorrects</div>
+    <div class="form-field">
+      <label class="form-lbl">Identifiant</label>
+      <input class="form-inp" id="l-user" type="text" placeholder="jennifer" autocomplete="username">
+    </div>
+    <div class="form-field">
+      <label class="form-lbl">Mot de passe</label>
+      <input class="form-inp" id="l-pass" type="password" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <button class="form-submit" onclick="doLogin()" style="margin-top:8px">Connexion →</button>
+    <div style="text-align:center;margin-top:14px"><button onclick="closeLogin()" style="background:none;border:none;font-size:13px;color:var(--muted);cursor:pointer">← Retour au site</button></div>
+  </div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="nav">
+  <div class="nav-brand">
+    <div class="nav-name">Jennifer Le Cuziat</div>
+    <div class="nav-sub">Sophrologue · L'Isle-Adam 95</div>
+  </div>
+  <ul class="nav-menu">
+    <li><a href="#accompagnement">Accompagnement</a></li>
+    <li><a href="#prestations">Prestations</a></li>
+    <li><a href="#agenda">Agenda</a></li>
+    <li><a href="#temoignages">Témoignages</a></li>
+    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#rdv" class="nav-cta">Prendre RDV</a></li>
+  </ul>
+  <div style="display:flex;align-items:center">
+    <button class="nav-admin-btn" onclick="openLogin()">⚙ Admin</button>
+    <div class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-badge">Cabinet sensoriel · Val d'Oise (95) · L'Isle-Adam</div>
+  <h1>Retrouvez votre <em>équilibre</em>,<br>vivez pleinement.</h1>
+  <p class="hero-sub">Sophrologue certifiée, j'accompagne adultes, enfants et adolescents à libérer le stress, les phobies et la douleur — avec des outils concrets dès la première séance.</p>
+  <div class="hero-btns">
+    <a href="#rdv" class="btn-w">Réserver une séance</a>
+    <a href="#agenda" class="btn-g">Voir les disponibilités</a>
+  </div>
+  <div class="hero-kpis">
+    <div class="kpi"><strong>+10 ans</strong><span>d'expérience</span></div>
+    <div class="kpi"><strong>Dès 6 ans</strong><span>enfants & adultes</span></div>
+    <div class="kpi"><strong>PMR</strong><span>accès adapté</span></div>
+    <div class="kpi"><strong>32 mutuelles</strong><span>remboursent</span></div>
+    <div class="kpi"><strong>7 avis ★★★★★</strong><span>patients satisfaits</span></div>
+  </div>
+</section>
+
+<!-- ===== BARRE GARANTIE ===== -->
+<div id="garantie">
+  <span class="g-item">✓ Outils dès la 1ère séance</span>
+  <span class="g-item">✓ Certifiée EFDS & Chambre Syndicale</span>
+  <span class="g-item">✓ Accès PMR</span>
+  <span class="g-item">✓ Premier échange offert</span>
+  <span class="g-item">✓ Données RGPD protégées</span>
+</div>
+
+<!-- ===== ACCOMPAGNEMENT ===== -->
+<section class="section" id="accompagnement">
+  <div class="s-label">Je vous accompagne si vous traversez…</div>
+  <div class="s-title">Quand la vie devient trop lourde à porter</div>
+  <p class="s-sub">Vous n'avez pas à subir. Ensemble, nous allons comprendre ce qui bloque pour le transformer — pas le subir.</p>
+  <div class="pb-grid">
+    <div class="pb-card"><div class="pb-ico">😰</div><div class="pb-title">Stress & anxiété</div><div class="pb-desc">Burn-out, tensions pro, angoisses chroniques du quotidien</div></div>
+    <div class="pb-card"><div class="pb-ico">😴</div><div class="pb-title">Troubles du sommeil</div><div class="pb-desc">Insomnies, réveils nocturnes, fatigue persistante</div></div>
+    <div class="pb-card"><div class="pb-ico">😨</div><div class="pb-title">Phobies & blocages</div><div class="pb-desc">Peur de l'avenir, phobie sociale, manque de confiance</div></div>
+    <div class="pb-card"><div class="pb-ico">🎯</div><div class="pb-title">Préparation mentale</div><div class="pb-desc">Examens, compétitions, accouchement, entretiens</div></div>
+    <div class="pb-card"><div class="pb-ico">🤕</div><div class="pb-title">Douleurs chroniques</div><div class="pb-desc">Gestion de la douleur, maladies, accompagnement soins</div></div>
+    <div class="pb-card"><div class="pb-ico">🌱</div><div class="pb-title">Deuil & transitions</div><div class="pb-desc">Séparations, changements de vie, reconstruction</div></div>
+  </div>
+</section>
+
+<!-- ===== PRESTATIONS ===== -->
+<section class="section section-w" id="prestations">
+  <div class="s-label">Mes prestations</div>
+  <div class="s-title">Une approche sur mesure, à votre rythme</div>
+  <p class="s-sub">Au cabinet sensoriel, à domicile, en entreprise ou en école — j'adapte chaque séance à votre besoin réel.</p>
+  <div class="sv-grid">
+    <div class="sv-card sv-feat">
+      <div>
+        <div class="sv-ico">🌿</div>
+        <div class="sv-name" style="font-size:20px;color:#fff">Séance individuelle adulte</div>
+        <div class="sv-desc" style="max-width:340px">Séance personnalisée d'1h intégrant relaxation, respiration et visualisation. Des outils concrets dès la première rencontre.</div>
+        <div class="sv-price">60 € / séance</div>
+      </div>
+      <a href="#rdv" class="btn-book">Réserver maintenant</a>
+    </div>
+    <div class="sv-card">
+      <div class="sv-ico">🧒</div>
+      <div class="sv-name">Enfants & adolescents</div>
+      <div class="sv-desc">Dès 6 ans. Stress scolaire, confiance en soi, émotions difficiles. Approche ludique et adaptée.</div>
+      <div class="sv-price" style="color:var(--teal)">40 €</div>
+    </div>
+    <div class="sv-card">
+      <div class="sv-ico">🔄</div>
+      <div class="sv-name">Forfait Bien-Être</div>
+      <div class="sv-desc">5 séances d'1h pour un accompagnement dans la durée. Résultats ancrés durablement.</div>
+      <div class="sv-price" style="color:var(--teal)">280 € <small style="font-size:13px;font-weight:400;color:#888">(-20€)</small></div>
+    </div>
+    <div class="sv-card">
+      <div class="sv-ico">🏢</div>
+      <div class="sv-name">Entreprises & groupes</div>
+      <div class="sv-desc">Ateliers QVT, prévention burn-out, écoles, EHPAD, maisons de retraite, milieu artistique.</div>
+      <div class="sv-price" style="color:var(--teal)">Sur devis</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENDA PUBLIC ===== -->
+<section id="agenda" style="padding:72px 60px">
+  <div class="s-label">Disponibilités</div>
+  <div class="s-title">Agenda en temps réel</div>
+  <p class="s-sub">Consultez les créneaux disponibles et réservez directement en ligne. L'agenda est mis à jour par Jennifer.</p>
+  <div class="agenda-wrap">
+    <div class="agenda-header">
+      <button class="agenda-nav" onclick="agendaNav(-1)">‹</button>
+      <span class="agenda-month" id="agenda-month-label">Avril 2026</span>
+      <button class="agenda-nav" onclick="agendaNav(1)">›</button>
+    </div>
+    <div class="agenda-legend">
+      <div class="leg-item"><div class="leg-dot leg-libre"></div><span>Créneau libre</span></div>
+      <div class="leg-item"><div class="leg-dot leg-occupe"></div><span>Occupé</span></div>
+      <div class="leg-item"><div class="leg-dot leg-indispo"></div><span>Indisponible</span></div>
+    </div>
+    <div class="agenda-grid" id="agenda-grid">
+      <div class="ag-dow">Lun</div><div class="ag-dow">Mar</div><div class="ag-dow">Mer</div>
+      <div class="ag-dow">Jeu</div><div class="ag-dow">Ven</div><div class="ag-dow">Sam</div><div class="ag-dow">Dim</div>
+    </div>
+    <div class="agenda-footer">📅 Cliquez sur un créneau libre pour pré-remplir le formulaire de RDV · Mis à jour par Jennifer en temps réel</div>
+  </div>
+</section>
+
+<!-- ===== À PROPOS ===== -->
+<section class="section section-w" id="apropos">
+  <div class="s-label">À propos de Jennifer</div>
+  <div class="s-title">Votre guide vers le mieux-être</div>
+  <div class="about-flex">
+    <div class="about-ava">🌿</div>
+    <div>
+      <div class="about-txt">Sophrologue certifiée depuis 2011, j'ai créé à L'Isle-Adam un <strong>cabinet sensoriel unique dans le Val d'Oise</strong> — un espace pensé comme une bulle de sécurité, de douceur et de profondeur pour vous et vos proches.<br><br>Mon approche holistique intègre le corps, le mental et l'émotionnel. Je crois profondément que vous méritez de vivre pleinement — pas seulement de « tenir bon ». Je vous guide avec transparence, bienveillance et professionnalisme. Vous décidez.<br><br>Consultante RH de formation, j'accompagne également les transitions professionnelles et le bien-être en entreprise. <em>L'amour pour épée, l'humour pour bouclier !</em></div>
+      <div class="creds">
+        <span class="cred">EFDS 2019 & 2020</span>
+        <span class="cred">EFT 2021</span>
+        <span class="cred">Chambre Syndicale de la Sophrologie</span>
+        <span class="cred">Consultante RH</span>
+        <span class="cred">Insertion professionnelle</span>
+        <span class="cred">SIRET 534 405 386 00028</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TÉMOIGNAGES ===== -->
+<section class="section" id="temoignages">
+  <div class="s-label">Témoignages patients</div>
+  <div class="s-title">Ils ont retrouvé leur équilibre</div>
+  <p class="s-sub">Des vraies personnes, de vrais changements. Ces avis ont été recueillis avec le consentement explicite des patients.</p>
+  <div class="testi-feat">
+    <div class="testi-star">★★★★★</div>
+    <div class="testi-q">"Jennifer est une perle, une femme formidable très à l'écoute et d'une gentillesse exceptionnelle, c'est une de mes meilleures rencontres de l'année 2024."</div>
+    <div class="testi-name">— Jenny</div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"C'est une expérience à vivre, surtout avec Jennifer qui nous accompagne avec un grand cœur. On en sort meilleur. Merci encore !"</div><div class="testi-name">— Zorica</div></div>
+    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Jennifer est une personne extraordinaire que je remercie du plus profond de mon cœur."</div><div class="testi-name">— Isabelle</div></div>
+    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Bienveillance, écoute, empathie, professionnalisme et sourires sont les clés de Jennifer. Je conseille fortement."</div><div class="testi-name">— Valérie</div></div>
+    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Jennifer est une sophrologue attentionnée, très professionnelle et pédagogue. Les exercices sont ludiques et son analyse pertinente est toujours au rendez-vous."</div><div class="testi-name">— Dougan</div></div>
+    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Un immense merci Jennifer pour tout ce que tu m'as transmis ! Ton expertise exceptionnelle et ta bienveillance ont rendu cet apprentissage unique, presque familial."</div><div class="testi-name">— Isaac</div></div>
+    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Je recommande vivement Mme Jennifer Le Cuziat. Jennifer est une personne passionnée et investie. Que des retours positifs pour son travail en sophrologie !"</div><div class="testi-name">— Mathieu</div></div>
+  </div>
+  <div class="rgpd-note">🔒 <strong>Note RGPD :</strong> Les avis publiés ici sont des prénoms uniquement. Aucune donnée permettant l'identification des personnes n'est divulguée, conformément au RGPD et aux recommandations de la CNIL. Les patients ont donné leur accord explicite pour la publication de leur témoignage.</div>
+</section>
+
+<!-- ===== TARIFS ===== -->
+<section class="section section-w" id="tarifs">
+  <div class="s-label">Tarifs</div>
+  <div class="s-title">Transparent et accessible</div>
+  <p class="s-sub">Profession libérale non réglementée. Honoraires libres. Paiement en espèces, chèque ou Paypal.</p>
+  <div class="pr-grid">
+    <div class="pr-card">
+      <div class="pr-name">Séance individuelle adulte</div>
+      <div><span class="pr-amount">60€</span> <span class="pr-unit">/ 1 heure</span></div>
+      <div class="pr-desc">Séance personnalisée avec exercices de relaxation, respiration et visualisation. Outils à emporter.</div>
+      <div class="pr-feats">
+        <div class="pr-feat"><span class="chk">✓</span>1 heure dédiée</div>
+        <div class="pr-feat"><span class="chk">✓</span>Au cabinet ou à domicile</div>
+        <div class="pr-feat"><span class="chk">✓</span>Outils concrets à pratiquer chez soi</div>
+      </div>
+      <a href="#rdv" class="pr-btn">Réserver</a>
+    </div>
+    <div class="pr-card pop">
+      <div class="pop-badge">Le plus choisi ⭐</div>
+      <div class="pr-name">Forfait Bien-Être</div>
+      <div><span class="pr-amount">280€</span> <span class="pr-unit">/ 5 séances</span></div>
+      <div class="pr-desc">Engagement sur la durée pour des résultats profonds et durables. 56€/séance au lieu de 60€.</div>
+      <div class="pr-feats">
+        <div class="pr-feat"><span class="chk">✓</span>5 × 1 heure</div>
+        <div class="pr-feat"><span class="chk">✓</span>Économisez 20€</div>
+        <div class="pr-feat"><span class="chk">✓</span>Suivi personnalisé continu</div>
+        <div class="pr-feat"><span class="chk">✓</span>Progression mesurée</div>
+      </div>
+      <a href="#rdv" class="pr-btn">Réserver</a>
+    </div>
+    <div class="pr-card">
+      <div class="pr-name">Enfant / Adolescent</div>
+      <div><span class="pr-amount">40€</span> <span class="pr-unit">/ 1 heure · dès 6 ans</span></div>
+      <div class="pr-desc">Approche ludique adaptée. Stress scolaire, confiance en soi, gestion des émotions.</div>
+      <div class="pr-feats">
+        <div class="pr-feat"><span class="chk">✓</span>Approche ludique et bienveillante</div>
+        <div class="pr-feat"><span class="chk">✓</span>Parents informés à chaque étape</div>
+        <div class="pr-feat"><span class="chk">✓</span>Outils adaptés à l'âge</div>
+      </div>
+      <a href="#rdv" class="pr-btn">Réserver</a>
+    </div>
+    <div class="pr-card">
+      <div class="pr-name">Entreprises & Groupes</div>
+      <div><span class="pr-amount" style="font-size:24px">Sur devis</span></div>
+      <div class="pr-desc">Ateliers QVT, séances en école, maison de retraite, EHPAD, milieu artistique. Déplacement possible.</div>
+      <div class="pr-feats">
+        <div class="pr-feat"><span class="chk">✓</span>Déplacement dans le Val d'Oise</div>
+        <div class="pr-feat"><span class="chk">✓</span>Devis personnalisé sous 48h</div>
+        <div class="pr-feat"><span class="chk">✓</span>Facture profession libérale</div>
+      </div>
+      <a href="#rdv" class="pr-btn">Demander un devis</a>
+    </div>
+  </div>
+  <div class="mutuelle-note">💚 <strong>32 mutuelles remboursent</strong> tout ou partie de vos séances de sophrologie. <a href="https://www.resalib.fr/remboursement/mutuelle/specialite/34-sophrologue" target="_blank" rel="noopener">Vérifiez si votre mutuelle rembourse →</a></div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section class="section" id="blog">
+  <div class="s-label">Ressources & conseils</div>
+  <div class="s-title">Le blog du bien-être</div>
+  <p class="s-sub">Des articles pratiques pour commencer à prendre soin de vous dès aujourd'hui. Techniques et conseils issus de ma pratique quotidienne.</p>
+  <div class="blog-grid">
+    <div class="blog-card"><div class="blog-img">🧘</div><div class="blog-body"><div class="blog-tag">Stress</div><div class="blog-title">5 exercices de respiration pour calmer l'anxiété en 5 minutes</div><div class="blog-exc">Des techniques simples praticables n'importe où, au bureau, dans les transports ou chez soi.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
+    <div class="blog-card"><div class="blog-img">🌙</div><div class="blog-body"><div class="blog-tag">Sommeil</div><div class="blog-title">Retrouver un sommeil profond grâce à la sophrologie</div><div class="blog-exc">La sophrologie agit directement sur le système nerveux autonome pour préparer le corps au repos.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
+    <div class="blog-card"><div class="blog-img">🎓</div><div class="blog-body"><div class="blog-tag">Enfants</div><div class="blog-title">Préparer son enfant aux examens avec la sophrologie</div><div class="blog-exc">Examens, contrôles, bac… Comment aider votre enfant à gérer le stress de performance.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
+    <div class="blog-card"><div class="blog-img">💼</div><div class="blog-body"><div class="blog-tag">Entreprise</div><div class="blog-title">Burn-out : les 7 signaux d'alerte que personne ne voit venir</div><div class="blog-exc">Reconnaître les premiers signes pour agir avant que l'épuisement s'installe durablement.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
+    <div class="blog-card"><div class="blog-img">🤰</div><div class="blog-body"><div class="blog-tag">Périnatalité</div><div class="blog-title">Sophrologie et grossesse : préparer sereinement l'accouchement</div><div class="blog-exc">La sophrologie accompagne les futures mamans pour réduire la douleur et l'anxiété.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
+    <div class="blog-card"><div class="blog-img">🌿</div><div class="blog-body"><div class="blog-tag">Quotidien</div><div class="blog-title">10 minutes de sophrologie le matin : transformer sa journée</div><div class="blog-exc">Une routine matinale simple et efficace pour démarrer chaque journée avec sérénité.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
+  </div>
+</section>
+
+<!-- ===== RÉSEAUX SOCIAUX ===== -->
+<section id="reseaux">
+  <div class="s-label">Présence digitale</div>
+  <div class="s-title">Stratégie réseaux sociaux</div>
+  <p class="s-sub">Exemples de posts prêts à publier pour développer votre communauté et attirer de nouveaux patients.</p>
+  <div class="rs-grid">
+    <div class="rs-card insta">
+      <div class="rs-icon">📸</div>
+      <div class="rs-name">Instagram — Post conseil (lundi)</div>
+      <div class="rs-tip">Objectif : visibilité, éducation, engagement. Fréquence : 3x/semaine.</div>
+      <div class="rs-example">🌬️ Technique du 4-7-8 pour calmer l'anxiété en 30 secondes :<br><br>→ Inspirez par le nez pendant 4 secondes<br>→ Retenez votre souffle 7 secondes<br>→ Expirez lentement par la bouche 8 secondes<br><br>Répétez 3 fois. Votre système nerveux se régule automatiquement 🧠✨<br><br>Cette technique, je l'enseigne dès la 1ère séance. Essayez maintenant et dites-moi en commentaire ce que vous ressentez 💬<br><br>#sophrologie #anxiété #bienetre #isleadam #valdoise #sophrologue95</div>
+    </div>
+    <div class="rs-card fb">
+      <div class="rs-icon">👥</div>
+      <div class="rs-name">Facebook — Post témoignage (mercredi)</div>
+      <div class="rs-tip">Objectif : preuve sociale, confiance. Fréquence : 2x/semaine.</div>
+      <div class="rs-example">💚 Chaque semaine, je suis touchée par les retours de mes patients.<br><br>"Bienveillance, écoute, empathie, professionnalisme et sourires sont les clés de Jennifer." — Valérie<br><br>La sophrologie n'est pas une médecine miracle. C'est un outil puissant qui, avec de la régularité, transforme profondément votre rapport au stress et à la vie.<br><br>🗓️ Prochains créneaux disponibles cette semaine — lien en bio ou au 06 99 74 05 27<br><br>📍 Cabinet sensoriel L'Isle-Adam (95) · À domicile · Entreprises</div>
+    </div>
+    <div class="rs-card insta">
+      <div class="rs-icon">🎬</div>
+      <div class="rs-name">Instagram Reels — Idée vidéo (vendredi)</div>
+      <div class="rs-tip">Format court 30–60 sec. Taux d'engagement ×3 vs image fixe.</div>
+      <div class="rs-example">💡 IDÉE DE REEL :<br><br>🎤 Vous filmez face caméra, dans votre cabinet :<br>"3 signes que votre corps vous dit STOP — et ce que vous pouvez faire maintenant"<br><br>Signe 1 : Vous serrez les mâchoires sans vous en rendre compte<br>Signe 2 : Vous vous réveillez fatigué malgré 8h de sommeil<br>Signe 3 : Les petites choses vous irritent plus qu'avant<br><br>👉 "Si vous vous reconnaissez, la sophrologie peut vous aider. Premier échange offert."<br><br>#burnout #sophrologue #bienetre #stress #valdoise</div>
+    </div>
+    <div class="rs-card lk">
+      <div class="rs-icon">💼</div>
+      <div class="rs-name">LinkedIn — Entreprises (mensuel)</div>
+      <div class="rs-tip">Objectif : attirer contrats entreprises, QVT. Ton professionnel.</div>
+      <div class="rs-example">📊 Saviez-vous que 2,5 millions de Français sont en situation de burn-out sévère chaque année ? (Source : INRS)<br><br>En tant que sophrologue certifiée et consultante RH, j'interviens dans les entreprises du Val d'Oise pour :<br>✅ Ateliers de gestion du stress en équipe<br>✅ Accompagnement individuel QVT<br>✅ Formation managers : identifier les signaux d'alerte<br><br>Investir dans le bien-être de vos collaborateurs, c'est réduire l'absentéisme et augmenter la performance.<br><br>📩 Contactez-moi pour un devis personnalisé : contact@sophrologuelisleadam.fr<br><br>#QVT #bienetre #RH #sophrologue #entreprise #valdoise</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORMULAIRE RDV ===== -->
+<section class="section section-w" id="rdv">
+  <div class="s-label">Prise de rendez-vous</div>
+  <div class="s-title">Commençons ensemble</div>
+  <p class="s-sub">Je vous réponds sous 24h. Premier échange téléphonique <strong>offert</strong> pour définir votre besoin, sans engagement.</p>
+  <div class="rdv-box">
+    <div class="form-row">
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Prénom *</label><input class="form-inp" id="f-prenom" type="text" placeholder="Votre prénom" autocomplete="given-name"></div>
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Nom *</label><input class="form-inp" id="f-nom" type="text" placeholder="Votre nom" autocomplete="family-name"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Téléphone *</label><input class="form-inp" id="f-tel" type="tel" placeholder="06 XX XX XX XX" autocomplete="tel"></div>
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Email</label><input class="form-inp" id="f-email" type="email" placeholder="votre@email.fr" autocomplete="email"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field" style="margin-bottom:0">
+        <label class="form-lbl">Prestation souhaitée</label>
+        <select class="form-sel" id="f-presta">
+          <option value="">— Choisissez —</option>
+          <option>Séance individuelle adulte (60€)</option>
+          <option>Séance enfant / adolescent (40€)</option>
+          <option>Forfait Bien-Être – 5 séances (280€)</option>
+          <option>Séance en entreprise (sur devis)</option>
+          <option>Je ne sais pas encore</option>
+        </select>
+      </div>
+      <div class="form-field" style="margin-bottom:0">
+        <label class="form-lbl">Créneau préféré</label>
+        <select class="form-sel" id="f-creneau">
+          <option>Matin (9h–12h)</option>
+          <option>Après-midi (13h–17h)</option>
+          <option>En soirée (17h–20h)</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-field">
+      <label class="form-lbl">Votre message (optionnel)</label>
+      <textarea class="form-ta" id="f-msg" rows="4" placeholder="Décrivez brièvement ce que vous traversez, pour que je puisse mieux vous accompagner lors de notre premier échange…"></textarea>
+    </div>
+    <!-- CONSENTEMENT RGPD OBLIGATOIRE -->
+    <div class="form-rgpd">
+      <input type="checkbox" id="f-rgpd" required>
+      <label for="f-rgpd">J'accepte que mes données (nom, téléphone, email) soient utilisées par Jennifer Le Cuziat uniquement pour traiter ma demande de rendez-vous, conformément au <a href="#mentions" style="color:var(--teal)">RGPD et à la politique de confidentialité</a>. Ces données ne seront jamais cédées à des tiers et seront supprimées après traitement. <strong>*</strong></label>
+    </div>
+    <button class="form-submit" onclick="submitRDV()">Envoyer ma demande de RDV →</button>
+    <div class="form-note">🔒 Données protégées · Réponse sous 24h · Profession libérale · SIRET 534 405 386 00028</div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="section" style="padding-top:0" id="contact">
+  <div class="cta-bloc">
+    <h3>Prête à vous rencontrer</h3>
+    <p>Cabinet sensoriel au 33 bis Avenue Michel Poniatowski, L'Isle-Adam (95290)<br>Accès PMR · Parking gratuit · À 5 min de la gare de Parmain–L'Isle-Adam (ligne H)</p>
+    <div class="cta-pills">
+      <div class="cpill">📞 06 99 74 05 27</div>
+      <div class="cpill">✉️ contact@sophrologuelisleadam.fr</div>
+      <div class="cpill">📍 L'Isle-Adam, Val d'Oise (95)</div>
+      <div class="cpill">🕐 Sur rendez-vous</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENTIONS LÉGALES & RGPD ===== -->
+<section class="section section-w" id="mentions" style="padding:40px 60px">
+  <details style="cursor:pointer">
+    <summary style="font-size:15px;font-weight:700;color:var(--teal);margin-bottom:12px">📋 Mentions légales & Politique de confidentialité (RGPD / CNIL)</summary>
+    <div style="font-size:13px;color:var(--muted);line-height:1.7;margin-top:16px;max-width:800px">
+      <p><strong>Responsable de traitement :</strong> Jennifer Le Cuziat, sophrologue libérale — SIRET 534 405 386 00028 — 33 bis Avenue Michel Poniatowski, 95290 L'Isle-Adam — contact@sophrologuelisleadam.fr</p>
+      <br>
+      <p><strong>Données collectées :</strong> Ce site collecte uniquement les données que vous transmettez volontairement via le formulaire de contact (nom, téléphone, email, message). Ces données sont utilisées exclusivement pour répondre à votre demande de rendez-vous.</p>
+      <br>
+      <p><strong>Base légale (RGPD art. 6) :</strong> Consentement explicite de la personne concernée.</p>
+      <br>
+      <p><strong>Durée de conservation :</strong> Les données sont conservées le temps nécessaire au traitement de votre demande, puis supprimées dans un délai de 3 ans maximum conformément aux recommandations de la CNIL.</p>
+      <br>
+      <p><strong>Vos droits :</strong> Conformément au RGPD (Règlement UE 2016/679) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Pour exercer ces droits : contact@sophrologuelisleadam.fr. Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--teal)">CNIL</a>.</p>
+      <br>
+      <p><strong>Témoignages :</strong> Les avis publiés sur ce site ne comportent que des prénoms, avec consentement explicite de chaque patient. Aucune donnée permettant l'identification complète d'une personne n'est publiée.</p>
+      <br>
+      <p><strong>Cookies :</strong> Ce site n'utilise pas de cookies de tracking ou publicitaires. Seuls des cookies fonctionnels strictement nécessaires peuvent être utilisés (session, préférences).</p>
+      <br>
+      <p><strong>Hébergement :</strong> Site hébergé en France. Recommandation de migrer vers OVH / o2switch pour garantir l'hébergement des données sur le territoire français (conformité RGPD).</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="f-brand">Jennifer Le Cuziat · Sophrologue</div>
+      <div class="f-sub">Cabinet sensoriel · 33 bis Avenue Michel Poniatowski<br>95290 L'Isle-Adam (Val d'Oise) · Sur rendez-vous<br>SIRET 534 405 386 00028 · Chambre Syndicale de la Sophrologie</div>
+    </div>
+    <div>
+      <div class="f-col-title">Navigation</div>
+      <div class="f-links">
+        <a href="#accompagnement">Accompagnement</a>
+        <a href="#prestations">Prestations</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#blog">Blog</a>
+        <a href="#rdv">Prendre RDV</a>
+      </div>
+    </div>
+    <div>
+      <div class="f-col-title">Contact</div>
+      <div class="f-links">
+        <a href="tel:0699740527">📞 06 99 74 05 27</a>
+        <a href="mailto:contact@sophrologuelisleadam.fr">✉️ Email</a>
+        <a href="#mentions">Mentions légales</a>
+        <a href="#mentions">Politique RGPD</a>
+        <a href="#mentions">Cookies</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jennifer Le Cuziat · Profession libérale non réglementée</span>
+    <span>Conforme RGPD · CNIL · Chambre Syndicale de la Sophrologie</span>
+  </div>
+</footer>
+
+<!-- ===== PANNEAU ADMIN ===== -->
+<div id="admin-overlay" onclick="closeAdmin()"></div>
+<div id="admin-panel">
+  <div class="admin-header">
+    <div class="admin-title">🌿 Espace Modérateur — Jennifer</div>
+    <button class="admin-close" onclick="closeAdmin()">×</button>
+  </div>
+  <div class="admin-tabs">
+    <div class="admin-tab active" onclick="adminTab('rdvs')">📅 RDV</div>
+    <div class="admin-tab" onclick="adminTab('agenda')">🗓 Agenda</div>
+    <div class="admin-tab" onclick="adminTab('contenu')">✏️ Contenu</div>
+    <div class="admin-tab" onclick="adminTab('posts')">📱 Posts</div>
+    <div class="admin-tab" onclick="adminTab('stats')">📊 Stats</div>
+  </div>
+  <div class="admin-content">
+
+    <!-- ONGLET RDV -->
+    <div class="admin-section active" id="tab-rdvs">
+      <div class="admin-s-title">📬 Demandes de rendez-vous</div>
+      <div id="rdv-list">
+        <div class="rdv-item">
+          <div class="rdv-info">
+            <div class="rdv-name">Marie D.</div>
+            <div class="rdv-detail">📞 06 12 34 56 78 · Forfait Bien-Être · Matin</div>
+            <div class="rdv-detail" style="color:#999;font-size:11px">Reçu le 21/04/2026 à 10h32</div>
+            <div class="rdv-detail" style="margin-top:6px;font-size:12px;color:#333">"Stress au travail depuis 6 mois, difficultés de sommeil"</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+            <span class="rdv-badge badge-new">Nouveau</span>
+            <button class="admin-btn" style="font-size:11px;padding:6px 12px" onclick="markConf(this)">✓ Confirmer</button>
+            <button class="admin-btn-del" onclick="this.closest('.rdv-item').remove()">Supprimer</button>
+          </div>
+        </div>
+        <div class="rdv-item">
+          <div class="rdv-info">
+            <div class="rdv-name">Thomas R.</div>
+            <div class="rdv-detail">📞 06 98 76 54 32 · Séance individuelle · Soirée</div>
+            <div class="rdv-detail" style="color:#999;font-size:11px">Reçu le 20/04/2026 à 18h15</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+            <span class="rdv-badge badge-conf">Confirmé</span>
+            <button class="admin-btn-del" onclick="this.closest('.rdv-item').remove()">Archiver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ONGLET AGENDA -->
+    <div class="admin-section" id="tab-agenda">
+      <div class="admin-s-title">🗓 Gérer les créneaux</div>
+      <div class="admin-card">
+        <div class="admin-s-title" style="font-size:13px;margin-bottom:10px">Ajouter un créneau disponible</div>
+        <div class="slot-form">
+          <div><label class="admin-lbl">Date</label><input class="admin-inp" type="date" id="slot-date"></div>
+          <div><label class="admin-lbl">Heure début</label><input class="admin-inp" type="time" id="slot-heure" value="09:00"></div>
+          <div><label class="admin-lbl">Type</label>
+            <select class="admin-inp" id="slot-type">
+              <option value="libre">Disponible</option>
+              <option value="occupe">Occupé</option>
+              <option value="indispo">Indisponible</option>
+            </select>
+          </div>
+          <div><label class="admin-lbl">Durée</label>
+            <select class="admin-inp">
+              <option>1 heure</option>
+              <option>1h30</option>
+              <option>2 heures</option>
+              <option>Journée</option>
+            </select>
+          </div>
+        </div>
+        <button class="admin-btn" onclick="addSlot()">+ Ajouter ce créneau</button>
+      </div>
+      <div class="admin-s-title" style="font-size:13px;margin-top:16px;margin-bottom:10px">Créneaux de la semaine</div>
+      <div id="slots-list">
+        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px">
+          <div><div style="font-size:13px;font-weight:700">Lun 22/04 — 9h00</div><div style="font-size:12px;color:var(--muted)">1 heure · Disponible</div></div>
+          <div style="display:flex;gap:8px"><span style="background:#E1F5EE;color:var(--teal);font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">Libre</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>
+        </div>
+        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px">
+          <div><div style="font-size:13px;font-weight:700">Mar 23/04 — 14h00</div><div style="font-size:12px;color:var(--muted)">1 heure · Occupé</div></div>
+          <div style="display:flex;gap:8px"><span style="background:#FAECE7;color:#993C1D;font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">Occupé</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>
+        </div>
+        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px">
+          <div><div style="font-size:13px;font-weight:700">Jeu 25/04 — 10h00</div><div style="font-size:12px;color:var(--muted)">1 heure · Disponible</div></div>
+          <div style="display:flex;gap:8px"><span style="background:#E1F5EE;color:var(--teal);font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">Libre</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ONGLET CONTENU -->
+    <div class="admin-section" id="tab-contenu">
+      <div class="admin-s-title">✏️ Modifier le contenu du site</div>
+      <div class="admin-card">
+        <div class="admin-s-title" style="font-size:13px">Phrase d'accroche principale</div>
+        <div class="admin-field"><label class="admin-lbl">Titre hero</label><input class="admin-inp" value="Retrouvez votre équilibre, vivez pleinement."></div>
+        <div class="admin-field"><label class="admin-lbl">Sous-titre</label><textarea class="admin-ta">Sophrologue certifiée, j'accompagne adultes, enfants et adolescents à libérer le stress, les phobies et la douleur — avec des outils concrets dès la première séance.</textarea></div>
+        <button class="admin-btn">Sauvegarder</button>
+      </div>
+      <div class="admin-card" style="margin-top:14px">
+        <div class="admin-s-title" style="font-size:13px">Ajouter un témoignage</div>
+        <div class="admin-field"><label class="admin-lbl">Prénom (RGPD : prénom uniquement)</label><input class="admin-inp" placeholder="Ex: Marie" id="new-testi-name"></div>
+        <div class="admin-field"><label class="admin-lbl">Avis</label><textarea class="admin-ta" placeholder="Texte du témoignage…" id="new-testi-txt"></textarea></div>
+        <div class="admin-field" style="background:#fff8e8;padding:10px;border-radius:8px;font-size:12px;color:#666">⚠️ <strong>CNIL / RGPD :</strong> Assurez-vous d'avoir le consentement écrit du patient avant de publier son témoignage. Utilisez uniquement le prénom. Ne publiez pas de données permettant l'identification (nom complet, ville précise, âge exact, profession).</div>
+        <button class="admin-btn" onclick="addTesti()">+ Publier le témoignage</button>
+      </div>
+      <div class="admin-card" style="margin-top:14px">
+        <div class="admin-s-title" style="font-size:13px">Paramètres affichage</div>
+        <div class="toggle-row"><div><div class="toggle-lbl">Bandeau RGPD</div><div class="toggle-sub">Afficher le bandeau cookies</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div class="toggle-lbl">Agenda public</div><div class="toggle-sub">Afficher les disponibilités</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div class="toggle-lbl">Formulaire RDV</div><div class="toggle-sub">Accepter les demandes en ligne</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div class="toggle-lbl">Blog</div><div class="toggle-sub">Afficher la section blog</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
+      </div>
+    </div>
+
+    <!-- ONGLET POSTS RÉSEAUX -->
+    <div class="admin-section" id="tab-posts">
+      <div class="admin-s-title">📱 Posts réseaux sociaux prêts à copier</div>
+      <div class="post-card">
+        <div class="post-net">📸 Instagram · Conseil du lundi</div>
+        <div class="post-txt">🌬️ Technique du 4-7-8 pour calmer l'anxiété en 30 secondes :<br>→ Inspirez 4 sec → Retenez 7 sec → Expirez 8 sec<br>Répétez 3 fois. Essayez maintenant et dites-moi en commentaire 💬<br>#sophrologie #anxiété #bienetre #isleadam #valdoise #sophrologue95</div>
+        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">Idéal : lundi 9h ou 12h</span></div>
+      </div>
+      <div class="post-card">
+        <div class="post-net">👥 Facebook · Témoignage mercredi</div>
+        <div class="post-txt">💚 "Bienveillance, écoute, empathie, professionnalisme et sourires sont les clés de Jennifer." — Valérie<br><br>🗓 Prochains créneaux disponibles cette semaine — 06 99 74 05 27<br>📍 Cabinet sensoriel L'Isle-Adam (95) · À domicile · Entreprises</div>
+        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">Idéal : mercredi 18h</span></div>
+      </div>
+      <div class="post-card">
+        <div class="post-net">📸 Instagram · Story vendredi</div>
+        <div class="post-txt">🌿 DISPONIBILITÉS CETTE SEMAINE 🌿<br><br>✅ Lundi 9h00<br>✅ Jeudi 14h30<br>✅ Samedi 10h00<br><br>👉 Réservez au 06 99 74 05 27 ou via le lien en bio<br>Premier échange offert 🎁<br>#sophrologue #isleadam #bienetre</div>
+        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">À mettre à jour avec vrais créneaux</span></div>
+      </div>
+      <div class="post-card">
+        <div class="post-net">💼 LinkedIn · Entreprises</div>
+        <div class="post-txt">📊 2,5 millions de Français en burn-out sévère chaque année. (INRS)<br><br>En tant que sophrologue certifiée et consultante RH, j'interviens en entreprise pour :<br>✅ Ateliers gestion du stress · ✅ QVT · ✅ Prévention burn-out<br><br>📩 contact@sophrologuelisleadam.fr · #QVT #bienetre #RH #sophrologue</div>
+        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">Idéal : mardi 8h</span></div>
+      </div>
+      <div style="background:#fff8e8;padding:12px 16px;border-radius:8px;font-size:12px;color:#666;margin-top:8px">
+        ⚠️ <strong>Rappel CNIL :</strong> Ne publiez jamais de données personnelles identifiables sur les réseaux sociaux. Utilisez uniquement les prénoms pour les témoignages. Obtenez toujours le consentement écrit avant de citer un patient.
+      </div>
+    </div>
+
+    <!-- ONGLET STATS -->
+    <div class="admin-section" id="tab-stats">
+      <div class="admin-s-title">📊 Tableau de bord</div>
+      <div class="stat-grid">
+        <div class="stat-card"><div class="stat-n">3</div><div class="stat-l">RDV ce mois</div></div>
+        <div class="stat-card"><div class="stat-n">7</div><div class="stat-l">Avis patients</div></div>
+        <div class="stat-card"><div class="stat-n">5★</div><div class="stat-l">Note moyenne</div></div>
+        <div class="stat-card"><div class="stat-n">2</div><div class="stat-l">Créneaux libres</div></div>
+      </div>
+      <div class="admin-card">
+        <div class="admin-s-title" style="font-size:13px">Actions recommandées cette semaine</div>
+        <div style="font-size:13px;color:#333;line-height:1.7">
+          ✅ Publier le post Instagram lundi matin<br>
+          ✅ Mettre à jour les créneaux agenda<br>
+          ✅ Répondre aux 2 nouvelles demandes RDV<br>
+          📝 Rédiger 1 article de blog (objectif SEO)<br>
+          📸 Photographier le cabinet pour Instagram<br>
+          ⭐ Demander un avis Google à vos patients satisfaits
+        </div>
+      </div>
+      <div class="admin-card" style="margin-top:14px">
+        <div class="admin-s-title" style="font-size:13px">Recommandations techniques prioritaires</div>
+        <div style="font-size:13px;color:#333;line-height:1.8">
+          🔴 <strong>Urgent :</strong> Migrer l'hébergement depuis 000webhostapp vers OVH ou o2switch (hébergement FR, ~3€/mois, conformité RGPD)<br>
+          🟡 <strong>Important :</strong> Créer / compléter Google Business Profile avec photos du cabinet<br>
+          🟡 <strong>Important :</strong> Activer un lien de prise de RDV en ligne (Doctolib ou Cal.com gratuit)<br>
+          🟢 <strong>Bonus :</strong> Créer un compte Instagram professionnel lié à la page Facebook
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /admin-content -->
+</div><!-- /admin-panel -->
+
+<script>
+// ===== DONNÉES AGENDA =====
+let agendaYear = 2026, agendaMonth = 3; // 0-indexed, 3=avril
+const slots = {
+  '2026-04-22': [{h:'09:00',type:'libre'},{h:'11:00',type:'libre'}],
+  '2026-04-23': [{h:'14:00',type:'occupe'}],
+  '2026-04-24': [{h:'10:00',type:'libre'}],
+  '2026-04-25': [{h:'09:00',type:'libre'},{h:'15:00',type:'libre'}],
+  '2026-04-28': [{h:'10:00',type:'libre'}],
+  '2026-04-29': [{h:'14:00',type:'occupe'},{h:'16:00',type:'occupe'}],
+  '2026-04-30': [{h:'09:00',type:'libre'}],
+};
+
+function buildAgenda(){
+  const grid = document.getElementById('agenda-grid');
+  // Remove day cells (keep headers)
+  const cells = grid.querySelectorAll('.ag-day');
+  cells.forEach(c=>c.remove());
+
+  const mNames=['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+  document.getElementById('agenda-month-label').textContent = mNames[agendaMonth]+' '+agendaYear;
+
+  const first = new Date(agendaYear, agendaMonth, 1);
+  let dow = first.getDay(); // 0=dim
+  dow = dow===0?6:dow-1; // Monday=0
+
+  const daysInMonth = new Date(agendaYear, agendaMonth+1, 0).getDate();
+  const today = new Date();
+
+  // Blank cells
+  for(let i=0;i<dow;i++){
+    const d=document.createElement('div');
+    d.className='ag-day autre-mois';
+    grid.appendChild(d);
+  }
+  for(let day=1;day<=daysInMonth;day++){
+    const d=document.createElement('div');
+    const dateStr = `${agendaYear}-${String(agendaMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const daySlots = slots[dateStr]||[];
+    const hasLibre = daySlots.some(s=>s.type==='libre');
+    const hasOccupe = daySlots.some(s=>s.type==='occupe');
+    const isToday = today.getFullYear()===agendaYear && today.getMonth()===agendaMonth && today.getDate()===day;
+
+    d.className='ag-day'+(isToday?' today':'')+(hasLibre?' libre':hasOccupe?' occupe':'');
+    let html=`<div class="ag-day-num">${day}</div>`;
+    daySlots.forEach(s=>{
+      html+=`<div class="ag-slot slot-${s.type}">${s.h}</div>`;
+    });
+    d.innerHTML=html;
+    if(hasLibre){
+      d.onclick=()=>{
+        const presta=document.getElementById('f-presta');
+        if(presta)presta.value='Séance individuelle adulte (60€)';
+        const msg=document.getElementById('f-msg');
+        if(msg)msg.value=`Je souhaite réserver le créneau du ${day}/${agendaMonth+1}/${agendaYear}.`;
+        document.getElementById('rdv').scrollIntoView({behavior:'smooth'});
+      };
+    }
+    grid.appendChild(d);
+  }
+}
+
+function agendaNav(dir){
+  agendaMonth+=dir;
+  if(agendaMonth>11){agendaMonth=0;agendaYear++;}
+  if(agendaMonth<0){agendaMonth=11;agendaYear--;}
+  buildAgenda();
+}
+buildAgenda();
+
+// ===== ADMIN AUTH =====
+const ADMIN_USER='jennifer', ADMIN_PASS='sophrologie2026!';
+function openLogin(){document.getElementById('login-modal').classList.add('show');}
+function closeLogin(){document.getElementById('login-modal').classList.remove('show');}
+function doLogin(){
+  const u=document.getElementById('l-user').value;
+  const p=document.getElementById('l-pass').value;
+  if(u===ADMIN_USER&&p===ADMIN_PASS){
+    closeLogin();
+    document.getElementById('admin-overlay').style.display='block';
+    document.getElementById('admin-panel').classList.add('open');
+  } else {
+    document.getElementById('login-err').style.display='block';
+    setTimeout(()=>document.getElementById('login-err').style.display='none',3000);
+  }
+}
+document.getElementById('l-pass').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+function closeAdmin(){
+  document.getElementById('admin-overlay').style.display='none';
+  document.getElementById('admin-panel').classList.remove('open');
+}
+function adminTab(name){
+  document.querySelectorAll('.admin-tab').forEach((t,i)=>{
+    const tabs=['rdvs','agenda','contenu','posts','stats'];
+    t.classList.toggle('active',tabs[i]===name);
+  });
+  document.querySelectorAll('.admin-section').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById('tab-'+name);
+  if(el)el.classList.add('active');
+}
+
+// ===== ADMIN ACTIONS =====
+function addSlot(){
+  const date=document.getElementById('slot-date').value;
+  const heure=document.getElementById('slot-heure').value;
+  const type=document.getElementById('slot-type').value;
+  if(!date){alert('Veuillez choisir une date.');return;}
+  if(!slots[date])slots[date]=[];
+  slots[date].push({h:heure,type});
+  buildAgenda();
+
+  const list=document.getElementById('slots-list');
+  const el=document.createElement('div');
+  const colors={libre:'#E1F5EE',occupe:'#FAECE7',indispo:'#f0f0f0'};
+  const tcol={libre:'var(--teal)',occupe:'#993C1D',indispo:'#888'};
+  const labels={libre:'Libre',occupe:'Occupé',indispo:'Indisponible'};
+  el.className='admin-card';
+  el.style.cssText='display:flex;justify-content:space-between;align-items:center;padding:12px 16px';
+  el.innerHTML=`<div><div style="font-size:13px;font-weight:700">${date} — ${heure}</div><div style="font-size:12px;color:var(--muted)">1 heure · ${labels[type]}</div></div><div style="display:flex;gap:8px"><span style="background:${colors[type]};color:${tcol[type]};font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">${labels[type]}</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>`;
+  list.prepend(el);
+}
+function markConf(btn){
+  const badge=btn.closest('.rdv-item').querySelector('.rdv-badge');
+  badge.textContent='Confirmé';badge.className='rdv-badge badge-conf';
+  btn.remove();
+}
+function addTesti(){
+  const name=document.getElementById('new-testi-name').value.trim();
+  const txt=document.getElementById('new-testi-txt').value.trim();
+  if(!name||!txt){alert('Remplissez le prénom et le texte.');return;}
+  const grid=document.querySelector('.testi-grid');
+  const card=document.createElement('div');
+  card.className='testi-card';
+  card.innerHTML=`<div class="testi-star">★★★★★</div><div class="testi-q">"${txt}"</div><div class="testi-name">— ${name}</div>`;
+  grid.prepend(card);
+  document.getElementById('new-testi-name').value='';
+  document.getElementById('new-testi-txt').value='';
+  alert('Témoignage publié sur le site !');
+}
+function copyPost(btn){
+  const txt=btn.closest('.post-card').querySelector('.post-txt').innerText;
+  navigator.clipboard.writeText(txt).then(()=>{
+    btn.textContent='✓ Copié !';
+    setTimeout(()=>btn.textContent='📋 Copier',2000);
+  });
+}
+
+// ===== FORMULAIRE RDV =====
+function submitRDV(){
+  const prenom=document.getElementById('f-prenom').value.trim();
+  const tel=document.getElementById('f-tel').value.trim();
+  const rgpd=document.getElementById('f-rgpd').checked;
+  if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre numéro de téléphone.');return;}
+  if(!rgpd){alert('Vous devez accepter la politique de confidentialité pour envoyer votre demande.');return;}
+
+  // Préparation données (envoi réel à connecter à un backend ou Formspree)
+  const data={
+    prenom, nom:document.getElementById('f-nom').value,
+    tel, email:document.getElementById('f-email').value,
+    presta:document.getElementById('f-presta').value,
+    creneau:document.getElementById('f-creneau').value,
+    message:document.getElementById('f-msg').value,
+    date_envoi:new Date().toLocaleString('fr-FR')
+  };
+  console.log('[RDV demande]', data); // À connecter à Formspree / EmailJS / backend
+
+  // Ajout dans l'interface admin
+  const list=document.getElementById('rdv-list');
+  const el=document.createElement('div');
+  el.className='rdv-item';
+  el.innerHTML=`<div class="rdv-info"><div class="rdv-name">${data.prenom} ${data.nom||''}</div><div class="rdv-detail">📞 ${data.tel} · ${data.presta||'Non précisé'} · ${data.creneau}</div><div class="rdv-detail" style="color:#999;font-size:11px">Reçu le ${data.date_envoi}</div>${data.message?`<div class="rdv-detail" style="margin-top:6px;font-size:12px;color:#333">"${data.message}"</div>`:''}</div><div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end"><span class="rdv-badge badge-new">Nouveau</span><button class="admin-btn" style="font-size:11px;padding:6px 12px" onclick="markConf(this)">✓ Confirmer</button></div>`;
+  list.prepend(el);
+
+  // Feedback utilisateur
+  document.querySelector('#rdv .rdv-box').innerHTML=`<div style="text-align:center;padding:40px 20px"><div style="font-size:48px;margin-bottom:16px">🌿</div><div style="font-size:22px;font-weight:700;color:var(--teal);margin-bottom:10px">Demande envoyée !</div><p style="font-size:15px;color:var(--muted);line-height:1.6">Merci ${data.prenom}, je vous recontacterai sous 24h au <strong>${data.tel}</strong> pour confirmer votre rendez-vous.</p><p style="font-size:13px;color:#999;margin-top:16px">Conformément au RGPD, vos données ne seront utilisées que pour traiter cette demande.</p></div>`;
+}
+
+// ===== RGPD BANNER =====
+function closeBanner(){document.getElementById('rgpd-banner').style.display='none';}
+function acceptCookies(){
+  localStorage.setItem('cookies-accepted','true');
+  closeBanner();
+}
+if(localStorage.getItem('cookies-accepted'))closeBanner();
+
+// ===== MOBILE MENU =====
+function toggleMobileMenu(){
+  const menu=document.querySelector('.nav-menu');
+  if(menu.style.display==='flex'){menu.style.display='none';}
+  else{menu.style.cssText='display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#fff;padding:20px;border-bottom:1px solid var(--border);z-index:199;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,.1)';}
+}
+</script>
+</body>
+</html>
