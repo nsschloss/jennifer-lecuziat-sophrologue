@@ -383,15 +383,58 @@ footer{background:var(--footer);padding:52px 64px 28px;color:rgba(255,255,255,.5
 .legal-text a{color:var(--cyan3)}
 
 /* RESPONSIVE */
+/* ============================================================
+   RESPONSIVE — CORRECTIONS MOBILES COMPLÈTES
+   ============================================================ */
+
+/* RÈGLES GLOBALES ANTI-DÉBORDEMENT */
+img{max-width:100%;height:auto}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/* Évite le débordement des enfants de grille */
+.pb-grid > *,.exp-grid > *,.testi-grid > *,.atelier-grid > *,
+.deon-grid > *,.blog-grid > *,.footer-top > *,.pay-grid > *,
+.gcal-grid > *,.form-row > *,.slot-form > *,.stat-grid > *{min-width:0}
+
+/* Textes longs ne débordent pas */
+.exp-badge,.exp-name,.exp-tagline,.exp-desc,.exp-ideal,
+.pb-title,.pb-desc,.testi-q,.blog-title,.blog-exc,
+.f-sub,.cab-info p,.gcal-detail,.gcal-name,
+.pay-name,.pay-desc,.deon-desc,.about-body{
+  word-break:break-word;overflow-wrap:break-word
+}
+
+/* Trame email : pre-wrap avec scroll horizontal */
+.trame-body{
+  white-space:pre-line;
+  word-break:break-word;
+  overflow-wrap:break-word;
+  max-width:100%
+}
+
+/* Facture table : scroll horizontal sur mobile */
+.facture-preview{overflow-x:auto}
+.facture-preview table{min-width:320px}
+
+/* Formulaire RDV : évite débordement */
+.form-inp,.form-sel,.form-ta{max-width:100%;width:100%}
+
 @media(max-width:960px){
+  /* NAV */
   #nav{padding:0 20px}
   .nav-links{display:none}
   .hamburger{display:flex}
-  .hero-c{padding:0 28px}
-  .hero-kpis{flex-direction:column}
+
+  /* HERO */
+  .hero-c{padding:0 28px;max-width:100%}
+  .hero-kpis{flex-direction:column;gap:0}
   .kpi{padding:10px 0;border-right:none;border-bottom:1px solid rgba(255,255,255,.15)}
   .kpi:last-child{border-bottom:none}
+
+  /* SECTIONS */
   .section{padding:56px 24px}
+
+  /* GRILLES */
   .exp-grid,.pb-grid{grid-template-columns:1fr}
   .testi-grid,.deon-grid{grid-template-columns:1fr}
   .atelier-grid{grid-template-columns:1fr 1fr}
@@ -400,17 +443,111 @@ footer{background:var(--footer);padding:52px 64px 28px;color:rgba(255,255,255,.5
   .footer-top{grid-template-columns:1fr 1fr}
   .form-row,.gcal-grid{grid-template-columns:1fr}
   .pay-grid{grid-template-columns:1fr 1fr}
+
+  /* ADMIN */
   #admin-panel{width:100%}
-  .cadeau-bloc{flex-direction:column;text-align:center}
+
+  /* CADEAU */
+  .cadeau-bloc{flex-direction:column;text-align:center;padding:28px 20px}
+  .cadeau-bloc::after{display:none}
   .cadeau-tags{justify-content:center}
+  .btn-cadeau{white-space:normal;text-align:center}
+  .cadeau-txt p{max-width:100%}
+
+  /* ABOUT — badge ne déborde pas */
+  .about-badge-p{position:static;display:inline-block;margin-bottom:16px;left:auto;top:auto}
+  .about-wrap{padding-bottom:0;padding-right:0}
+  .about-deco{display:none}
+
+  /* AGENDA — cellules plus petites */
+  .ag-dow{padding:6px 2px;font-size:9px;letter-spacing:0}
+  .ag-day{min-height:52px;padding:4px 3px}
+  .ag-num{font-size:11px}
+  .ag-slot{font-size:9px;padding:1px 3px}
+
+  /* CTA */
+  .cta-bloc{padding:40px 28px}
+  .cta-pills{flex-direction:column;align-items:center}
+
+  /* HERO KPIS */
+  .kpi strong{font-size:20px}
+  .kpi span{font-size:11px}
+
+  /* PAIEMENT */
+  .pay-note{font-size:12px}
+
+  /* GCAL BUTTONS */
+  .gcal-btn{padding:12px 14px}
+  .gcal-name{font-size:13px}
 }
+
 @media(max-width:600px){
-  #hero h1{font-size:34px}
-  .hero-c{padding:0 20px!important}
+  /* HERO */
+  #hero h1{font-size:32px;line-height:1.1}
+  .hero-c{padding:0 20px!important;max-width:100%}
+  .hero-tagline{font-size:16px}
+  .hero-sub{font-size:13px}
+  .hero-badge{font-size:10px;padding:5px 14px}
+  .hero-btns{flex-direction:column;gap:10px}
+  .btn-p,.btn-s{text-align:center;width:100%;padding:13px 20px}
+
+  /* SECTIONS */
   .section{padding:44px 20px}
+
+  /* GRILLES */
   .blog-grid,.atelier-grid,.pay-grid{grid-template-columns:1fr}
-  .cta-bloc{padding:40px 24px}
-  .cta-bloc h3{font-size:28px}
+  .footer-top{grid-template-columns:1fr}
+
+  /* CTA */
+  .cta-bloc{padding:36px 20px}
+  .cta-bloc h3{font-size:26px}
+  .cta-btn{padding:12px 24px;font-size:12px}
+
+  /* EXP CARDS */
+  .exp-card{padding:24px 20px}
+  .exp-name{font-size:24px}
+  .exp-price{font-size:26px}
+
+  /* TÉMOIGNAGES */
+  .testi-feat{padding:24px 20px}
+  .testi-q{font-size:16px}
+
+  /* ABOUT */
+  .pquote p{font-size:17px}
+
+  /* AGENDA */
+  .ag-head{padding:16px 20px}
+  .ag-legend{padding:10px 20px;gap:12px;flex-wrap:wrap}
+  .ag-foot{padding:10px 20px;font-size:10px}
+
+  /* GCAL */
+  .gcal-section{padding:20px}
+  .gcal-title{font-size:18px}
+
+  /* ADMIN */
+  .admin-tab{padding:9px 6px;font-size:10px}
+  .facture-preview{padding:12px}
+
+  /* GARANTIE */
+  #garantie{padding:10px 16px;gap:12px}
+  .g-item{font-size:10px}
+
+  /* FOOTER */
+  .footer-bottom{flex-direction:column;gap:4px;font-size:10px}
+  footer{padding:40px 20px 24px}
+  .f-socials{flex-wrap:wrap;gap:14px}
+
+  /* MENTIONS */
+  #mentions{padding:28px 20px!important}
+}
+
+@media(max-width:375px){
+  #hero h1{font-size:28px}
+  .hero-tagline{font-size:14px}
+  .exp-name{font-size:22px}
+  .st{font-size:24px}
+  .ss{font-size:13px}
+  .ag-dow{font-size:8px}
 }
 </style>
 </head>
