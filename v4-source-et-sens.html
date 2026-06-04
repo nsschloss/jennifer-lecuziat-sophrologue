@@ -352,10 +352,10 @@ footer{background:var(--footer);padding:52px 64px 28px;color:rgba(255,255,255,.5
 .b-conf{background:#EBF5FF;color:#1877F2}
 .slot-form{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
 .toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
-.sw{width:40px;height:21px;background:var(--border);border-radius:11px;cursor:pointer;position:relative;transition:.2s;flex-shrink:0}
-.sw.on{background:var(--cyan2)}
-.sw::after{content:'';position:absolute;top:3px;left:3px;width:15px;height:15px;background:#fff;border-radius:50%;transition:.2s}
-.sw.on::after{left:22px}
+.toggle-sw{width:40px;height:21px;background:var(--border);border-radius:11px;cursor:pointer;position:relative;transition:.2s;flex-shrink:0}
+.toggle-sw.on{background:var(--cyan2)}
+.toggle-sw::after{content:'';position:absolute;top:3px;left:3px;width:15px;height:15px;background:#fff;border-radius:50%;transition:.2s}
+.toggle-sw.on::after{left:22px}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:18px}
 .stat-card{background:#fafaf8;border-radius:10px;padding:16px;border:1px solid var(--border);text-align:center}
 .stat-n{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:var(--cyan3)}
@@ -1305,11 +1305,11 @@ Source & Sens · 06 99 74 05 27</div>
       </div>
       <div class="admin-card" style="margin-top:12px">
         <div style="font-size:12px;font-weight:700;margin-bottom:12px">Paramètres d'affichage</div>
-        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Bandeau RGPD</div></div><div class="sw on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Agenda public</div></div><div class="sw on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Formulaire RDV</div></div><div class="sw on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">WhatsApp flottant</div></div><div class="sw on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Chèque cadeau</div></div><div class="sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Bandeau RGPD</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Agenda public</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Formulaire RDV</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">WhatsApp flottant</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Chèque cadeau</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
       </div>
       <div class="admin-card" style="margin-top:12px;background:#EAF5F5;border-color:var(--cyan)">
         <div style="font-size:12px;font-weight:700;margin-bottom:8px;color:var(--cyan3)">📱 Curator.io — Flux réseaux sociaux</div>
