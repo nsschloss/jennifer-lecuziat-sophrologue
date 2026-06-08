@@ -122,10 +122,6 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-
 /* EXPÉRIENCES */
 .exp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .exp-card{background:var(--pure);border-radius:20px;padding:32px 28px;border:1px solid var(--border);transition:.25s;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.exp-photo{background-size:cover;background-position:center}
-.exp-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(248,246,242,.93) 0%,rgba(248,246,242,.87) 100%);border-radius:20px}
-.exp-card.feat .exp-overlay{background:linear-gradient(160deg,rgba(61,138,138,.88),rgba(45,112,112,.86))}
-.exp-badge,.exp-name,.exp-tagline,.exp-desc,.exp-ideals,.exp-footer,.visio-tag{position:relative;z-index:1}
 .exp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:.3s}
 .exp-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--cyan)}
 .exp-card:hover::before{transform:scaleX(1)}
@@ -673,10 +669,9 @@ img{max-width:100%;height:auto}
   <p class="ss">Des expériences sensorielles au cabinet, et L'Escale en visio WhatsApp — pensées pour vous accompagner là où vous en êtes.</p>
   <div class="exp-grid">
 
-    <!-- ====== L'ESCALE ====== -->
-    <div class="exp-card exp-photo" style="background-image:url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-escale.webp')">
-      <div class="exp-overlay"></div>
-      <div class="exp-badge">🌿 30 minutes &middot; Présentiel &amp; Visio</div>
+    <!-- L'ESCALE -->
+    <div class="exp-card" style="background:linear-gradient(160deg,rgba(248,246,242,.80) 0%,rgba(232,221,210,.72) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-escale.webp');background-size:cover;background-position:center">
+      <div class="exp-badge">🌿 30 minutes · Présentiel &amp; Visio</div>
       <div class="exp-name">L'Escale</div>
       <div class="exp-tagline">"Une pause ?"</div>
       <div class="exp-desc">Une pause douce pour souffler et relâcher les tensions. Respiration consciente, relaxation guidée et recentrage corporel dans une atmosphère douce et enveloppante.</div>
@@ -689,11 +684,10 @@ img{max-width:100%;height:auto}
         <span class="exp-price">45€</span>
         <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
       </div>
-    </div><!-- /L'Escale -->
+    </div>
 
-    <!-- ====== L'IMMERSION ====== -->
-    <div class="exp-card feat exp-photo" style="background-image:url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp')">
-      <div class="exp-overlay" style="background:linear-gradient(160deg,rgba(61,138,138,.88),rgba(45,112,112,.86))"></div></div>
+    <!-- L'IMMERSION -->
+    <div class="exp-card feat" style="background:linear-gradient(160deg,rgba(42,90,90,.84) 0%,rgba(30,70,70,.80) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center">
       <div class="exp-badge">🌊 60 minutes</div>
       <div class="exp-name">L'Immersion</div>
       <div class="exp-tagline">"S'abandonner profondément."</div>
@@ -707,12 +701,11 @@ img{max-width:100%;height:auto}
         <span class="exp-price">65€</span>
         <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
       </div>
-    </div><!-- /L'Immersion -->
+    </div>
 
-    <!-- ====== LA SOURCE ====== -->
-    <div class="exp-card exp-photo" style="background-image:url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-source.webp')">
-      <div class="exp-overlay"></div>
-      <div class="exp-badge">✨ 90 minutes &middot; Expérience signature</div>
+    <!-- LA SOURCE -->
+    <div class="exp-card" style="background:linear-gradient(160deg,rgba(248,246,242,.80) 0%,rgba(220,235,235,.72) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-source.webp');background-size:cover;background-position:center">
+      <div class="exp-badge">✨ 90 minutes · Expérience signature</div>
       <div class="exp-name">La Source</div>
       <div class="exp-tagline">"Retrouver l'harmonie corps &amp; esprit."</div>
       <div class="exp-desc">Massage pleine conscience + sophrologie immersive + relaxation sensorielle + accompagnement émotionnel. Un véritable voyage intérieur complet.</div>
@@ -725,12 +718,12 @@ img{max-width:100%;height:auto}
         <span class="exp-price">105€</span>
         <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
       </div>
-    </div><!-- /La Source -->
+    </div>
 
-    <!-- ====== L'ESCALE VISIO ====== -->
+    <!-- L'ESCALE VISIO -->
     <div class="exp-card visio">
       <span class="visio-tag">📱 WhatsApp Video uniquement</span>
-      <div class="exp-badge">🌿 30 minutes &middot; À distance</div>
+      <div class="exp-badge">🌿 30 minutes · À distance</div>
       <div class="exp-name">L'Escale Visio</div>
       <div class="exp-tagline">"Une pause, depuis chez vous."</div>
       <div class="exp-desc"><strong>À distance.</strong> Réservée aux <strong>suivis hebdomadaires</strong> uniquement. Paiement Wero avant la séance. Appel WhatsApp Video à l'heure du RDV.</div>
@@ -743,7 +736,7 @@ img{max-width:100%;height:auto}
         <span class="exp-price">40€</span>
         <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
       </div>
-    </div><!-- /L'Escale Visio -->
+    </div>
 
   </div>
   <!-- CHÈQUE CADEAU<!-- CHÈQUE CADEAU -->
