@@ -675,7 +675,7 @@ img{max-width:100%;height:auto}
       <div class="jennifer-overlay-inner">
         <div class="ey" style="color:var(--cyan);text-align:center">Jennifer Le Cuziat</div>
         <h2 class="st" style="color:#fff;text-align:center;margin-bottom:14px">Bienvenue chez Source &amp; Sens</h2>
-        <div class="pquote"><p style="color:#ffffff;font-weight:500;text-shadow:0 1px 6px rgba(0,0,0,.45)">"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
+        <div class="pquote"><p style="color:#ffffff;font-weight:500;font-size:clamp(30px,5vw,42px);text-shadow:0 1px 6px rgba(0,0,0,.45)">"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
         <div class="about-body" style="color:rgba(255,255,255,.92)">
           <p>Je suis Jennifer Le Cuziat, <u>sophrologue</u> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
           <p>Certifiée Quali Sophro pour Sophrologie &amp; Psychopraticienne 2019 via EFDS, puis PNL et EFT en 2021 pour apporter mon aide et soutien pour certaines pathologies tel que bipolarité, schizophrénie, TDHA et/ou trauma attentats et somatisations.</p>
@@ -1372,6 +1372,8 @@ function copyTrame(btn){
 }
 
 /* FORMULAIRE RDV */
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
+window.addEventListener('load',function(){if(!location.hash){window.scrollTo(0,0);}});
 function pickExp(motcle){
   const p=document.getElementById('f-presta');
   if(p){for(let i=0;i<p.options.length;i++){if(p.options[i].text.indexOf(motcle)>-1){p.selectedIndex=i;break;}}}
