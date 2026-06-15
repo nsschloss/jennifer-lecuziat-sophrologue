@@ -564,13 +564,15 @@ img{max-width:100%;height:auto}
 }
 
 /* Section Jennifer — texte en surimpression au survol */
-.jennifer-hover-wrap{position:relative;max-width:600px;margin:0 auto;border-radius:20px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.jennifer-hover-wrap{position:relative;width:100%;max-width:340px;margin:0 auto;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;overflow:hidden;cursor:pointer;aspect-ratio:1/1;box-shadow:0 0 60px rgba(169,215,215,.3);border:3px solid rgba(169,215,215,.3)}
 .jennifer-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
 .jennifer-hover-wrap:hover .jennifer-photo{transform:scale(1.05)}
 .jennifer-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(42,90,90,.94),rgba(30,60,60,.96));opacity:0;transition:opacity .4s ease;display:flex;align-items:center;overflow-y:auto}
 .jennifer-hover-wrap:hover .jennifer-overlay{opacity:1}
-.jennifer-overlay-inner{padding:36px 40px}
-.jennifer-overlay-inner .about-body p{margin-bottom:12px;font-size:13.5px;line-height:1.7;font-weight:300}
+.jennifer-overlay-inner{padding:24px 26px}
+.jennifer-overlay-inner .about-body p{margin-bottom:9px;font-size:11.5px;line-height:1.55;font-weight:300}
+.jennifer-overlay-inner .st{font-size:22px!important;margin-bottom:8px}
+.jennifer-overlay-inner .pquote p{font-size:13px}
 .jennifer-overlay::-webkit-scrollbar{width:6px}
 .jennifer-overlay::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
 @media(max-width:640px){.jennifer-overlay{opacity:1;background:linear-gradient(160deg,rgba(42,90,90,.85),rgba(30,60,60,.92))}.jennifer-overlay-inner{padding:24px}}
@@ -654,7 +656,22 @@ img{max-width:100%;height:auto}
       </div>
     </div>
     <div class="hero-portrait">
-      <img src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/portrait-jennifer.webp" alt="Jennifer Le Cuziat — Sophrologue Source & Sens">
+      <div class="jennifer-hover-wrap">
+    <img class="jennifer-photo" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-cadeau-main.webp" alt="Source &amp; Sens — Jennifer Le Cuziat">
+    <div class="jennifer-overlay">
+      <div class="jennifer-overlay-inner">
+        <div class="ey" style="color:var(--cyan)">Jennifer Le Cuziat</div>
+        <h2 class="st" style="color:#fff">Bienvenue chez Source &amp; Sens</h2>
+        <div class="pquote" style="color:rgba(255,255,255,.85)"><p>"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
+        <div class="about-body" style="color:rgba(255,255,255,.92)">
+          <p>Je suis Jennifer Le Cuziat, <strong>sophrologue</strong> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
+          <p>Certifiée Quali Sophro pour Sophrologie &amp; Psychopraticienne 2019 via EFDS, puis PNL et EFT en 2021 pour apporter mon aide et soutien pour certaines pathologies tel que bipolarité, schizophrénie, TDHA et/ou trauma attentats et somatisations.</p>
+          <p><em>En cours : Livre Méthode des 4T pour exercer son estime sur +de 540 l'ont testé, et certification de Sexologue – aide aux victimes – inceste – trauma pour 2027.</em></p>
+          <p>Profondément humaniste, chaque personne accueillie jusqu'ici m'a donnée la motivation de me former en continue…</p>
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
       <div class="engagement-vignette">
         <div class="engagement-label">🤝 Notre engagement</div>
@@ -687,24 +704,7 @@ img{max-width:100%;height:auto}
 
 
 <!-- JENNIFER -->
-<section class="section sw" id="jennifer">
-  <div class="jennifer-hover-wrap">
-    <img class="jennifer-photo" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-cadeau-main.webp" alt="Source &amp; Sens — Jennifer Le Cuziat">
-    <div class="jennifer-overlay">
-      <div class="jennifer-overlay-inner">
-        <div class="ey" style="color:var(--cyan)">Jennifer Le Cuziat</div>
-        <h2 class="st" style="color:#fff">Bienvenue chez Source &amp; Sens</h2>
-        <div class="pquote" style="color:rgba(255,255,255,.85)"><p>"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
-        <div class="about-body" style="color:rgba(255,255,255,.92)">
-          <p>Je suis Jennifer Le Cuziat, <strong>sophrologue</strong> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
-          <p>Certifiée Quali Sophro pour Sophrologie &amp; Psychopraticienne 2019 via EFDS, puis PNL et EFT en 2021 pour apporter mon aide et soutien pour certaines pathologies tel que bipolarité, schizophrénie, TDHA et/ou trauma attentats et somatisations.</p>
-          <p><em>En cours : Livre Méthode des 4T pour exercer son estime sur +de 540 l'ont testé, et certification de Sexologue – aide aux victimes – inceste – trauma pour 2027.</em></p>
-          <p>Profondément humaniste, chaque personne accueillie jusqu'ici m'a donnée la motivation de me former en continue…</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- EXPÉRIENCES -->
 <section class="section sa" id="experiences">
