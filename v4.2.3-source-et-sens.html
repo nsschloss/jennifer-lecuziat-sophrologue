@@ -18,7 +18,7 @@
   --cyan:#A9D7D7;--cyan2:#6BB5B5;--cyan3:#3D8A8A;
   --beige:#E9DED2;--beige2:#C7AE91;
   --white:#F8F6F2;--pure:#FFFFFF;
-  --text:#3A3A3A;--muted:#7A7A7A;--border:#E2DBD3;
+  --text:#3A3A3A;--muted:#5A5A5A;--border:#E2DBD3;
   --footer:#2A3535;--shadow:0 4px 24px rgba(169,215,215,.18);
   --shadow-md:0 8px 40px rgba(0,0,0,.08);
 }
@@ -305,9 +305,9 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-
 .form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:11px;line-height:1.55;font-weight:300}
 .alt-contact{background:var(--beige);border-radius:10px;padding:14px 18px;font-size:13px;color:var(--text);margin-top:18px;text-align:center}
 /* Réduction ciblée section "Commençons ensemble" (#rdv) — sans perte d'info */
-#rdv{padding-top:44px;padding-bottom:44px}
-#rdv .ss{margin-bottom:22px}
-#rdv .rdv-wrap{padding:30px}
+#rdv{padding-top:32px;padding-bottom:36px}
+#rdv .ss{margin-bottom:16px}
+#rdv .rdv-wrap{padding:26px}
 #rdv .form-row{margin-bottom:12px;gap:14px}
 #rdv .form-field{margin-bottom:12px}
 .alt-contact a{color:var(--cyan3);font-weight:600;text-decoration:none}
@@ -675,7 +675,7 @@ img{max-width:100%;height:auto}
       <div class="jennifer-overlay-inner">
         <div class="ey" style="color:var(--cyan);text-align:center">Jennifer Le Cuziat</div>
         <h2 class="st" style="color:#fff;text-align:center;margin-bottom:14px">Bienvenue chez Source &amp; Sens</h2>
-        <div class="pquote" style="color:rgba(255,255,255,.85)"><p>"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
+        <div class="pquote" style="color:#ffffff;font-weight:500;text-shadow:0 1px 6px rgba(0,0,0,.45)"><p>"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
         <div class="about-body" style="color:rgba(255,255,255,.92)">
           <p>Je suis Jennifer Le Cuziat, <u>sophrologue</u> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
           <p>Certifiée Quali Sophro pour Sophrologie &amp; Psychopraticienne 2019 via EFDS, puis PNL et EFT en 2021 pour apporter mon aide et soutien pour certaines pathologies tel que bipolarité, schizophrénie, TDHA et/ou trauma attentats et somatisations.</p>
@@ -722,12 +722,12 @@ img{max-width:100%;height:auto}
       </div>
       <div class="exp-footer">
         <span class="exp-price">45€</span>
-        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
+        <a href="#rdv" onclick="pickExp('Escale');return false;" class="btn-rdv">Réserver →</a>
       </div>
     </div>
 
     <!-- L'IMMERSION -->
-    <div class="exp-card feat" style="background:linear-gradient(to top,rgba(30,60,60,.90) 0%,rgba(42,90,90,.55) 45%,rgba(42,90,90,.10) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center">
+    <div class="exp-card feat" style="background:linear-gradient(to top,rgba(58,122,122,.82) 0%,rgba(78,148,148,.50) 45%,rgba(92,162,162,.10) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center">
       <div class="exp-badge">🌊 60 minutes</div>
       <div class="exp-name">L'Immersion</div>
       <div class="exp-tagline">"S'abandonner profondément."</div>
@@ -739,7 +739,7 @@ img{max-width:100%;height:auto}
       </div>
       <div class="exp-footer">
         <span class="exp-price">65€</span>
-        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
+        <a href="#rdv" onclick="pickExp('Immersion');return false;" class="btn-rdv">Réserver →</a>
       </div>
     </div>
 
@@ -756,12 +756,12 @@ img{max-width:100%;height:auto}
       </div>
       <div class="exp-footer">
         <span class="exp-price">105€</span>
-        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
+        <a href="#rdv" onclick="pickExp('Source');return false;" class="btn-rdv">Réserver →</a>
       </div>
     </div>
 
     <!-- L'ESCALE VISIO -->
-    <div class="exp-card visio" style="background:linear-gradient(to top,rgba(30,80,80,.88) 0%,rgba(50,110,110,.50) 45%,rgba(61,138,138,.12) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center top">
+    <div class="exp-card visio" style="background:linear-gradient(to top,rgba(62,132,132,.80) 0%,rgba(84,156,156,.46) 45%,rgba(98,172,172,.10) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center top">
       <span class="visio-tag">📱 WhatsApp Video uniquement</span>
       <div class="exp-badge">🌿 30 minutes · À distance</div>
       <div class="exp-name">L'Escale Visio</div>
@@ -774,7 +774,7 @@ img{max-width:100%;height:auto}
       </div>
       <div class="exp-footer">
         <span class="exp-price">40€</span>
-        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
+        <a href="#rdv" onclick="pickExp('Escale Visio');return false;" class="btn-rdv">Réserver →</a>
       </div>
     </div>
 
@@ -1372,6 +1372,12 @@ function copyTrame(btn){
 }
 
 /* FORMULAIRE RDV */
+function pickExp(motcle){
+  const p=document.getElementById('f-presta');
+  if(p){for(let i=0;i<p.options.length;i++){if(p.options[i].text.indexOf(motcle)>-1){p.selectedIndex=i;break;}}}
+  const r=document.getElementById('rdv');
+  if(r)r.scrollIntoView({behavior:'smooth'});
+}
 function submitRDV(){
   const prenom=document.getElementById('f-prenom').value.trim(),tel=document.getElementById('f-tel').value.trim(),rgpd=document.getElementById('f-rgpd').checked;
   if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre téléphone.');return;}
