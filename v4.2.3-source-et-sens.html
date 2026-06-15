@@ -74,8 +74,8 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-
 .hero-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(42,53,53,.78) 0%,rgba(61,138,138,.52) 55%,rgba(169,215,215,.18) 100%)}
 .hero-split{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;width:100%;padding:0 64px;gap:32px}
 .hero-c{color:#fff;animation:fadeUp .9s ease both;flex:1;min-width:0}
-.hero-portrait{flex-shrink:0;width:380px;animation:fadeUp 1.1s ease both}
-.hero-portrait img{width:100%;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;object-fit:cover;aspect-ratio:1;box-shadow:0 0 60px rgba(169,215,215,.3);border:3px solid rgba(169,215,215,.3)}
+.hero-portrait{flex-shrink:0;width:440px;animation:fadeUp 1.1s ease both}
+.hero-portrait>img{width:100%;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;object-fit:cover;aspect-ratio:1;box-shadow:0 0 60px rgba(169,215,215,.3);border:3px solid rgba(169,215,215,.3)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(169,215,215,.2);border:1px solid rgba(169,215,215,.4);border-radius:30px;padding:7px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:28px;color:rgba(255,255,255,.9);font-weight:500}
 .hero-badge::before{content:'';width:6px;height:6px;background:var(--cyan);border-radius:50%}
@@ -564,10 +564,10 @@ img{max-width:100%;height:auto}
 }
 
 /* Section Jennifer — texte en surimpression au survol */
-.jennifer-hover-wrap{position:relative;width:100%;max-width:380px;margin:0 auto;border-radius:18px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;box-shadow:0 12px 40px rgba(0,0,0,.15)}
-.jennifer-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.jennifer-hover-wrap{position:relative;width:100%;max-width:440px;margin:0 auto;border-radius:18px;overflow:hidden;cursor:pointer;aspect-ratio:4/5;box-shadow:0 12px 40px rgba(0,0,0,.15)}
+.jennifer-photo{width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:0;transition:transform .5s ease}
 .jennifer-hover-wrap:hover .jennifer-photo{transform:scale(1.05)}
-.jennifer-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(42,90,90,.94),rgba(30,60,60,.96));opacity:0;transition:opacity .4s ease;display:flex;align-items:center;overflow-y:auto}
+.jennifer-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(42,90,90,.95),rgba(30,60,60,.97));opacity:0;transition:opacity .4s ease;display:flex;align-items:flex-start;overflow-y:auto}
 .jennifer-hover-wrap:hover .jennifer-overlay{opacity:1}
 .jennifer-overlay-inner{padding:24px 26px}
 .jennifer-overlay-inner .about-body p{margin-bottom:9px;font-size:11.5px;line-height:1.55;font-weight:300}
@@ -575,7 +575,7 @@ img{max-width:100%;height:auto}
 .jennifer-overlay-inner .pquote p{font-size:13px}
 .jennifer-overlay::-webkit-scrollbar{width:6px}
 .jennifer-overlay::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
-@media(max-width:640px){.jennifer-overlay{opacity:1;background:linear-gradient(160deg,rgba(42,90,90,.85),rgba(30,60,60,.92))}.jennifer-overlay-inner{padding:24px}}
+@media(max-width:640px){.jennifer-overlay-inner{padding:20px}.jennifer-hover-wrap{max-width:340px}}
 
 /* Vignette Engagement — hero */
 .engagement-vignette{position:relative;margin-top:16px;border-radius:14px;cursor:pointer}
