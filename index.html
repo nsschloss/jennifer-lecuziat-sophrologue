@@ -603,9 +603,14 @@ img{max-width:100%;height:auto}
   .hero-portrait{order:2;flex:0 1 auto;width:100%;max-width:380px}
   .engagement-panel{order:3;width:100%;max-width:440px}
 }
+/* Scroll reveal entre sections (effet type Apple) */
+html.js-reveal .section{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.16,.84,.44,1),transform .8s cubic-bezier(.16,.84,.44,1)}
+html.js-reveal .section.in-view{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html.js-reveal .section{opacity:1!important;transform:none!important;transition:none}}
 </style>
 </head>
 <body>
+<script>document.documentElement.classList.add('js-reveal');</script>
 
 <!-- RGPD -->
 <div id="rgpd">
@@ -1422,6 +1427,16 @@ document.querySelectorAll('.engagement-vignette,.jennifer-hover-wrap').forEach(f
     if(ov){ var open = ov.style.opacity==='1'; ov.style.opacity = open?'':'1'; ov.style.pointerEvents = open?'':'auto'; }
   });
 });
+</script>
+<script>
+(function(){
+  var els=document.querySelectorAll('.section');
+  if(!('IntersectionObserver' in window)){document.documentElement.classList.remove('js-reveal');return;}
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
 </script>
 </body>
 </html>
