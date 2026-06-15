@@ -2,609 +2,833 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jennifer Le Cuziat, sophrologue certifiée à L'Isle-Adam (95). Stress, anxiété, sommeil, phobies, enfants et adolescents. Cabinet sensoriel Val d'Oise. RDV au 06 99 74 05 27.">
-<meta name="robots" content="index, follow">
-<title>Jennifer Le Cuziat · Sophrologue L'Isle-Adam (95) · Cabinet Sensoriel</title>
-
-<!-- Balises Open Graph pour réseaux sociaux -->
-<meta property="og:title" content="Jennifer Le Cuziat · Sophrologue L'Isle-Adam">
-<meta property="og:description" content="Retrouvez votre équilibre grâce à la sophrologie. Cabinet sensoriel à L'Isle-Adam (95). Adultes, enfants, entreprises.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sophrologuelisleadam.fr">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Source & Sens — Cabinet sensoriel corps & esprit. Jennifer Le Cuziat, sophrologue certifiée à L'Isle-Adam (95). Sophrologie, relaxation immersive, massage pleine conscience, PNL. RDV : jennifer.lecuziat@gmail.com ou 06 99 74 05 27.">
+<meta name="keywords" content="sophrologue L'Isle-Adam, relaxation immersive, massage bien-être Val d'Oise, gestion stress 95, reconnexion corps esprit">
+<meta property="og:title" content="Source & Sens — Cabinet sensoriel · Jennifer Le Cuziat">
+<meta property="og:description" content="Un espace pour ralentir, respirer et revenir à soi. L'Isle-Adam (95).">
+<title>Source & Sens — Refuge Sensoriel · Jennifer Le Cuziat · L'Isle-Adam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Curator.io — flux réseaux sociaux (à activer après création compte curator.io) -->
+<!-- <script type="text/javascript" src="https://cdn.curator.io/published/YOUR_FEED_ID.js" charset="UTF-8" defer></script> -->
 <style>
-/* ===== RESET & BASE ===== */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --teal:#0F6E56;--teal2:#1D9E75;--teal3:#5DCAA5;--teal-light:#E1F5EE;--teal-dark:#0B2E24;
-  --cream:#FAF8F5;--warm:#F5EFE8;--gold:#BA7517;--text:#1a1a1a;--muted:#666;--border:#e8e5e0;
-  --shadow:0 2px 16px rgba(0,0,0,0.08);--radius:12px;
+  --cyan:#A9D7D7;--cyan2:#6BB5B5;--cyan3:#3D8A8A;
+  --beige:#E9DED2;--beige2:#C7AE91;
+  --white:#F8F6F2;--pure:#FFFFFF;
+  --text:#3A3A3A;--muted:#7A7A7A;--border:#E2DBD3;
+  --footer:#2A3535;--shadow:0 4px 24px rgba(169,215,215,.18);
+  --shadow-md:0 8px 40px rgba(0,0,0,.08);
 }
 html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--cream);color:var(--text);line-height:1.6}
+body{font-family:'Poppins',sans-serif;background:var(--white);color:var(--text);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.15}
 
-/* ===== NAV ===== */
-#nav{background:#fff;border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;height:64px;box-shadow:0 1px 8px rgba(0,0,0,0.06)}
-.nav-brand{display:flex;flex-direction:column;line-height:1.2}
-.nav-name{font-size:15px;font-weight:700;color:var(--teal)}
-.nav-sub{font-size:10px;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase}
-.nav-menu{display:flex;gap:6px;list-style:none;align-items:center}
-.nav-menu a{font-size:13px;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;transition:.15s}
-.nav-menu a:hover{background:var(--teal-light);color:var(--teal)}
-.nav-cta{background:var(--teal);color:#fff!important;padding:9px 20px!important;border-radius:24px!important;font-weight:600}
-.nav-cta:hover{background:var(--teal-dark)!important}
-.nav-admin-btn{font-size:11px;color:var(--muted);cursor:pointer;padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:none;margin-left:8px}
-.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:6px}
-.hamburger span{width:22px;height:2px;background:var(--teal);border-radius:2px;transition:.2s}
+/* RGPD */
+#rgpd{position:fixed;bottom:0;left:0;right:0;background:var(--pure);border-top:2px solid var(--cyan);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:998;box-shadow:0 -4px 20px rgba(0,0,0,.08);flex-wrap:wrap}
+#rgpd p{font-size:12px;color:var(--muted);max-width:580px;line-height:1.5}
+#rgpd a{color:var(--cyan3);text-decoration:underline}
+.btn-rgpd-ok{background:var(--cyan3);color:#fff;border:none;padding:8px 18px;border-radius:6px;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;cursor:pointer}
+.btn-rgpd-no{background:transparent;color:var(--muted);border:1px solid var(--border);padding:8px 14px;border-radius:6px;font-family:'Poppins',sans-serif;font-size:12px;cursor:pointer}
 
-/* ===== HERO ===== */
-#hero{background:linear-gradient(135deg,#074d38 0%,var(--teal) 45%,var(--teal3) 100%);color:#fff;padding:80px 60px 72px;position:relative;overflow:hidden}
-#hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:rgba(255,255,255,0.03);border-radius:50%}
-#hero::after{content:'';position:absolute;bottom:-100px;left:20%;width:300px;height:300px;background:rgba(255,255,255,0.025);border-radius:50%}
-.hero-badge{display:inline-block;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.28);border-radius:20px;padding:6px 18px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:24px}
-#hero h1{font-size:42px;font-weight:700;line-height:1.18;margin-bottom:18px;position:relative;z-index:1}
-#hero h1 em{font-style:normal;color:#9FE1CB}
-.hero-sub{font-size:16px;opacity:.88;line-height:1.65;margin-bottom:34px;max-width:540px;position:relative;z-index:1}
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
-.btn-w{background:#fff;color:var(--teal);padding:13px 28px;border-radius:28px;font-size:14px;font-weight:700;text-decoration:none;display:inline-block;transition:.15s}
-.btn-w:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.15)}
-.btn-g{background:transparent;color:#fff;padding:13px 28px;border-radius:28px;font-size:14px;border:1.5px solid rgba(255,255,255,0.5);text-decoration:none;display:inline-block;transition:.15s}
-.btn-g:hover{background:rgba(255,255,255,0.08)}
-.hero-kpis{display:flex;gap:40px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.18);flex-wrap:wrap;position:relative;z-index:1}
-.kpi strong{display:block;font-size:22px;font-weight:700}
-.kpi span{font-size:12px;opacity:.7}
+/* WHATSAPP flottant */
+#wa{position:fixed;bottom:80px;right:24px;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:990;text-decoration:none;font-size:26px;transition:.2s}
+#wa:hover{transform:scale(1.08)}
+#wa-tip{position:absolute;right:60px;background:var(--footer);color:#fff;font-size:11px;font-weight:500;padding:5px 10px;border-radius:6px;white-space:nowrap;opacity:0;transition:.2s;pointer-events:none;font-family:'Poppins',sans-serif}
+#wa:hover #wa-tip{opacity:1}
 
-/* ===== GARANTIE BAR ===== */
-#garantie{background:var(--teal-light);border-bottom:1px solid rgba(29,158,117,.3);padding:14px 40px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
-.g-item{font-size:12px;color:var(--teal);font-weight:600;display:flex;align-items:center;gap:5px}
-
-/* ===== SECTIONS ===== */
-.section{padding:72px 60px}
-.section-w{background:#fff}
-.s-label{font-size:11px;font-weight:700;color:var(--teal2);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
-.s-title{font-size:28px;font-weight:700;margin-bottom:12px;line-height:1.25}
-.s-sub{font-size:15px;color:var(--muted);line-height:1.65;margin-bottom:40px;max-width:620px}
-
-/* ===== PROBLÈMES ===== */
-.pb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.pb-card{background:var(--warm);border-radius:var(--radius);padding:22px;border-left:3px solid var(--teal2);transition:.2s}
-.pb-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.pb-ico{font-size:24px;margin-bottom:10px}
-.pb-title{font-size:14px;font-weight:700;margin-bottom:5px}
-.pb-desc{font-size:13px;color:var(--muted);line-height:1.5}
-
-/* ===== PRESTATIONS ===== */
-.sv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.sv-card{background:var(--warm);border-radius:14px;padding:26px;border:1px solid transparent;transition:.2s;cursor:pointer}
-.sv-card:hover{border-color:var(--teal2);background:var(--teal-light)}
-.sv-feat{background:var(--teal);color:#fff;grid-column:span 2;display:flex;align-items:center;gap:28px;justify-content:space-between}
-.sv-feat:hover{background:var(--teal-dark);border-color:transparent}
-.sv-ico{font-size:28px;margin-bottom:12px}
-.sv-name{font-size:16px;font-weight:700;margin-bottom:6px}
-.sv-desc{font-size:13px;opacity:.78;line-height:1.55}
-.sv-price{margin-top:14px;font-size:22px;font-weight:700;color:var(--teal)}
-.sv-feat .sv-price{color:#9FE1CB}
-.btn-book{background:#fff;color:var(--teal);padding:12px 24px;border-radius:24px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;display:inline-block;transition:.15s}
-.btn-book:hover{transform:translateY(-1px)}
-
-/* ===== AGENDA PUBLIC ===== */
-#agenda{padding:72px 60px}
-.agenda-wrap{background:#fff;border-radius:14px;border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow)}
-.agenda-header{background:var(--teal);color:#fff;padding:20px 28px;display:flex;align-items:center;justify-content:space-between}
-.agenda-nav{background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:14px}
-.agenda-month{font-size:18px;font-weight:700}
-.agenda-legend{display:flex;gap:16px;font-size:12px;padding:14px 28px;border-bottom:1px solid var(--border);background:#fafafa}
-.leg-item{display:flex;align-items:center;gap:6px}
-.leg-dot{width:12px;height:12px;border-radius:3px}
-.leg-libre{background:#9FE1CB}
-.leg-occupe{background:#F0997B}
-.leg-indispo{background:#e0e0e0}
-.agenda-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0}
-.ag-dow{padding:10px;text-align:center;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;border-bottom:1px solid var(--border);background:#fafafa}
-.ag-day{min-height:70px;padding:8px 6px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);font-size:12px;position:relative;cursor:default;transition:.15s}
-.ag-day.autre-mois{background:#f9f9f9;color:#ccc}
-.ag-day.libre{background:#f0faf6;cursor:pointer}
-.ag-day.libre:hover{background:var(--teal-light)}
-.ag-day.occupe{background:#fff8f6}
-.ag-day.today{background:linear-gradient(135deg,var(--teal-light),#fff)}
-.ag-day-num{font-weight:600;color:var(--text);font-size:12px;margin-bottom:4px}
-.ag-day.autre-mois .ag-day-num{color:#ccc}
-.ag-slot{font-size:10px;padding:2px 5px;border-radius:4px;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.slot-libre{background:#9FE1CB;color:#0B5C47;font-weight:600}
-.slot-occupe{background:#F5C4B3;color:#993C1D}
-.agenda-footer{padding:16px 28px;background:#fafafa;font-size:12px;color:var(--muted);border-top:1px solid var(--border)}
-
-/* ===== APROPOS ===== */
-.about-flex{display:flex;gap:36px;align-items:flex-start;margin-top:24px}
-.about-ava{width:110px;height:110px;border-radius:50%;background:var(--teal-light);border:3px solid var(--teal2);display:flex;align-items:center;justify-content:center;font-size:44px;flex-shrink:0}
-.about-txt{font-size:14px;color:#333;line-height:1.78}
-.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.cred{background:var(--teal-light);color:var(--teal);font-size:12px;padding:5px 12px;border-radius:14px;border:1px solid rgba(29,158,117,.3);font-weight:600}
-
-/* ===== TÉMOIGNAGES ===== */
-.testi-star{font-size:14px;color:#BA7517;margin-bottom:8px;letter-spacing:2px}
-.testi-feat{background:var(--teal-light);border:1px solid rgba(29,158,117,.3);border-radius:14px;padding:28px;margin-bottom:16px}
-.testi-feat .testi-q{font-size:15px}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.testi-card{background:var(--warm);border-radius:12px;padding:22px}
-.testi-q{font-size:13px;line-height:1.62;margin-bottom:12px;font-style:italic;color:#333}
-.testi-name{font-size:12px;font-weight:700;color:var(--teal)}
-
-/* Note RGPD avis */
-.rgpd-note{font-size:11px;color:var(--muted);margin-top:20px;padding:12px 16px;background:#f9f9f9;border-radius:8px;border-left:3px solid var(--border)}
-
-/* ===== TARIFS ===== */
-.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.pr-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;position:relative;transition:.2s}
-.pr-card:hover{box-shadow:var(--shadow)}
-.pr-card.pop{border:2px solid var(--teal2)}
-.pop-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:11px;padding:4px 16px;border-radius:12px;white-space:nowrap;font-weight:700}
-.pr-name{font-size:14px;font-weight:700;margin-bottom:10px}
-.pr-amount{font-size:34px;font-weight:800;color:var(--teal)}
-.pr-unit{font-size:13px;color:var(--muted)}
-.pr-desc{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.55}
-.pr-feats{margin-top:16px}
-.pr-feat{font-size:13px;padding:4px 0;display:flex;gap:8px;align-items:flex-start}
-.chk{color:var(--teal2);font-weight:700;flex-shrink:0}
-.pr-btn{display:block;text-align:center;background:var(--teal);color:#fff;padding:12px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;margin-top:20px;transition:.15s}
-.pr-btn:hover{background:var(--teal-dark)}
-.mutuelle-note{margin-top:24px;background:var(--warm);border-radius:10px;padding:16px 20px;font-size:13px;color:var(--muted)}
-.mutuelle-note a{color:var(--teal)}
-
-/* ===== BLOG ===== */
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.blog-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:.2s;cursor:pointer}
-.blog-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
-.blog-img{height:100px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;font-size:36px}
-.blog-body{padding:18px}
-.blog-tag{font-size:10px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
-.blog-title{font-size:13px;font-weight:700;line-height:1.45;margin-bottom:8px}
-.blog-exc{font-size:12px;color:var(--muted);line-height:1.5}
-.blog-link{font-size:12px;color:var(--teal);text-decoration:none;margin-top:8px;display:block;font-weight:600}
-
-/* ===== FORMULAIRE RDV ===== */
-.rdv-box{background:#fff;border-radius:14px;padding:40px;border:1px solid var(--border);box-shadow:var(--shadow)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.form-field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
-.form-lbl{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-.form-inp,.form-sel,.form-ta{padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;color:var(--text);background:#fff;font-family:inherit;transition:.15s}
-.form-inp:focus,.form-sel:focus,.form-ta:focus{outline:none;border-color:var(--teal2);box-shadow:0 0 0 3px rgba(29,158,117,.12)}
-.form-ta{resize:none;line-height:1.6}
-.form-submit{width:100%;background:var(--teal);color:#fff;padding:15px;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:.15s}
-.form-submit:hover{background:var(--teal-dark)}
-.form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:12px;line-height:1.5}
-.form-rgpd{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--muted);margin-bottom:16px;padding:12px;background:#f9f9f9;border-radius:8px}
-.form-rgpd input{margin-top:2px;flex-shrink:0}
-
-/* ===== CTA BLOC ===== */
-.cta-bloc{background:linear-gradient(135deg,#0B5C47,var(--teal2));border-radius:16px;padding:52px 48px;text-align:center;color:#fff}
-.cta-bloc h3{font-size:26px;font-weight:700;margin-bottom:14px}
-.cta-bloc p{font-size:14px;opacity:.88;margin-bottom:28px;line-height:1.65}
-.cta-pills{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.cpill{background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.28);border-radius:24px;padding:10px 20px;font-size:13px;display:flex;align-items:center;gap:6px}
-
-/* ===== FOOTER ===== */
-footer{background:var(--teal-dark);padding:48px 60px 28px;color:rgba(255,255,255,.6)}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:32px}
-.f-brand{color:#fff;font-size:16px;font-weight:700;margin-bottom:6px}
-.f-sub{font-size:12px;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:16px}
-.f-col-title{font-size:12px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.8px;text-transform:uppercase;margin-bottom:12px}
-.f-links{display:flex;flex-direction:column;gap:8px}
-.f-links a{font-size:12px;color:rgba(255,255,255,.5);text-decoration:none}
-.f-links a:hover{color:rgba(255,255,255,.8)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-
-/* ===== RGPD BANNER ===== */
-#rgpd-banner{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid var(--teal2);padding:16px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;z-index:999;box-shadow:0 -4px 20px rgba(0,0,0,.12);flex-wrap:wrap}
-#rgpd-banner p{font-size:13px;color:var(--text);max-width:600px;line-height:1.5}
-#rgpd-banner a{color:var(--teal);text-decoration:underline}
-.rgpd-btns{display:flex;gap:10px;flex-shrink:0}
-.btn-accept{background:var(--teal);color:#fff;border:none;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer}
-.btn-refuse{background:#fff;color:var(--muted);border:1px solid var(--border);padding:9px 20px;border-radius:8px;font-size:13px;cursor:pointer}
-
-/* ===== ADMIN PANEL ===== */
-#admin-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:500;backdrop-filter:blur(3px)}
-#admin-panel{position:fixed;top:0;right:0;bottom:0;width:480px;background:#fff;z-index:501;overflow-y:auto;box-shadow:-4px 0 32px rgba(0,0,0,.2);transform:translateX(100%);transition:.3s ease}
-#admin-panel.open{transform:translateX(0)}
-.admin-header{background:var(--teal);color:#fff;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
-.admin-title{font-size:16px;font-weight:700}
-.admin-close{background:none;border:none;color:#fff;font-size:22px;cursor:pointer}
-.admin-tabs{display:flex;border-bottom:1px solid var(--border);background:#fafafa}
-.admin-tab{flex:1;padding:12px;text-align:center;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:.15s}
-.admin-tab.active{color:var(--teal);border-bottom-color:var(--teal);background:#fff}
-.admin-content{padding:24px}
-.admin-section{display:none}
-.admin-section.active{display:block}
-.admin-s-title{font-size:14px;font-weight:700;margin-bottom:16px;color:var(--text);display:flex;align-items:center;gap:8px}
-.admin-card{background:#f9f9f9;border-radius:10px;padding:16px;margin-bottom:14px;border:1px solid var(--border)}
-.admin-field{margin-bottom:12px}
-.admin-lbl{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;display:block}
-.admin-inp{width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit}
-.admin-inp:focus{outline:none;border-color:var(--teal2)}
-.admin-ta{width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit;min-height:80px;resize:none}
-.admin-btn{background:var(--teal);color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s}
-.admin-btn:hover{background:var(--teal-dark)}
-.admin-btn-del{background:#fff;color:#E24B4A;border:1px solid #F09595;padding:7px 14px;border-radius:7px;font-size:12px;cursor:pointer}
-.admin-btn-sec{background:#fff;color:var(--teal);border:1.5px solid var(--teal2);padding:9px 18px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer}
-.rdv-item{background:#fff;border-radius:10px;padding:14px;margin-bottom:10px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
-.rdv-info{flex:1}
-.rdv-name{font-size:14px;font-weight:700}
-.rdv-detail{font-size:12px;color:var(--muted);margin-top:3px}
-.rdv-badge{font-size:11px;padding:3px 10px;border-radius:8px;font-weight:600;white-space:nowrap}
-.badge-new{background:#E1F5EE;color:var(--teal)}
-.badge-conf{background:#e8f4ff;color:#185FA5}
-.badge-done{background:#f9f9f9;color:#888}
-.slot-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
-.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
-.toggle-lbl{font-size:13px;font-weight:600}
-.toggle-sub{font-size:11px;color:var(--muted)}
-.switch{width:42px;height:22px;background:var(--border);border-radius:11px;cursor:pointer;position:relative;transition:.2s;flex-shrink:0}
-.switch.on{background:var(--teal2)}
-.switch::after{content:'';position:absolute;top:3px;left:3px;width:16px;height:16px;background:#fff;border-radius:50%;transition:.2s}
-.switch.on::after{left:23px}
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
-.stat-card{background:#f9f9f9;border-radius:10px;padding:16px;border:1px solid var(--border);text-align:center}
-.stat-n{font-size:26px;font-weight:800;color:var(--teal)}
-.stat-l{font-size:12px;color:var(--muted);margin-top:4px}
-.post-card{background:#f9f9f9;border-radius:10px;padding:14px;margin-bottom:12px;border:1px solid var(--border)}
-.post-net{font-size:11px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
-.post-txt{font-size:13px;line-height:1.55;color:#333}
-.post-actions{display:flex;gap:8px;margin-top:10px}
-.post-copy{background:#fff;border:1px solid var(--border);color:var(--teal);font-size:12px;padding:5px 12px;border-radius:6px;cursor:pointer;font-weight:600}
-
-/* ===== LOGIN ===== */
-#login-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:600;align-items:center;justify-content:center}
+/* LOGIN ADMIN */
+#login-modal{display:none;position:fixed;inset:0;background:rgba(42,53,53,.7);z-index:700;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
 #login-modal.show{display:flex}
-.login-box{background:#fff;border-radius:16px;padding:40px;width:340px;box-shadow:0 8px 48px rgba(0,0,0,.2)}
-.login-logo{text-align:center;font-size:32px;margin-bottom:8px}
-.login-title{text-align:center;font-size:18px;font-weight:700;margin-bottom:4px}
-.login-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:28px}
-.login-err{background:#FFF0F0;color:#E24B4A;font-size:13px;padding:10px 14px;border-radius:8px;margin-bottom:16px;display:none}
+.lbox{background:var(--pure);border-radius:20px;padding:44px 40px;width:340px;box-shadow:var(--shadow-md)}
+.lbox h2{font-family:'Cormorant Garamond',serif;text-align:center;font-size:24px;margin-bottom:4px}
+.lbox p{text-align:center;font-size:12px;color:var(--muted);margin-bottom:24px}
+.lbox-err{background:#FFF0F0;color:#C0392B;font-size:12px;padding:10px 14px;border-radius:8px;margin-bottom:14px;display:none}
+.lf{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.lf label{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+.lf input{padding:11px 13px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-family:'Poppins',sans-serif;color:var(--text);background:var(--white)}
+.lf input:focus{outline:none;border-color:var(--cyan2)}
+.btn-login{width:100%;background:var(--cyan3);color:#fff;border:none;padding:13px;border-radius:10px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;cursor:pointer;margin-top:4px}
+.btn-back{background:none;border:none;font-size:12px;color:var(--muted);cursor:pointer;display:block;text-align:center;margin-top:12px;font-family:'Poppins',sans-serif}
 
-/* ===== RÉSEAUX SOCIAUX ===== */
-#reseaux{padding:72px 60px;background:#fff}
-.rs-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.rs-card{border-radius:14px;padding:28px;border:1px solid var(--border)}
-.rs-card.insta{border-color:#E1306C;background:#fff9fb}
-.rs-card.fb{border-color:#1877F2;background:#f5f9ff}
-.rs-card.lk{border-color:#0A66C2;background:#f4f8ff}
-.rs-icon{font-size:28px;margin-bottom:10px}
-.rs-name{font-size:15px;font-weight:700;margin-bottom:6px}
-.rs-tip{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:14px}
-.rs-example{background:rgba(0,0,0,.04);border-radius:8px;padding:12px;font-size:12px;line-height:1.6;font-style:italic;color:#333}
+/* NAV */
+#nav{position:sticky;top:0;z-index:200;background:rgba(248,246,242,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo{width:66px;height:66px;border-radius:50%;object-fit:contain;background:var(--white);padding:3px;border:2px solid var(--cyan)}
+.nav-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--cyan3);line-height:1.1;display:block}
+.nav-sub{font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:none;font-weight:300}
+.nav-links{display:flex;gap:2px;list-style:none;align-items:center}
+.nav-links a{font-size:12px;font-weight:500;color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:8px;transition:.15s}
+.nav-links a:hover{color:var(--cyan3);background:#EAF5F5}
+.nav-cta{background:var(--cyan3)!important;color:#fff!important;border-radius:22px!important;font-weight:600!important;padding:8px 20px!important}
+.nav-admin{font-size:10px;color:var(--muted);border:1px solid var(--border);padding:5px 9px;border-radius:6px;background:transparent;cursor:pointer;font-family:'Poppins',sans-serif;margin-left:6px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+.hamburger span{width:22px;height:1.5px;background:var(--cyan3);border-radius:2px}
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:900px){
-  #hero{padding:52px 28px 48px}
-  #hero h1{font-size:30px}
-  .section,.section-w,#agenda,#reseaux{padding:52px 28px}
-  #nav{padding:0 20px}
-  .nav-menu{display:none}
-  .hamburger{display:flex}
-  .pb-grid{grid-template-columns:1fr 1fr}
-  .sv-grid{grid-template-columns:1fr}
-  .sv-feat{flex-direction:column;gap:16px}
-  .testi-grid{grid-template-columns:1fr}
-  .pr-grid{grid-template-columns:1fr}
-  .blog-grid{grid-template-columns:1fr 1fr}
-  .footer-top{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
-  #admin-panel{width:100%}
-  .rs-grid{grid-template-columns:1fr}
-  .hero-kpis{gap:24px}
+/* HERO */
+#hero{position:relative;min-height:calc(70vh - 76px);padding:28px 0;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://sophrologuelisleadam.000webhostapp.com/wp-content/uploads/2024/02/cropped-soap-bubble-2403673_1920.jpg');background-size:cover;background-position:center;transition:transform 10s ease}
+#hero:hover .hero-bg{transform:scale(1.03)}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(42,53,53,.78) 0%,rgba(61,138,138,.52) 55%,rgba(169,215,215,.18) 100%)}
+.hero-split{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;width:100%;padding:0 56px;gap:40px}
+.hero-c{color:#fff;animation:fadeUp .9s ease both;flex:1;min-width:0}
+.hero-portrait{flex:0 1 440px;display:flex;justify-content:center;animation:fadeUp 1.1s ease both}
+.hero-portrait>img{width:100%;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;object-fit:cover;aspect-ratio:1;box-shadow:0 0 60px rgba(169,215,215,.3);border:3px solid rgba(169,215,215,.3)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(169,215,215,.2);border:1px solid rgba(169,215,215,.4);border-radius:30px;padding:7px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:28px;color:rgba(255,255,255,.9);font-weight:500}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--cyan);border-radius:50%}
+#hero h1{font-size:clamp(36px,4.5vw,60px);font-weight:400;line-height:1.08;margin-bottom:8px;text-shadow:0 2px 24px rgba(0,0,0,.2)}
+#hero h1 em{font-style:italic;color:var(--cyan)}
+.hero-tagline{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,2.2vw,24px);font-style:italic;opacity:.88;margin-bottom:28px;font-weight:300}
+.hero-sub{font-size:14px;font-weight:300;opacity:.85;line-height:1.75;margin-bottom:40px;max-width:500px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-p{background:var(--cyan);color:var(--footer);padding:14px 32px;border-radius:30px;font-size:13px;font-weight:600;text-decoration:none;display:inline-block;transition:.2s}
+.btn-p:hover{background:#fff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(169,215,215,.4)}
+.btn-s{background:transparent;color:#fff;padding:14px 32px;border-radius:30px;font-size:13px;border:1.5px solid rgba(255,255,255,.5);text-decoration:none;display:inline-block;transition:.2s}
+.btn-s:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.hero-kpis{display:flex;gap:0;margin-top:56px;padding-top:28px;border-top:1px solid rgba(255,255,255,.18);flex-wrap:wrap}
+.kpi{padding:0 28px;border-right:1px solid rgba(255,255,255,.18);color:#fff}
+.kpi:first-child{padding-left:0}
+.kpi:last-child{border-right:none}
+.kpi strong{display:block;font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500}
+.kpi span{font-size:11px;opacity:.68;letter-spacing:.4px}
+
+/* GARANTIE */
+#garantie{background:#EAF5F5;border-bottom:1px solid rgba(169,215,215,.5);padding:14px 40px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+.g-item{font-size:11px;font-weight:600;color:var(--cyan3);display:flex;align-items:center;gap:6px}
+
+/* SECTIONS */
+.section{padding:80px 64px}
+.sw{background:var(--pure)}
+.sa{background:var(--white)}
+.sb{background:var(--beige)}
+.ey{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan2);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ey::after{content:'';width:36px;height:1.5px;background:var(--cyan);border-radius:2px}
+.st{font-size:clamp(26px,3vw,40px);color:var(--text);margin-bottom:14px;font-weight:400}
+.ss{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:44px;max-width:620px;font-weight:300}
+.centered{text-align:center}
+.centered .ss{margin-left:auto;margin-right:auto}
+
+/* PROBLÈMES */
+.pb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pb-card{background:var(--pure);border-radius:14px;padding:24px;border:1px solid var(--border);border-top:3px solid var(--cyan2);transition:.2s}
+.pb-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pb-ico{font-size:26px;margin-bottom:10px}
+.pb-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;margin-bottom:5px}
+.pb-desc{font-size:13px;color:var(--muted);line-height:1.55;font-weight:300}
+
+/* EXPÉRIENCES */
+.exp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;align-items:stretch}
+.exp-card{background:var(--pure);border-radius:20px;padding:32px 28px;border:1px solid var(--border);transition:.25s;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.exp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:.3s}
+.exp-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--cyan)}
+.exp-card:hover::before{transform:scaleX(1)}
+.exp-card.feat{background:linear-gradient(160deg,var(--cyan3) 0%,#2D7070 100%);color:#fff;border-color:transparent}
+.exp-card.feat::before{background:var(--beige2)}
+.exp-card.visio{background:linear-gradient(160deg,#2A3535 0%,#3D5A5A 100%);color:#fff;border-color:transparent}
+.exp-card.visio::before{background:var(--cyan)}
+.exp-badge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan2);margin-bottom:10px}
+.exp-card.feat .exp-badge,.exp-card.visio .exp-badge{color:rgba(255,255,255,.7)}
+.exp-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;margin-bottom:6px}
+.exp-card[style] .exp-name,.exp-card[style] .exp-tagline,.exp-card[style] .exp-badge{text-shadow:0 1px 8px rgba(0,0,0,.18),0 0 20px rgba(0,0,0,.08)}
+.exp-card.feat[style] .exp-name,.exp-card.feat[style] .exp-tagline,.exp-card.visio .exp-name,.exp-card.visio .exp-tagline{text-shadow:0 1px 8px rgba(0,0,0,.5),0 0 24px rgba(0,0,0,.3)}
+.exp-card[style] .exp-desc,.exp-card[style] .exp-ideal{text-shadow:0 1px 4px rgba(0,0,0,.12)}
+.exp-card.feat[style] .exp-desc,.exp-card.feat[style] .exp-ideal,.exp-card.visio .exp-desc,.exp-card.visio .exp-ideal{text-shadow:0 1px 4px rgba(0,0,0,.4)}
+.exp-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--muted);margin-bottom:14px}
+.exp-card.feat .exp-tagline,.exp-card.visio .exp-tagline{color:rgba(255,255,255,.75)}
+.exp-desc{font-size:13px;color:var(--muted);line-height:1.7;font-weight:400;flex:1}
+.exp-card.feat .exp-desc,.exp-card.visio .exp-desc{color:rgba(255,255,255,.82)}
+.exp-ideals{margin-top:14px}
+.exp-ideal{font-size:12px;color:var(--muted);padding:3px 0;display:flex;gap:6px;align-items:flex-start;font-weight:300}
+.exp-card.feat .exp-ideal,.exp-card.visio .exp-ideal{color:rgba(255,255,255,.72)}
+.exp-dot{color:var(--cyan);flex-shrink:0;font-size:10px;margin-top:3px}
+.exp-card.feat .exp-dot,.exp-card.visio .exp-dot{color:var(--beige)}
+.exp-footer{display:flex;align-items:center;justify-content:space-between;margin-top:24px;padding-top:18px;border-top:1px solid var(--border)}
+.exp-card.feat .exp-footer,.exp-card.visio .exp-footer{border-top-color:rgba(255,255,255,.2)}
+.exp-price{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;color:var(--cyan3)}
+.exp-card[style] .exp-price{text-shadow:0 1px 6px rgba(0,0,0,.15)}
+.exp-card.feat[style] .exp-price,.exp-card.visio .exp-price{text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.exp-card.feat .exp-price{color:var(--cyan)}
+.exp-card.visio .exp-price{color:var(--cyan)}
+.btn-rdv{background:var(--cyan3);color:#fff;padding:9px 18px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;transition:.2s;border:none;cursor:pointer;font-family:'Poppins',sans-serif}
+.exp-card.feat .btn-rdv{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3)}
+.exp-card.visio .btn-rdv{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3)}
+.btn-rdv:hover{opacity:.85}
+.visio-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:3px 10px;font-size:10px;font-weight:600;letter-spacing:.5px;margin-bottom:10px;color:rgba(255,255,255,.9)}
+
+/* CHÈQUE CADEAU */
+.cadeau-bloc{border-radius:20px;padding:40px;margin-top:24px;position:relative;overflow:hidden}
+.cadeau-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.cadeau-right{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.cadeau-bloc::after{content:'🎁';position:absolute;right:36px;top:50%;transform:translateY(-50%);font-size:72px;opacity:.1}
+.cadeau-txt h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--footer);margin-bottom:8px}
+.cadeau-txt p{font-size:13px;color:var(--footer);opacity:.75;line-height:1.65;font-weight:300;max-width:400px}
+.cadeau-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.cadeau-tag{background:rgba(255,255,255,.45);color:var(--footer);font-size:11px;padding:4px 12px;border-radius:12px;font-weight:500}
+.btn-cadeau{background:var(--footer);color:#fff;padding:13px 26px;border-radius:30px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:.2s}
+.btn-cadeau:hover{background:var(--cyan3);transform:translateY(-1px)}
+
+/* PAIEMENT */
+.pay-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
+.pay-card{background:var(--pure);border-radius:14px;padding:22px 18px;border:1px solid var(--border);text-align:center;transition:.2s}
+.pay-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.pay-ico{font-size:28px;margin-bottom:10px}
+.pay-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:5px}
+.pay-desc{font-size:12px;color:var(--muted);line-height:1.55;font-weight:300}
+.pay-note{margin-top:20px;background:#EAF5F5;border-radius:10px;padding:14px 18px;font-size:13px;color:var(--text)}
+
+/* JENNIFER */
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:center}
+.about-wrap{position:relative;padding-bottom:20px;padding-right:20px}
+.about-photo{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:20px;box-shadow:var(--shadow-md);display:block}
+.about-deco{position:absolute;bottom:0;right:0;width:85%;height:88%;border:1.5px solid var(--cyan);border-radius:20px;z-index:-1}
+.about-badge-p{position:absolute;top:20px;left:-14px;background:var(--cyan3);color:#fff;padding:9px 18px;border-radius:30px;font-size:11px;font-weight:600;letter-spacing:.3px;box-shadow:var(--shadow)}
+.pquote{padding-left:20px;border-left:2px solid var(--cyan);margin:18px 0 22px}
+.pquote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--cyan3);line-height:1.5;font-weight:400}
+.about-body{font-size:14px;color:var(--muted);line-height:1.78;font-weight:300}
+.about-body p{margin-bottom:14px}
+.about-body strong{color:var(--text);font-weight:500}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.cred{background:#EAF5F5;color:var(--cyan3);font-size:11px;padding:5px 13px;border-radius:20px;border:1px solid rgba(169,215,215,.4);font-weight:500}
+
+/* CABINET */
+.cab-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;align-items:start}
+.cab-main{width:100%;border-radius:20px;aspect-ratio:4/3;object-fit:cover;box-shadow:var(--shadow-md);display:block}
+.cab-side{display:flex;flex-direction:column;gap:13px}
+.cab-sm{width:100%;border-radius:14px;aspect-ratio:16/9;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.06);display:block}
+.cab-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cab-mini{width:100%;border-radius:10px;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.cab-info{background:#EAF5F5;border-radius:12px;padding:16px 18px;border-left:2px solid var(--cyan)}
+.cab-info p{font-size:13px;color:var(--text);line-height:1.7;font-weight:300}
+
+/* AGENDA */
+.agenda-wrap{background:var(--pure);border-radius:20px;border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow-md)}
+.ag-head{background:linear-gradient(90deg,var(--cyan3),var(--cyan2));color:#fff;padding:22px 32px;display:flex;align-items:center;justify-content:space-between}
+.ag-nav{background:rgba(255,255,255,.18);border:none;color:#fff;padding:7px 16px;border-radius:10px;cursor:pointer;font-size:16px}
+.ag-month{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500}
+.ag-legend{display:flex;gap:18px;font-size:11px;padding:12px 32px;border-bottom:1px solid var(--border);background:#fafaf8}
+.leg{display:flex;align-items:center;gap:6px;color:var(--muted)}
+.leg-d{width:10px;height:10px;border-radius:3px}
+.leg-l{background:var(--cyan)}
+.leg-o{background:var(--beige2)}
+.ag-grid-wrap{display:grid;grid-template-columns:repeat(7,1fr)}
+.ag-dow{padding:10px;text-align:center;font-size:10px;font-weight:600;color:var(--muted);letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid var(--border);background:#fafaf8}
+.ag-day{min-height:68px;padding:7px 6px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);font-size:12px;transition:.14s}
+.ag-day.autre{background:#f9f9f7;color:#ccc}
+.ag-day.libre{background:#F0FAFA;cursor:pointer}
+.ag-day.libre:hover{background:#EAF5F5}
+.ag-day.occupe{background:#FAF7F3}
+.ag-day.today{background:linear-gradient(135deg,#EAF5F5,#fff)}
+.ag-num{font-weight:600;margin-bottom:3px;color:var(--text);font-size:12px}
+.ag-day.autre .ag-num{color:#ccc}
+.ag-slot{font-size:10px;padding:2px 5px;border-radius:4px;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sl-l{background:var(--cyan);color:var(--footer);font-weight:600}
+.sl-o{background:var(--beige);color:var(--text)}
+.ag-foot{padding:12px 32px;background:#fafaf8;font-size:11px;color:var(--muted);border-top:1px solid var(--border)}
+
+/* RÉSERVATION GOOGLE */
+.gcal-section{background:var(--pure);border-radius:20px;border:1px solid var(--border);padding:32px;margin-top:20px;box-shadow:var(--shadow)}
+.gcal-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;margin-bottom:8px;color:var(--text)}
+.gcal-sub{font-size:13px;color:var(--muted);margin-bottom:22px;font-weight:300}
+.gcal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gcal-btn{display:flex;align-items:center;gap:12px;background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:16px 18px;text-decoration:none;transition:.2s;cursor:pointer}
+.gcal-btn:hover{border-color:var(--cyan);background:#EAF5F5;transform:translateY(-1px)}
+.gcal-btn.visio{border-color:#1A4A4A;background:linear-gradient(135deg,#EAF5F5,#fff)}
+.gcal-ico{font-size:22px;flex-shrink:0}
+.gcal-info{}
+.gcal-name{font-size:14px;font-weight:600;color:var(--text)}
+.gcal-detail{font-size:12px;color:var(--muted);font-weight:300}
+.gcal-note{margin-top:16px;background:#EAF5F5;border-radius:10px;padding:12px 16px;font-size:12px;color:var(--cyan3)}
+
+/* TÉMOIGNAGES */
+.testi-feat{background:#EAF5F5;border:1px solid rgba(169,215,215,.5);border-radius:20px;padding:36px;margin-bottom:18px;position:relative;overflow:hidden}
+.testi-feat::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:130px;color:var(--cyan);opacity:.12;position:absolute;top:-20px;left:18px;line-height:1}
+.testi-stars{color:var(--beige2);letter-spacing:2px;margin-bottom:10px;font-size:14px}
+.testi-q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2vw,21px);color:var(--cyan3);line-height:1.6;margin-bottom:14px;font-weight:400;position:relative}
+.testi-name{font-size:12px;font-weight:600;color:var(--cyan3);letter-spacing:.3px}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.testi-card{background:var(--pure);border-radius:14px;padding:22px;border:1px solid var(--border);transition:.2s}
+.testi-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.testi-card .testi-q{font-size:14px;color:var(--text)}
+.rgpd-note{margin-top:20px;font-size:11px;color:var(--muted);background:var(--pure);border-radius:10px;padding:12px 16px;border-left:2px solid var(--border);line-height:1.6}
+
+/* RÉSEAUX SOCIAUX — Curator.io */
+.social-feeds{margin-top:8px}
+.curator-placeholder{background:var(--pure);border-radius:16px;border:1px solid var(--border);padding:40px;text-align:center}
+.curator-placeholder p{font-size:13px;color:var(--muted);margin-top:12px;font-weight:300}
+.social-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.social-link{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:20px;padding:8px 16px;font-size:12px;font-weight:600;color:var(--text);text-decoration:none;transition:.2s}
+.social-link:hover{border-color:var(--cyan);color:var(--cyan3)}
+
+/* ATELIERS */
+.atelier-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.atelier-card{background:var(--pure);border-radius:12px;padding:18px;border:1px solid var(--border);transition:.2s}
+.atelier-card:hover{border-color:var(--cyan);transform:translateY(-2px);box-shadow:var(--shadow)}
+.atelier-ico{font-size:20px;margin-bottom:8px}
+.atelier-name{font-size:13px;font-weight:600;color:var(--text);line-height:1.35}
+.atelier-tag{display:inline-block;background:#EAF5F5;color:var(--cyan3);font-size:10px;padding:3px 9px;border-radius:10px;margin-top:6px;font-weight:500}
+
+/* DÉONTOLOGIE */
+.deon-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.deon-card{background:var(--pure);border-radius:12px;padding:20px;border:1px solid var(--border)}
+.deon-n{font-size:11px;font-weight:700;color:var(--cyan3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px}
+.deon-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:5px}
+.deon-desc{font-size:12px;color:var(--muted);line-height:1.55;font-weight:300}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.blog-card{background:var(--pure);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:.2s}
+.blog-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.blog-img{height:140px;object-fit:cover;width:100%;display:block}
+.blog-fb{height:140px;background:#EAF5F5;display:flex;align-items:center;justify-content:center;font-size:36px}
+.blog-body{padding:18px}
+.blog-tag{font-size:10px;font-weight:700;color:var(--cyan2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.blog-title{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;line-height:1.35;margin-bottom:7px;color:var(--text)}
+.blog-exc{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
+.blog-lien{font-size:12px;color:var(--cyan3);text-decoration:none;font-weight:600;margin-top:8px;display:block}
+
+/* FORMULAIRE */
+.rdv-wrap{background:var(--pure);border-radius:20px;padding:44px;border:1px solid var(--border);box-shadow:var(--shadow-md)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.form-field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.form-lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.form-inp,.form-sel,.form-ta{padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;color:var(--text);background:var(--white);font-family:'Poppins',sans-serif;transition:.15s;font-weight:300}
+.form-inp:focus,.form-sel:focus,.form-ta:focus{outline:none;border-color:var(--cyan2);box-shadow:0 0 0 3px rgba(169,215,215,.18)}
+.form-ta{resize:none;line-height:1.6}
+.form-rgpd{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--muted);margin-bottom:18px;padding:14px;background:#EAF5F5;border-radius:10px;line-height:1.55;font-weight:300}
+.form-rgpd input{margin-top:2px;accent-color:var(--cyan3);flex-shrink:0}
+.form-rgpd a{color:var(--cyan3)}
+.form-submit{width:100%;background:var(--cyan3);color:#fff;padding:15px;border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;transition:.2s}
+.form-submit:hover{background:var(--cyan2);transform:translateY(-1px)}
+.form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:11px;line-height:1.55;font-weight:300}
+.alt-contact{background:var(--beige);border-radius:10px;padding:14px 18px;font-size:13px;color:var(--text);margin-top:18px;text-align:center}
+.alt-contact a{color:var(--cyan3);font-weight:600;text-decoration:none}
+
+/* CTA */
+.cta-bloc{background:linear-gradient(135deg,var(--cyan3) 0%,#2D7070 100%);border-radius:24px;padding:60px 52px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-bloc::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.06)}
+.cta-bloc h3{font-size:38px;font-weight:400;margin-bottom:14px;position:relative;z-index:1}
+.cta-bloc p{font-size:14px;opacity:.88;margin-bottom:32px;line-height:1.7;font-weight:300;position:relative;z-index:1}
+.cta-pills{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.cpill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:30px;padding:10px 20px;font-size:12px;display:flex;align-items:center;gap:6px;font-weight:300}
+.cta-btn{background:var(--beige);color:var(--footer);padding:14px 36px;border-radius:30px;font-size:13px;font-weight:600;text-decoration:none;display:inline-block;margin-top:28px;position:relative;z-index:1;transition:.2s}
+.cta-btn:hover{background:#fff;transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--footer);padding:52px 64px 28px;color:rgba(255,255,255,.5)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.f-logo{width:60px;height:60px;object-fit:contain;border-radius:50%;background:var(--pure);padding:4px;margin-bottom:14px}
+.f-brand{font-family:'Cormorant Garamond',serif;color:var(--cyan);font-size:20px;font-weight:500;margin-bottom:3px}
+.f-sub{font-size:11px;line-height:1.65;color:rgba(255,255,255,.4);font-weight:300}
+.f-col-title{font-size:10px;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.f-links{display:flex;flex-direction:column;gap:8px}
+.f-links a{font-size:12px;color:rgba(255,255,255,.4);text-decoration:none;transition:.15s;font-weight:300}
+.f-links a:hover{color:rgba(255,255,255,.8)}
+.f-socials{display:flex;gap:12px;margin-top:14px}
+.f-socials a{color:rgba(255,255,255,.4);text-decoration:none;font-size:17px;transition:.15s}
+.f-socials a:hover{color:var(--cyan)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:rgba(255,255,255,.3);font-weight:300}
+
+/* ADMIN */
+#admin-overlay{display:none;position:fixed;inset:0;background:rgba(42,53,53,.6);z-index:500;backdrop-filter:blur(4px)}
+#admin-panel{position:fixed;top:0;right:0;bottom:0;width:510px;background:var(--pure);z-index:501;overflow-y:auto;box-shadow:-6px 0 48px rgba(0,0,0,.18);transform:translateX(100%);transition:.32s cubic-bezier(.4,0,.2,1)}
+#admin-panel.open{transform:translateX(0)}
+.admin-head{background:linear-gradient(90deg,var(--cyan3),var(--cyan2));color:#fff;padding:22px 26px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.admin-head-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500}
+.admin-close{background:rgba(255,255,255,.2);border:none;color:#fff;font-size:20px;cursor:pointer;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.admin-tabs{display:flex;border-bottom:1px solid var(--border);background:#fafaf8;overflow-x:auto}
+.admin-tab{flex-shrink:0;padding:11px 8px;text-align:center;font-size:11px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:.15s;white-space:nowrap}
+.admin-tab.active{color:var(--cyan3);border-bottom-color:var(--cyan3);background:#fff}
+.admin-body{padding:24px}
+.admin-sec{display:none}
+.admin-sec.active{display:block}
+.admin-sec-title{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;margin-bottom:16px;color:var(--text)}
+.admin-card{background:#fafaf8;border-radius:12px;padding:16px;margin-bottom:12px;border:1px solid var(--border)}
+.admin-lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px;display:block}
+.admin-inp{width:100%;padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-size:12px;font-family:'Poppins',sans-serif;color:var(--text);background:var(--white)}
+.admin-inp:focus{outline:none;border-color:var(--cyan2)}
+.admin-ta{width:100%;min-height:90px;padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-size:12px;font-family:'Poppins',sans-serif;resize:none;color:var(--text);background:var(--white)}
+.admin-f{margin-bottom:11px}
+.admin-btn{background:var(--cyan3);color:#fff;border:none;padding:9px 18px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif}
+.admin-btn-del{background:var(--pure);color:#C0392B;border:1px solid #F5C6C6;padding:6px 12px;border-radius:7px;font-size:11px;cursor:pointer;font-family:'Poppins',sans-serif}
+.admin-btn-copy{background:var(--pure);border:1px solid var(--border);color:var(--cyan3);font-size:11px;padding:5px 12px;border-radius:6px;cursor:pointer;font-weight:600;font-family:'Poppins',sans-serif;margin-top:8px}
+.rdv-item{background:var(--pure);border-radius:10px;padding:13px;margin-bottom:9px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.rdv-info{flex:1}
+.rdv-name{font-weight:600;font-size:13px;margin-bottom:3px;color:var(--text)}
+.rdv-detail{font-size:11px;color:var(--muted);margin-top:2px}
+.rdv-badge{font-size:10px;padding:3px 9px;border-radius:7px;font-weight:600;white-space:nowrap}
+.b-new{background:#EAF5F5;color:var(--cyan3)}
+.b-conf{background:#EBF5FF;color:#1877F2}
+.slot-form{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
+.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
+.toggle-sw{width:40px;height:21px;background:var(--border);border-radius:11px;cursor:pointer;position:relative;transition:.2s;flex-shrink:0}
+.toggle-sw.on{background:var(--cyan2)}
+.toggle-sw::after{content:'';position:absolute;top:3px;left:3px;width:15px;height:15px;background:#fff;border-radius:50%;transition:.2s}
+.toggle-sw.on::after{left:22px}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:18px}
+.stat-card{background:#fafaf8;border-radius:10px;padding:16px;border:1px solid var(--border);text-align:center}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:var(--cyan3)}
+.stat-l{font-size:11px;color:var(--muted);margin-top:3px}
+.trame-card{background:#fafaf8;border-radius:10px;padding:14px;margin-bottom:11px;border:1px solid var(--border)}
+.trame-title{font-size:12px;font-weight:700;color:var(--cyan3);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.trame-body{font-size:11px;color:var(--text);line-height:1.65;white-space:pre-wrap}
+.warn-script{background:#FFF8EA;border-left:3px solid #F0AD00;padding:12px 14px;border-radius:8px;font-size:11px;color:#7D6B00;margin-top:8px;line-height:1.55}
+.script-box{background:#1E1E1E;color:#9FE1CB;border-radius:10px;padding:14px;font-size:10px;font-family:'Courier New',monospace;overflow-x:auto;margin-top:10px;line-height:1.6}
+.facture-preview{background:var(--pure);border:1px solid var(--border);border-radius:10px;padding:18px;font-size:12px;color:var(--text)}
+.facture-preview table{width:100%;border-collapse:collapse;margin-top:10px}
+.facture-preview td,.facture-preview th{padding:5px 8px;border-bottom:1px solid var(--border);font-size:11px}
+.facture-preview th{background:#EAF5F5;color:var(--cyan3);font-weight:700;font-size:10px;text-transform:uppercase}
+.warn-cnil{background:#FFF8EA;border-left:3px solid #F0AD00;padding:11px 14px;border-radius:8px;font-size:11px;color:#7D6B00;margin-top:8px;line-height:1.55}
+.post-card{background:#fafaf8;border-radius:10px;padding:14px;margin-bottom:11px;border:1px solid var(--border)}
+.post-net{font-size:10px;font-weight:700;color:var(--cyan3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.post-txt{font-size:11px;line-height:1.6;color:var(--text);font-weight:300}
+
+/* MENTIONS */
+#mentions details{cursor:pointer}
+#mentions summary{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:var(--cyan3);list-style:none;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.legal-text{font-size:13px;color:var(--muted);line-height:1.75;margin-top:16px;max-width:820px;font-weight:300}
+.legal-text p{margin-bottom:12px}
+.legal-text strong{color:var(--text);font-weight:500}
+.legal-text a{color:var(--cyan3)}
+
+/* RESPONSIVE */
+/* ============================================================
+   RESPONSIVE — CORRECTIONS MOBILES COMPLÈTES
+   ============================================================ */
+
+/* RÈGLES GLOBALES ANTI-DÉBORDEMENT */
+img{max-width:100%;height:auto}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/* Évite le débordement des enfants de grille */
+.pb-grid > *,.exp-grid > *,.testi-grid > *,.atelier-grid > *,
+.deon-grid > *,.blog-grid > *,.footer-top > *,.pay-grid > *,
+.gcal-grid > *,.form-row > *,.slot-form > *,.stat-grid > *{min-width:0}
+
+/* Textes longs ne débordent pas */
+.exp-badge,.exp-name,.exp-tagline,.exp-desc,.exp-ideal,
+.pb-title,.pb-desc,.testi-q,.blog-title,.blog-exc,
+.f-sub,.cab-info p,.gcal-detail,.gcal-name,
+.pay-name,.pay-desc,.deon-desc,.about-body{
+  word-break:break-word;overflow-wrap:break-word
 }
-@media(max-width:500px){
-  .pb-grid,.blog-grid{grid-template-columns:1fr}
-  #hero h1{font-size:26px}
+
+/* Trame email : pre-wrap avec scroll horizontal */
+.trame-body{
+  white-space:pre-line;
+  word-break:break-word;
+  overflow-wrap:break-word;
+  max-width:100%
+}
+
+/* Facture table : scroll horizontal sur mobile */
+.facture-preview{overflow-x:auto}
+.facture-preview table{min-width:320px}
+
+/* Formulaire RDV : évite débordement */
+.form-inp,.form-sel,.form-ta{max-width:100%;width:100%}
+
+@media(max-width:960px){
+  /* NAV */
+  #nav{padding:0 20px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+
+  /* HERO */
+  .hero-split{flex-direction:column-reverse;padding:0 24px;gap:24px}
+  .hero-c{padding:0}
+  .hero-portrait{width:200px;align-self:center}
+  .hero-kpis{flex-direction:column;gap:0}
+  .kpi{padding:10px 0;border-right:none;border-bottom:1px solid rgba(255,255,255,.15)}
+  .kpi:last-child{border-bottom:none}
+
+  /* SECTIONS */
+  .section{padding:56px 24px}
+
+  /* GRILLES */
+  .exp-grid,.pb-grid{grid-template-columns:1fr}
+  .testi-grid,.deon-grid{grid-template-columns:1fr}
+  .atelier-grid{grid-template-columns:1fr 1fr}
+  .about-grid,.cab-grid{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .form-row,.gcal-grid{grid-template-columns:1fr}
+  .pay-grid{grid-template-columns:1fr 1fr}
+
+  /* ADMIN */
+  #admin-panel{width:100%}
+
+  /* CADEAU */
+  .cadeau-bloc{flex-direction:column;text-align:center;padding:28px 20px}
+  .cadeau-bloc::after{display:none}
+  .cadeau-tags{justify-content:center}
+  .btn-cadeau{white-space:normal;text-align:center}
+  .cadeau-txt p{max-width:100%}
+
+  /* ABOUT — badge ne déborde pas */
+  .about-badge-p{position:static;display:inline-block;margin-bottom:16px;left:auto;top:auto}
+  .about-wrap{padding-bottom:0;padding-right:0}
+  .about-deco{display:none}
+
+  /* AGENDA — cellules plus petites */
+  .ag-dow{padding:6px 2px;font-size:9px;letter-spacing:0}
+  .ag-day{min-height:52px;padding:4px 3px}
+  .ag-num{font-size:11px}
+  .ag-slot{font-size:9px;padding:1px 3px}
+
+  /* CTA */
+  .cta-bloc{padding:40px 28px}
+  .cta-pills{flex-direction:column;align-items:center}
+
+  /* HERO KPIS */
+  .kpi strong{font-size:20px}
+  .kpi span{font-size:11px}
+
+  /* PAIEMENT */
+  .pay-note{font-size:12px}
+
+  /* GCAL BUTTONS */
+  .gcal-btn{padding:12px 14px}
+  .gcal-name{font-size:13px}
+}
+
+@media(max-width:600px){
+  /* HERO */
+  #hero h1{font-size:32px;line-height:1.1}
+  .hero-c{padding:0 20px!important;max-width:100%}
+  .hero-tagline{font-size:16px}
+  .hero-sub{font-size:13px}
+  .hero-badge{font-size:10px;padding:5px 14px}
+  .hero-btns{flex-direction:column;gap:10px}
+  .btn-p,.btn-s{text-align:center;width:100%;padding:13px 20px}
+
+  /* SECTIONS */
+  .section{padding:44px 20px}
+
+  /* GRILLES */
+  .blog-grid,.atelier-grid,.pay-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+
+  /* CTA */
+  .cta-bloc{padding:36px 20px}
+  .cta-bloc h3{font-size:26px}
+  .cta-btn{padding:12px 24px;font-size:12px}
+
+  /* EXP CARDS */
+  .exp-card{padding:24px 20px}
+  .exp-name{font-size:24px}
+  .exp-price{font-size:26px}
+
+  /* TÉMOIGNAGES */
+  .testi-feat{padding:24px 20px}
+  .testi-q{font-size:16px}
+
+  /* ABOUT */
+  .pquote p{font-size:17px}
+
+  /* AGENDA */
+  .ag-head{padding:16px 20px}
+  .ag-legend{padding:10px 20px;gap:12px;flex-wrap:wrap}
+  .ag-foot{padding:10px 20px;font-size:10px}
+
+  /* GCAL */
+  .gcal-section{padding:20px}
+  .gcal-title{font-size:18px}
+
+  /* ADMIN */
+  .admin-tab{padding:9px 6px;font-size:10px}
+  .facture-preview{padding:12px}
+
+  /* GARANTIE */
+  #garantie{padding:10px 16px;gap:12px}
+  .g-item{font-size:10px}
+
+  /* FOOTER */
+  .footer-bottom{flex-direction:column;gap:4px;font-size:10px}
+  footer{padding:40px 20px 24px}
+  .f-socials{flex-wrap:wrap;gap:14px}
+
+  /* MENTIONS */
+  #mentions{padding:28px 20px!important}
+}
+
+@media(max-width:375px){
+  #hero h1{font-size:28px}
+  .hero-tagline{font-size:14px}
+  .exp-name{font-size:22px}
+  .st{font-size:24px}
+  .ss{font-size:13px}
+  .ag-dow{font-size:8px}
+}
+
+/* Section Jennifer — texte en surimpression au survol */
+.jennifer-hover-wrap{position:relative;width:100%;max-width:440px;margin:0 auto;border-radius:18px;overflow:hidden;cursor:pointer;aspect-ratio:4/5;box-shadow:0 12px 40px rgba(0,0,0,.15)}
+.jennifer-photo{width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:0;transition:transform .5s ease}
+.jennifer-hover-wrap:hover .jennifer-photo{transform:scale(1.05)}
+.jennifer-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(42,90,90,.95),rgba(30,60,60,.97));opacity:0;transition:opacity .4s ease;display:flex;align-items:flex-start;overflow-y:auto}
+.jennifer-hover-wrap:hover .jennifer-overlay{opacity:1}
+.jennifer-overlay-inner{padding:24px 26px}
+.jennifer-overlay-inner .about-body p{margin-bottom:11px;font-size:13px;line-height:1.6;font-weight:300}
+.jennifer-overlay-inner .st{font-size:24px!important;margin-bottom:8px}
+.jennifer-overlay-inner .pquote p{font-size:14px;text-align:center}
+.jennifer-overlay-inner u{text-decoration:underline;font-weight:400}
+.jennifer-overlay::-webkit-scrollbar{width:6px}
+.jennifer-overlay::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
+@media(max-width:640px){.jennifer-overlay-inner{padding:20px}.jennifer-hover-wrap{max-width:340px}}
+
+/* Panneau Engagement — hero (liste fixe) */
+.engagement-panel{width:340px;flex-shrink:0;padding:24px 22px;color:var(--text,#3A3A3A);align-self:stretch;display:flex;flex-direction:column}
+.engagement-panel-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cyan3,#3D8A8A);margin-bottom:16px;text-align:center;line-height:1.2}
+.engagement-panel-list{display:flex;flex-direction:column;gap:11px;overflow-y:auto}
+.eng-item{display:flex;gap:11px;align-items:flex-start}
+.eng-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--cyan3,#3D8A8A);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.eng-txt{font-size:11.5px;line-height:1.4}
+.eng-txt strong{display:block;color:var(--cyan3,#3D8A8A);margin-bottom:1px;font-size:12px}
+.eng-txt span{color:var(--muted,#7A7A7A);font-weight:300}
+.engagement-panel-list::-webkit-scrollbar{width:5px}
+.engagement-panel-list::-webkit-scrollbar-thumb{background:rgba(61,138,138,.3);border-radius:3px}
+@media(max-width:900px){
+  .hero-split{flex-direction:column;align-items:center;padding:0 24px;gap:28px}
+  .hero-c{order:1;text-align:center;width:100%}
+  .hero-c .hero-btns{justify-content:center}
+  .hero-portrait{order:2;flex:0 1 auto;width:100%;max-width:380px}
+  .engagement-panel{order:3;width:100%;max-width:440px}
 }
 </style>
 </head>
 <body>
 
-<!-- ===== BANDEAU RGPD (CNIL) ===== -->
-<div id="rgpd-banner">
-  <p>🍪 Ce site utilise uniquement des cookies fonctionnels strictement nécessaires à son fonctionnement. Aucune donnée personnelle n'est collectée sans votre accord explicite, conformément au <strong>RGPD</strong> et aux recommandations de la <strong>CNIL</strong>. <a href="#mentions">En savoir plus</a></p>
-  <div class="rgpd-btns">
-    <button class="btn-refuse" onclick="closeBanner()">Refuser</button>
-    <button class="btn-accept" onclick="acceptCookies()">Accepter</button>
+<!-- RGPD -->
+<div id="rgpd">
+  <p>🍪 Ce site utilise uniquement des cookies fonctionnels. Aucune donnée personnelle n'est collectée sans votre accord, conformément au <strong>RGPD</strong> et aux recommandations de la <strong>CNIL</strong>. <a href="#mentions">En savoir plus</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0">
+    <button class="btn-rgpd-no" onclick="closeRGPD()">Refuser</button>
+    <button class="btn-rgpd-ok" onclick="acceptRGPD()">Accepter</button>
   </div>
 </div>
 
-<!-- ===== MODAL LOGIN ADMIN ===== -->
+<!-- WHATSAPP FLOTTANT -->
+<a id="wa" href="https://wa.me/33699740527" target="_blank" rel="noopener" title="WhatsApp">
+  💬<span id="wa-tip">Écrire sur WhatsApp</span>
+</a>
+
+<!-- LOGIN ADMIN -->
 <div id="login-modal">
-  <div class="login-box">
-    <div class="login-logo">🌿</div>
-    <div class="login-title">Espace modérateur</div>
-    <div class="login-sub">Accès réservé à Jennifer Le Cuziat</div>
-    <div class="login-err" id="login-err">Identifiants incorrects</div>
-    <div class="form-field">
-      <label class="form-lbl">Identifiant</label>
-      <input class="form-inp" id="l-user" type="text" placeholder="jennifer" autocomplete="username">
-    </div>
-    <div class="form-field">
-      <label class="form-lbl">Mot de passe</label>
-      <input class="form-inp" id="l-pass" type="password" placeholder="••••••••" autocomplete="current-password">
-    </div>
-    <button class="form-submit" onclick="doLogin()" style="margin-top:8px">Connexion →</button>
-    <div style="text-align:center;margin-top:14px"><button onclick="closeLogin()" style="background:none;border:none;font-size:13px;color:var(--muted);cursor:pointer">← Retour au site</button></div>
+  <div class="lbox">
+    <img src="https://sophrologuelisleadam.fr/wp-content/uploads/2025/04/logocb2-3.jpg" alt="Source & Sens" style="width:70px;height:70px;border-radius:50%;display:block;margin:0 auto 14px;object-fit:contain;border:2px solid var(--cyan)" onerror="this.style.display='none'">
+    <h2>Espace modérateur</h2>
+    <p>Accès réservé — Jennifer Le Cuziat</p>
+    <div class="lbox-err" id="login-err">Identifiants incorrects</div>
+    <div class="lf"><label>Identifiant</label><input id="l-user" type="text" placeholder="jennifer" autocomplete="username"></div>
+    <div class="lf"><label>Mot de passe</label><input id="l-pass" type="password" placeholder="••••••••" autocomplete="current-password"></div>
+    <button class="btn-login" onclick="doLogin()">Connexion →</button>
+    <button class="btn-back" onclick="closeLogin()">← Retour au site</button>
   </div>
 </div>
 
-<!-- ===== NAVIGATION ===== -->
+<!-- NAV -->
 <nav id="nav">
-  <div class="nav-brand">
-    <div class="nav-name">Jennifer Le Cuziat</div>
-    <div class="nav-sub">Sophrologue · L'Isle-Adam 95</div>
-  </div>
-  <ul class="nav-menu">
-    <li><a href="#accompagnement">Accompagnement</a></li>
-    <li><a href="#prestations">Prestations</a></li>
-    <li><a href="#agenda">Agenda</a></li>
-    <li><a href="#temoignages">Témoignages</a></li>
-    <li><a href="#tarifs">Tarifs</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#rdv" class="nav-cta">Prendre RDV</a></li>
+  <a href="#" class="nav-brand">
+    <img class="nav-logo" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/logo-source-sens-new.png" alt="Source & Sens logo">
+    <div>
+      <span class="nav-name">Source &amp; Sens</span>
+      <span class="nav-sub"><a href="https://maps.app.goo.gl/YourLink" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:none">Refuge Sensoriel · L'Isle-Adam</a></span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#experiences">Expériences</a></li>
+    <li><a href="#entreprises">Entreprises</a></li>
+    <li><a href="#reseaux">Publications</a></li>
+    <li><a href="#rdv" class="nav-cta">Contact</a></li>
   </ul>
   <div style="display:flex;align-items:center">
-    <button class="nav-admin-btn" onclick="openLogin()">⚙ Admin</button>
-    <div class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
 </nav>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section id="hero">
-  <div class="hero-badge">Cabinet sensoriel · Val d'Oise (95) · L'Isle-Adam</div>
-  <h1>Retrouvez votre <em>équilibre</em>,<br>vivez pleinement.</h1>
-  <p class="hero-sub">Sophrologue certifiée, j'accompagne adultes, enfants et adolescents à libérer le stress, les phobies et la douleur — avec des outils concrets dès la première séance.</p>
-  <div class="hero-btns">
-    <a href="#rdv" class="btn-w">Réserver une séance</a>
-    <a href="#agenda" class="btn-g">Voir les disponibilités</a>
+  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-split">
+    <div class="hero-c">
+      <h1>Source<br>&amp; <em>Sens</em></h1>
+      <div class="hero-tagline">Déposer, ralentir, respirer et revenir à soi !</div>
+      <p class="hero-sub">Sophrologie · Relaxation immersive · Massage pleine conscience · PNL<br>Jennifer Le Cuziat, accompagnatrice certifiée depuis 7 ans.</p>
+      <div class="hero-btns">
+        <a href="#experiences" class="btn-s">Découvrir les expériences</a>
+        <a href="#rdv" class="btn-p">Prenez contact →</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <div class="jennifer-hover-wrap">
+    <img class="jennifer-photo" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-cadeau-main.webp" alt="Source &amp; Sens — Jennifer Le Cuziat">
+    <div class="jennifer-overlay">
+      <div class="jennifer-overlay-inner">
+        <div class="ey" style="color:var(--cyan);text-align:center">Jennifer Le Cuziat</div>
+        <h2 class="st" style="color:#fff;text-align:center;margin-bottom:14px">Bienvenue chez Source &amp; Sens</h2>
+        <div class="pquote" style="color:rgba(255,255,255,.85)"><p>"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
+        <div class="about-body" style="color:rgba(255,255,255,.92)">
+          <p>Je suis Jennifer Le Cuziat, <u>sophrologue</u> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
+          <p>Certifiée Quali Sophro pour Sophrologie &amp; Psychopraticienne 2019 via EFDS, puis PNL et EFT en 2021 pour apporter mon aide et soutien pour certaines pathologies tel que bipolarité, schizophrénie, TDHA et/ou trauma attentats et somatisations.</p>
+          <p><em>En cours : Livre Méthode des 4T pour exercer son estime sur +de 540 l'ont testé, et certification de Sexologue – aide aux victimes – inceste – trauma pour 2027.</em></p>
+          <p>Profondément humaniste, chaque personne accueillie jusqu'ici m'a donnée la motivation de me former en continue…</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="hero-kpis">
-    <div class="kpi"><strong>+10 ans</strong><span>d'expérience</span></div>
-    <div class="kpi"><strong>Dès 6 ans</strong><span>enfants & adultes</span></div>
-    <div class="kpi"><strong>PMR</strong><span>accès adapté</span></div>
-    <div class="kpi"><strong>32 mutuelles</strong><span>remboursent</span></div>
-    <div class="kpi"><strong>7 avis ★★★★★</strong><span>patients satisfaits</span></div>
+    </div>
+      <!-- (Panneau "Engagement déontologique" supprimé) -->
   </div>
 </section>
 
-<!-- ===== BARRE GARANTIE ===== -->
 <div id="garantie">
-  <span class="g-item">✓ Outils dès la 1ère séance</span>
-  <span class="g-item">✓ Certifiée EFDS & Chambre Syndicale</span>
-  <span class="g-item">✓ Accès PMR</span>
-  <span class="g-item">✓ Premier échange offert</span>
-  <span class="g-item">✓ Données RGPD protégées</span>
+  <span class="g-item">✦ Outils dès la 1re séance</span>
+  
+  <span class="g-item">✦ Accès PMR</span>
+  <span class="g-item">✦ Engagements déontologiques</span>
+  <span class="g-item">✦ RGPD &amp; secret professionnel</span>
 </div>
 
-<!-- ===== ACCOMPAGNEMENT ===== -->
-<section class="section" id="accompagnement">
-  <div class="s-label">Je vous accompagne si vous traversez…</div>
-  <div class="s-title">Quand la vie devient trop lourde à porter</div>
-  <p class="s-sub">Vous n'avez pas à subir. Ensemble, nous allons comprendre ce qui bloque pour le transformer — pas le subir.</p>
-  <div class="pb-grid">
-    <div class="pb-card"><div class="pb-ico">😰</div><div class="pb-title">Stress & anxiété</div><div class="pb-desc">Burn-out, tensions pro, angoisses chroniques du quotidien</div></div>
-    <div class="pb-card"><div class="pb-ico">😴</div><div class="pb-title">Troubles du sommeil</div><div class="pb-desc">Insomnies, réveils nocturnes, fatigue persistante</div></div>
-    <div class="pb-card"><div class="pb-ico">😨</div><div class="pb-title">Phobies & blocages</div><div class="pb-desc">Peur de l'avenir, phobie sociale, manque de confiance</div></div>
-    <div class="pb-card"><div class="pb-ico">🎯</div><div class="pb-title">Préparation mentale</div><div class="pb-desc">Examens, compétitions, accouchement, entretiens</div></div>
-    <div class="pb-card"><div class="pb-ico">🤕</div><div class="pb-title">Douleurs chroniques</div><div class="pb-desc">Gestion de la douleur, maladies, accompagnement soins</div></div>
-    <div class="pb-card"><div class="pb-ico">🌱</div><div class="pb-title">Deuil & transitions</div><div class="pb-desc">Séparations, changements de vie, reconstruction</div></div>
-  </div>
-</section>
 
-<!-- ===== PRESTATIONS ===== -->
-<section class="section section-w" id="prestations">
-  <div class="s-label">Mes prestations</div>
-  <div class="s-title">Une approche sur mesure, à votre rythme</div>
-  <p class="s-sub">Au cabinet sensoriel, à domicile, en entreprise ou en école — j'adapte chaque séance à votre besoin réel.</p>
-  <div class="sv-grid">
-    <div class="sv-card sv-feat">
-      <div>
-        <div class="sv-ico">🌿</div>
-        <div class="sv-name" style="font-size:20px;color:#fff">Séance individuelle adulte</div>
-        <div class="sv-desc" style="max-width:340px">Séance personnalisée d'1h intégrant relaxation, respiration et visualisation. Des outils concrets dès la première rencontre.</div>
-        <div class="sv-price">60 € / séance</div>
+
+<!-- JENNIFER -->
+
+
+<!-- EXPÉRIENCES -->
+<section class="section sa" id="experiences">
+  <div class="ey">Les expériences</div>
+  <h2 class="st">Choisissez votre moment</h2>
+  <div class="exp-grid">
+
+    <!-- L'ESCALE -->
+    <div class="exp-card" style="background:linear-gradient(to top,rgba(248,246,242,.95) 0%,rgba(248,246,242,.75) 45%,rgba(248,246,242,.20) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-escale.webp');background-size:cover;background-position:center">
+      <div class="exp-badge">🌿 30 minutes · Présentiel &amp; Visio</div>
+      <div class="exp-name">L'Escale</div>
+      <div class="exp-tagline">"Une pause ?"</div>
+      <div class="exp-desc">Une pause douce pour souffler et relâcher les tensions. Respiration consciente, relaxation guidée et recentrage corporel dans une atmosphère douce et enveloppante.</div>
+      <div class="exp-ideals">
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Stress ponctuel</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Surcharge mentale</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Besoin de souffler</div>
       </div>
-      <a href="#rdv" class="btn-book">Réserver maintenant</a>
-    </div>
-    <div class="sv-card">
-      <div class="sv-ico">🧒</div>
-      <div class="sv-name">Enfants & adolescents</div>
-      <div class="sv-desc">Dès 6 ans. Stress scolaire, confiance en soi, émotions difficiles. Approche ludique et adaptée.</div>
-      <div class="sv-price" style="color:var(--teal)">40 €</div>
-    </div>
-    <div class="sv-card">
-      <div class="sv-ico">🔄</div>
-      <div class="sv-name">Forfait Bien-Être</div>
-      <div class="sv-desc">5 séances d'1h pour un accompagnement dans la durée. Résultats ancrés durablement.</div>
-      <div class="sv-price" style="color:var(--teal)">280 € <small style="font-size:13px;font-weight:400;color:#888">(-20€)</small></div>
-    </div>
-    <div class="sv-card">
-      <div class="sv-ico">🏢</div>
-      <div class="sv-name">Entreprises & groupes</div>
-      <div class="sv-desc">Ateliers QVT, prévention burn-out, écoles, EHPAD, maisons de retraite, milieu artistique.</div>
-      <div class="sv-price" style="color:var(--teal)">Sur devis</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== AGENDA PUBLIC ===== -->
-<section id="agenda" style="padding:72px 60px">
-  <div class="s-label">Disponibilités</div>
-  <div class="s-title">Agenda en temps réel</div>
-  <p class="s-sub">Consultez les créneaux disponibles et réservez directement en ligne. L'agenda est mis à jour par Jennifer.</p>
-  <div class="agenda-wrap">
-    <div class="agenda-header">
-      <button class="agenda-nav" onclick="agendaNav(-1)">‹</button>
-      <span class="agenda-month" id="agenda-month-label">Avril 2026</span>
-      <button class="agenda-nav" onclick="agendaNav(1)">›</button>
-    </div>
-    <div class="agenda-legend">
-      <div class="leg-item"><div class="leg-dot leg-libre"></div><span>Créneau libre</span></div>
-      <div class="leg-item"><div class="leg-dot leg-occupe"></div><span>Occupé</span></div>
-      <div class="leg-item"><div class="leg-dot leg-indispo"></div><span>Indisponible</span></div>
-    </div>
-    <div class="agenda-grid" id="agenda-grid">
-      <div class="ag-dow">Lun</div><div class="ag-dow">Mar</div><div class="ag-dow">Mer</div>
-      <div class="ag-dow">Jeu</div><div class="ag-dow">Ven</div><div class="ag-dow">Sam</div><div class="ag-dow">Dim</div>
-    </div>
-    <div class="agenda-footer">📅 Cliquez sur un créneau libre pour pré-remplir le formulaire de RDV · Mis à jour par Jennifer en temps réel</div>
-  </div>
-</section>
-
-<!-- ===== À PROPOS ===== -->
-<section class="section section-w" id="apropos">
-  <div class="s-label">À propos de Jennifer</div>
-  <div class="s-title">Votre guide vers le mieux-être</div>
-  <div class="about-flex">
-    <div class="about-ava">🌿</div>
-    <div>
-      <div class="about-txt">Sophrologue certifiée depuis 2011, j'ai créé à L'Isle-Adam un <strong>cabinet sensoriel unique dans le Val d'Oise</strong> — un espace pensé comme une bulle de sécurité, de douceur et de profondeur pour vous et vos proches.<br><br>Mon approche holistique intègre le corps, le mental et l'émotionnel. Je crois profondément que vous méritez de vivre pleinement — pas seulement de « tenir bon ». Je vous guide avec transparence, bienveillance et professionnalisme. Vous décidez.<br><br>Consultante RH de formation, j'accompagne également les transitions professionnelles et le bien-être en entreprise. <em>L'amour pour épée, l'humour pour bouclier !</em></div>
-      <div class="creds">
-        <span class="cred">EFDS 2019 & 2020</span>
-        <span class="cred">EFT 2021</span>
-        <span class="cred">Chambre Syndicale de la Sophrologie</span>
-        <span class="cred">Consultante RH</span>
-        <span class="cred">Insertion professionnelle</span>
-        <span class="cred">SIRET 534 405 386 00028</span>
+      <div class="exp-footer">
+        <span class="exp-price">45€</span>
+        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ===== TÉMOIGNAGES ===== -->
-<section class="section" id="temoignages">
-  <div class="s-label">Témoignages patients</div>
-  <div class="s-title">Ils ont retrouvé leur équilibre</div>
-  <p class="s-sub">Des vraies personnes, de vrais changements. Ces avis ont été recueillis avec le consentement explicite des patients.</p>
-  <div class="testi-feat">
-    <div class="testi-star">★★★★★</div>
-    <div class="testi-q">"Jennifer est une perle, une femme formidable très à l'écoute et d'une gentillesse exceptionnelle, c'est une de mes meilleures rencontres de l'année 2024."</div>
-    <div class="testi-name">— Jenny</div>
-  </div>
-  <div class="testi-grid">
-    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"C'est une expérience à vivre, surtout avec Jennifer qui nous accompagne avec un grand cœur. On en sort meilleur. Merci encore !"</div><div class="testi-name">— Zorica</div></div>
-    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Jennifer est une personne extraordinaire que je remercie du plus profond de mon cœur."</div><div class="testi-name">— Isabelle</div></div>
-    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Bienveillance, écoute, empathie, professionnalisme et sourires sont les clés de Jennifer. Je conseille fortement."</div><div class="testi-name">— Valérie</div></div>
-    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Jennifer est une sophrologue attentionnée, très professionnelle et pédagogue. Les exercices sont ludiques et son analyse pertinente est toujours au rendez-vous."</div><div class="testi-name">— Dougan</div></div>
-    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Un immense merci Jennifer pour tout ce que tu m'as transmis ! Ton expertise exceptionnelle et ta bienveillance ont rendu cet apprentissage unique, presque familial."</div><div class="testi-name">— Isaac</div></div>
-    <div class="testi-card"><div class="testi-star">★★★★★</div><div class="testi-q">"Je recommande vivement Mme Jennifer Le Cuziat. Jennifer est une personne passionnée et investie. Que des retours positifs pour son travail en sophrologie !"</div><div class="testi-name">— Mathieu</div></div>
-  </div>
-  <div class="rgpd-note">🔒 <strong>Note RGPD :</strong> Les avis publiés ici sont des prénoms uniquement. Aucune donnée permettant l'identification des personnes n'est divulguée, conformément au RGPD et aux recommandations de la CNIL. Les patients ont donné leur accord explicite pour la publication de leur témoignage.</div>
-</section>
-
-<!-- ===== TARIFS ===== -->
-<section class="section section-w" id="tarifs">
-  <div class="s-label">Tarifs</div>
-  <div class="s-title">Transparent et accessible</div>
-  <p class="s-sub">Profession libérale non réglementée. Honoraires libres. Paiement en espèces, chèque ou Paypal.</p>
-  <div class="pr-grid">
-    <div class="pr-card">
-      <div class="pr-name">Séance individuelle adulte</div>
-      <div><span class="pr-amount">60€</span> <span class="pr-unit">/ 1 heure</span></div>
-      <div class="pr-desc">Séance personnalisée avec exercices de relaxation, respiration et visualisation. Outils à emporter.</div>
-      <div class="pr-feats">
-        <div class="pr-feat"><span class="chk">✓</span>1 heure dédiée</div>
-        <div class="pr-feat"><span class="chk">✓</span>Au cabinet ou à domicile</div>
-        <div class="pr-feat"><span class="chk">✓</span>Outils concrets à pratiquer chez soi</div>
+    <!-- L'IMMERSION -->
+    <div class="exp-card feat" style="background:linear-gradient(to top,rgba(30,60,60,.90) 0%,rgba(42,90,90,.55) 45%,rgba(42,90,90,.10) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center">
+      <div class="exp-badge">🌊 60 minutes</div>
+      <div class="exp-name">L'Immersion</div>
+      <div class="exp-tagline">"S'abandonner profondément."</div>
+      <div class="exp-desc">Sophrologie, relaxation profonde et accompagnement sensoriel personnalisé. Cette séance vous invite à ralentir pleinement et déposer les tensions accumulées.</div>
+      <div class="exp-ideals">
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Anxiété &amp; stress chronique</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Fatigue mentale</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Reconnexion intérieure</div>
       </div>
-      <a href="#rdv" class="pr-btn">Réserver</a>
-    </div>
-    <div class="pr-card pop">
-      <div class="pop-badge">Le plus choisi ⭐</div>
-      <div class="pr-name">Forfait Bien-Être</div>
-      <div><span class="pr-amount">280€</span> <span class="pr-unit">/ 5 séances</span></div>
-      <div class="pr-desc">Engagement sur la durée pour des résultats profonds et durables. 56€/séance au lieu de 60€.</div>
-      <div class="pr-feats">
-        <div class="pr-feat"><span class="chk">✓</span>5 × 1 heure</div>
-        <div class="pr-feat"><span class="chk">✓</span>Économisez 20€</div>
-        <div class="pr-feat"><span class="chk">✓</span>Suivi personnalisé continu</div>
-        <div class="pr-feat"><span class="chk">✓</span>Progression mesurée</div>
+      <div class="exp-footer">
+        <span class="exp-price">65€</span>
+        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
       </div>
-      <a href="#rdv" class="pr-btn">Réserver</a>
     </div>
-    <div class="pr-card">
-      <div class="pr-name">Enfant / Adolescent</div>
-      <div><span class="pr-amount">40€</span> <span class="pr-unit">/ 1 heure · dès 6 ans</span></div>
-      <div class="pr-desc">Approche ludique adaptée. Stress scolaire, confiance en soi, gestion des émotions.</div>
-      <div class="pr-feats">
-        <div class="pr-feat"><span class="chk">✓</span>Approche ludique et bienveillante</div>
-        <div class="pr-feat"><span class="chk">✓</span>Parents informés à chaque étape</div>
-        <div class="pr-feat"><span class="chk">✓</span>Outils adaptés à l'âge</div>
-      </div>
-      <a href="#rdv" class="pr-btn">Réserver</a>
-    </div>
-    <div class="pr-card">
-      <div class="pr-name">Entreprises & Groupes</div>
-      <div><span class="pr-amount" style="font-size:24px">Sur devis</span></div>
-      <div class="pr-desc">Ateliers QVT, séances en école, maison de retraite, EHPAD, milieu artistique. Déplacement possible.</div>
-      <div class="pr-feats">
-        <div class="pr-feat"><span class="chk">✓</span>Déplacement dans le Val d'Oise</div>
-        <div class="pr-feat"><span class="chk">✓</span>Devis personnalisé sous 48h</div>
-        <div class="pr-feat"><span class="chk">✓</span>Facture profession libérale</div>
-      </div>
-      <a href="#rdv" class="pr-btn">Demander un devis</a>
-    </div>
-  </div>
-  <div class="mutuelle-note">💚 <strong>32 mutuelles remboursent</strong> tout ou partie de vos séances de sophrologie. <a href="https://www.resalib.fr/remboursement/mutuelle/specialite/34-sophrologue" target="_blank" rel="noopener">Vérifiez si votre mutuelle rembourse →</a></div>
-</section>
 
-<!-- ===== BLOG ===== -->
-<section class="section" id="blog">
-  <div class="s-label">Ressources & conseils</div>
-  <div class="s-title">Le blog du bien-être</div>
-  <p class="s-sub">Des articles pratiques pour commencer à prendre soin de vous dès aujourd'hui. Techniques et conseils issus de ma pratique quotidienne.</p>
-  <div class="blog-grid">
-    <div class="blog-card"><div class="blog-img">🧘</div><div class="blog-body"><div class="blog-tag">Stress</div><div class="blog-title">5 exercices de respiration pour calmer l'anxiété en 5 minutes</div><div class="blog-exc">Des techniques simples praticables n'importe où, au bureau, dans les transports ou chez soi.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
-    <div class="blog-card"><div class="blog-img">🌙</div><div class="blog-body"><div class="blog-tag">Sommeil</div><div class="blog-title">Retrouver un sommeil profond grâce à la sophrologie</div><div class="blog-exc">La sophrologie agit directement sur le système nerveux autonome pour préparer le corps au repos.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
-    <div class="blog-card"><div class="blog-img">🎓</div><div class="blog-body"><div class="blog-tag">Enfants</div><div class="blog-title">Préparer son enfant aux examens avec la sophrologie</div><div class="blog-exc">Examens, contrôles, bac… Comment aider votre enfant à gérer le stress de performance.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
-    <div class="blog-card"><div class="blog-img">💼</div><div class="blog-body"><div class="blog-tag">Entreprise</div><div class="blog-title">Burn-out : les 7 signaux d'alerte que personne ne voit venir</div><div class="blog-exc">Reconnaître les premiers signes pour agir avant que l'épuisement s'installe durablement.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
-    <div class="blog-card"><div class="blog-img">🤰</div><div class="blog-body"><div class="blog-tag">Périnatalité</div><div class="blog-title">Sophrologie et grossesse : préparer sereinement l'accouchement</div><div class="blog-exc">La sophrologie accompagne les futures mamans pour réduire la douleur et l'anxiété.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
-    <div class="blog-card"><div class="blog-img">🌿</div><div class="blog-body"><div class="blog-tag">Quotidien</div><div class="blog-title">10 minutes de sophrologie le matin : transformer sa journée</div><div class="blog-exc">Une routine matinale simple et efficace pour démarrer chaque journée avec sérénité.</div><a href="#" class="blog-link">Lire l'article →</a></div></div>
-  </div>
-</section>
+    <!-- LA SOURCE -->
+    <div class="exp-card" style="background:linear-gradient(to top,rgba(248,246,242,.95) 0%,rgba(248,246,242,.72) 45%,rgba(248,246,242,.18) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-source.webp');background-size:cover;background-position:center">
+      <div class="exp-badge">✨ 90 minutes · Expérience signature</div>
+      <div class="exp-name">La Source</div>
+      <div class="exp-tagline">"Retrouver l'harmonie corps &amp; esprit."</div>
+      <div class="exp-desc">Massage pleine conscience + sophrologie immersive + relaxation sensorielle + accompagnement émotionnel. Un véritable voyage intérieur complet.</div>
+      <div class="exp-ideals">
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Surcharge émotionnelle</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Besoin de lâcher-prise profond</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Recentrage corps &amp; esprit</div>
+      </div>
+      <div class="exp-footer">
+        <span class="exp-price">105€</span>
+        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
+      </div>
+    </div>
 
-<!-- ===== RÉSEAUX SOCIAUX ===== -->
-<section id="reseaux">
-  <div class="s-label">Présence digitale</div>
-  <div class="s-title">Stratégie réseaux sociaux</div>
-  <p class="s-sub">Exemples de posts prêts à publier pour développer votre communauté et attirer de nouveaux patients.</p>
-  <div class="rs-grid">
-    <div class="rs-card insta">
-      <div class="rs-icon">📸</div>
-      <div class="rs-name">Instagram — Post conseil (lundi)</div>
-      <div class="rs-tip">Objectif : visibilité, éducation, engagement. Fréquence : 3x/semaine.</div>
-      <div class="rs-example">🌬️ Technique du 4-7-8 pour calmer l'anxiété en 30 secondes :<br><br>→ Inspirez par le nez pendant 4 secondes<br>→ Retenez votre souffle 7 secondes<br>→ Expirez lentement par la bouche 8 secondes<br><br>Répétez 3 fois. Votre système nerveux se régule automatiquement 🧠✨<br><br>Cette technique, je l'enseigne dès la 1ère séance. Essayez maintenant et dites-moi en commentaire ce que vous ressentez 💬<br><br>#sophrologie #anxiété #bienetre #isleadam #valdoise #sophrologue95</div>
+    <!-- L'ESCALE VISIO -->
+    <div class="exp-card visio" style="background:linear-gradient(to top,rgba(30,80,80,.88) 0%,rgba(50,110,110,.50) 45%,rgba(61,138,138,.12) 100%),url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-immersion.webp');background-size:cover;background-position:center top">
+      <span class="visio-tag">📱 WhatsApp Video uniquement</span>
+      <div class="exp-badge">🌿 30 minutes · À distance</div>
+      <div class="exp-name">L'Escale Visio</div>
+      <div class="exp-tagline">"Une pause, depuis chez vous."</div>
+      <div class="exp-desc"><strong>À distance.</strong> Réservée aux <strong>suivis hebdomadaires</strong> uniquement. Paiement Wero avant la séance. Appel WhatsApp Video à l'heure du RDV.</div>
+      <div class="exp-ideals">
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Stress ponctuel à distance</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Paiement Wero en amont</div>
+        <div class="exp-ideal"><span class="exp-dot">✦</span>Appel WhatsApp Video</div>
+      </div>
+      <div class="exp-footer">
+        <span class="exp-price">40€</span>
+        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener" class="btn-rdv">Réserver →</a>
+      </div>
     </div>
-    <div class="rs-card fb">
-      <div class="rs-icon">👥</div>
-      <div class="rs-name">Facebook — Post témoignage (mercredi)</div>
-      <div class="rs-tip">Objectif : preuve sociale, confiance. Fréquence : 2x/semaine.</div>
-      <div class="rs-example">💚 Chaque semaine, je suis touchée par les retours de mes patients.<br><br>"Bienveillance, écoute, empathie, professionnalisme et sourires sont les clés de Jennifer." — Valérie<br><br>La sophrologie n'est pas une médecine miracle. C'est un outil puissant qui, avec de la régularité, transforme profondément votre rapport au stress et à la vie.<br><br>🗓️ Prochains créneaux disponibles cette semaine — lien en bio ou au 06 99 74 05 27<br><br>📍 Cabinet sensoriel L'Isle-Adam (95) · À domicile · Entreprises</div>
-    </div>
-    <div class="rs-card insta">
-      <div class="rs-icon">🎬</div>
-      <div class="rs-name">Instagram Reels — Idée vidéo (vendredi)</div>
-      <div class="rs-tip">Format court 30–60 sec. Taux d'engagement ×3 vs image fixe.</div>
-      <div class="rs-example">💡 IDÉE DE REEL :<br><br>🎤 Vous filmez face caméra, dans votre cabinet :<br>"3 signes que votre corps vous dit STOP — et ce que vous pouvez faire maintenant"<br><br>Signe 1 : Vous serrez les mâchoires sans vous en rendre compte<br>Signe 2 : Vous vous réveillez fatigué malgré 8h de sommeil<br>Signe 3 : Les petites choses vous irritent plus qu'avant<br><br>👉 "Si vous vous reconnaissez, la sophrologie peut vous aider. Premier échange offert."<br><br>#burnout #sophrologue #bienetre #stress #valdoise</div>
-    </div>
-    <div class="rs-card lk">
-      <div class="rs-icon">💼</div>
-      <div class="rs-name">LinkedIn — Entreprises (mensuel)</div>
-      <div class="rs-tip">Objectif : attirer contrats entreprises, QVT. Ton professionnel.</div>
-      <div class="rs-example">📊 Saviez-vous que 2,5 millions de Français sont en situation de burn-out sévère chaque année ? (Source : INRS)<br><br>En tant que sophrologue certifiée et consultante RH, j'interviens dans les entreprises du Val d'Oise pour :<br>✅ Ateliers de gestion du stress en équipe<br>✅ Accompagnement individuel QVT<br>✅ Formation managers : identifier les signaux d'alerte<br><br>Investir dans le bien-être de vos collaborateurs, c'est réduire l'absentéisme et augmenter la performance.<br><br>📩 Contactez-moi pour un devis personnalisé : contact@sophrologuelisleadam.fr<br><br>#QVT #bienetre #RH #sophrologue #entreprise #valdoise</div>
+
+  </div>
+  <!-- CHÈQUE CADEAU<!-- CHÈQUE CADEAU -->
+  <div class="cadeau-bloc" style="background-image:url('https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-cadeau-fond.webp');background-size:cover;background-position:center">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(233,222,210,.92),rgba(199,174,145,.88));border-radius:20px"></div>
+    <div class="cadeau-inner">
+      <div class="cadeau-txt">
+        <h3>Et si le plus beau cadeau était simplement un moment ?</h3>
+        <p>Offrir « La Source », c'est offrir un instant pour souffler, se retrouver… et simplement revenir à soi.</p>
+        <div class="cadeau-tags">
+          <span class="cadeau-tag">Fête des mères</span><span class="cadeau-tag">Anniversaire</span><span class="cadeau-tag">Remerciement</span><span class="cadeau-tag">Soutien</span><span class="cadeau-tag">Cadeau à soi-même</span>
+        </div>
+      </div>
+      <div class="cadeau-right">
+        <a href="mailto:jennifer.lecuziat@gmail.com?subject=Ch%C3%A8que%20cadeau" class="btn-cadeau">🎁 Offrir une expérience</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== FORMULAIRE RDV ===== -->
-<section class="section section-w" id="rdv">
-  <div class="s-label">Prise de rendez-vous</div>
-  <div class="s-title">Commençons ensemble</div>
-  <p class="s-sub">Je vous réponds sous 24h. Premier échange téléphonique <strong>offert</strong> pour définir votre besoin, sans engagement.</p>
-  <div class="rdv-box">
+
+
+<!-- PAIEMENT -->
+<section class="section sw" id="paiement">
+  <div class="ey">Moyens de paiement</div>
+  <h2 class="st">Simple &amp; sans frais</h2>
+  <p class="ss">Aucun intermédiaire coûteux. Paiement direct à Jennifer, instantané ou sur place.</p>
+  <div class="pay-grid">
+    <div class="pay-card">
+      <div class="pay-ico">⚡</div>
+      <div class="pay-name">Wero</div>
+      <div class="pay-desc">Virement instantané via votre appli bancaire — numéro de téléphone Jennifer : 06 99 74 05 27. Disponible si votre banque est compatible (BNP, SG, CA, LCL, La Poste…)</div>
+    </div>
+    <div class="pay-card">
+      <div class="pay-ico">🏦</div>
+      <div class="pay-name">Virement bancaire</div>
+      <div class="pay-desc">IBAN communiqué par Jennifer sur demande. Idéal pour les séances Visio — paiement à effectuer 48h avant la séance.</div>
+    </div>
+    <div class="pay-card">
+      <div class="pay-ico">💵</div>
+      <div class="pay-name">Espèces</div>
+      <div class="pay-desc">Acceptées au cabinet, à la séance. Note d'honoraires remise systématiquement pour le remboursement mutuelle.</div>
+    </div>
+    <div class="pay-card">
+      <div class="pay-ico">📋</div>
+      <div class="pay-name">Chèque</div>
+      <div class="pay-desc">À l'ordre de Jennifer Le Cuziat. Accepté au cabinet.</div>
+    </div>
+  </div>
+  <div class="pay-note">💚 <strong>32 mutuelles remboursent</strong> tout ou partie de vos séances. Une <strong>note d'honoraires</strong> vous est remise après chaque séance, prête à envoyer à votre complémentaire santé. <a href="https://www.resalib.fr/remboursement/mutuelle/specialite/34-sophrologue" target="_blank" rel="noopener" style="color:var(--cyan3);font-weight:600">Vérifier si ma mutuelle rembourse →</a></div>
+</section>
+
+<!-- FORMULAIRE RDV -->
+<section class="section sa" id="rdv">
+  <div class="ey">Prise de contact</div>
+  <h2 class="st">Commençons ensemble</h2>
+  <p class="ss">Je vous réponds sous 24h via Gmail. Premier échange <strong>offert</strong> pour définir votre besoin, sans engagement.</p>
+  <div class="rdv-wrap">
     <div class="form-row">
       <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Prénom *</label><input class="form-inp" id="f-prenom" type="text" placeholder="Votre prénom" autocomplete="given-name"></div>
       <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Nom *</label><input class="form-inp" id="f-nom" type="text" placeholder="Votre nom" autocomplete="family-name"></div>
@@ -615,13 +839,15 @@ footer{background:var(--teal-dark);padding:48px 60px 28px;color:rgba(255,255,255
     </div>
     <div class="form-row">
       <div class="form-field" style="margin-bottom:0">
-        <label class="form-lbl">Prestation souhaitée</label>
+        <label class="form-lbl">Expérience souhaitée</label>
         <select class="form-sel" id="f-presta">
           <option value="">— Choisissez —</option>
-          <option>Séance individuelle adulte (60€)</option>
-          <option>Séance enfant / adolescent (40€)</option>
-          <option>Forfait Bien-Être – 5 séances (280€)</option>
-          <option>Séance en entreprise (sur devis)</option>
+          <option>🌿 L'Escale — 30 min (45€)</option>
+          <option>🌊 L'Immersion — 60 min (65€)</option>
+          <option>✨ La Source — 90 min (105€)</option>
+          <option>📱 L'Escale Visio WhatsApp — 30 min (40€)</option>
+          <option>🎁 Chèque cadeau</option>
+          <option>🏢 Atelier entreprise (sur devis)</option>
           <option>Je ne sais pas encore</option>
         </select>
       </div>
@@ -637,460 +863,550 @@ footer{background:var(--teal-dark);padding:48px 60px 28px;color:rgba(255,255,255
     </div>
     <div class="form-field">
       <label class="form-lbl">Votre message (optionnel)</label>
-      <textarea class="form-ta" id="f-msg" rows="4" placeholder="Décrivez brièvement ce que vous traversez, pour que je puisse mieux vous accompagner lors de notre premier échange…"></textarea>
+      <textarea class="form-ta" id="f-msg" rows="4" placeholder="Décrivez brièvement ce que vous traversez, pour que je puisse mieux vous accueillir lors de notre premier échange…"></textarea>
     </div>
-    <!-- CONSENTEMENT RGPD OBLIGATOIRE -->
     <div class="form-rgpd">
       <input type="checkbox" id="f-rgpd" required>
-      <label for="f-rgpd">J'accepte que mes données (nom, téléphone, email) soient utilisées par Jennifer Le Cuziat uniquement pour traiter ma demande de rendez-vous, conformément au <a href="#mentions" style="color:var(--teal)">RGPD et à la politique de confidentialité</a>. Ces données ne seront jamais cédées à des tiers et seront supprimées après traitement. <strong>*</strong></label>
+      <label for="f-rgpd">J'accepte que mes données (nom, téléphone, email) soient utilisées par Jennifer Le Cuziat uniquement pour traiter ma demande, conformément au <a href="#mentions">RGPD et à la politique de confidentialité</a>. Données non transmises à des tiers. <strong>*</strong></label>
     </div>
-    <button class="form-submit" onclick="submitRDV()">Envoyer ma demande de RDV →</button>
-    <div class="form-note">🔒 Données protégées · Réponse sous 24h · Profession libérale · SIRET 534 405 386 00028</div>
-  </div>
-</section>
-
-<!-- ===== CTA FINAL ===== -->
-<section class="section" style="padding-top:0" id="contact">
-  <div class="cta-bloc">
-    <h3>Prête à vous rencontrer</h3>
-    <p>Cabinet sensoriel au 33 bis Avenue Michel Poniatowski, L'Isle-Adam (95290)<br>Accès PMR · Parking gratuit · À 5 min de la gare de Parmain–L'Isle-Adam (ligne H)</p>
-    <div class="cta-pills">
-      <div class="cpill">📞 06 99 74 05 27</div>
-      <div class="cpill">✉️ contact@sophrologuelisleadam.fr</div>
-      <div class="cpill">📍 L'Isle-Adam, Val d'Oise (95)</div>
-      <div class="cpill">🕐 Sur rendez-vous</div>
+    <button class="form-submit" onclick="submitRDV()">Envoyer ma demande →</button>
+    <div class="form-note">🔒 Réponse sous 24h via Gmail · jennifer.lecuziat@gmail.com · SIRET 534 405 386 00028</div>
+    <div class="alt-contact">
+      Vous préférez un contact direct ? →
+      <a href="mailto:jennifer.lecuziat@gmail.com?subject=Prise de RDV Source %26 Sens">✉️ jennifer.lecuziat@gmail.com</a>
+      &nbsp;|&nbsp;
+      <a href="tel:0699740527">📞 06 99 74 05 27</a>
+      &nbsp;|&nbsp;
+      <a href="https://wa.me/33699740527" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <div style="margin-top:10px">📍 <strong>Adresse :</strong> 33 bis Avenue Michel Poniatowski, L'Isle-Adam (95290)</div>
     </div>
   </div>
 </section>
 
-<!-- ===== MENTIONS LÉGALES & RGPD ===== -->
-<section class="section section-w" id="mentions" style="padding:40px 60px">
-  <details style="cursor:pointer">
-    <summary style="font-size:15px;font-weight:700;color:var(--teal);margin-bottom:12px">📋 Mentions légales & Politique de confidentialité (RGPD / CNIL)</summary>
-    <div style="font-size:13px;color:var(--muted);line-height:1.7;margin-top:16px;max-width:800px">
-      <p><strong>Responsable de traitement :</strong> Jennifer Le Cuziat, sophrologue libérale — SIRET 534 405 386 00028 — 33 bis Avenue Michel Poniatowski, 95290 L'Isle-Adam — contact@sophrologuelisleadam.fr</p>
-      <br>
-      <p><strong>Données collectées :</strong> Ce site collecte uniquement les données que vous transmettez volontairement via le formulaire de contact (nom, téléphone, email, message). Ces données sont utilisées exclusivement pour répondre à votre demande de rendez-vous.</p>
-      <br>
+<!-- (Pavé "Prête à vous accueillir" supprimé) -->
+
+
+
+
+
+<!-- CABINET -->
+
+
+
+<!-- ATELIERS ENTREPRISE -->
+<section class="section sw" id="entreprises">
+  <div class="ey">Entreprises &amp; groupes</div>
+  <h2 class="st">Ateliers sur mesure</h2>
+  <p class="ss">Interventions en entreprise, école, EHPAD, centre sportif. Devis sous 48h — jennifer.lecuziat@gmail.com</p>
+  <div class="atelier-grid">
+    <div class="atelier-card"><div class="atelier-ico">🧘</div><div class="atelier-name">Gestion du stress &amp; phobies</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">🫁</div><div class="atelier-name">Respiration &amp; cohérence cardiaque</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">🧠</div><div class="atelier-name">Intelligence émotionnelle</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">💬</div><div class="atelier-name">Communication Non Violente</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">🎤</div><div class="atelier-name">Prise de parole &amp; se valoriser</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">🌊</div><div class="atelier-name">Relaxation immersive</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">🔗</div><div class="atelier-name">PNL &amp; Rigologie</div><div class="atelier-tag">Groupe</div></div>
+    <div class="atelier-card"><div class="atelier-ico">⚡</div><div class="atelier-name">Hormones &amp; choix de vie</div><div class="atelier-tag">Groupe</div></div>
+  </div>
+  <div style="margin-top:24px;text-align:center">
+    <a href="mailto:jennifer.lecuziat@gmail.com?subject=Demande atelier entreprise Source %26 Sens&body=Bonjour Jennifer, je souhaite vous contacter pour un atelier en entreprise." style="display:inline-block;background:var(--cyan3);color:#fff;padding:13px 32px;border-radius:30px;font-size:13px;font-weight:600;text-decoration:none">Demander un devis par email →</a>
+  </div>
+</section>
+
+<!-- RÉSEAUX SOCIAUX — Curator.io -->
+<section class="section sa" id="reseaux">
+  <div class="ey">Publications</div>
+  <h2 class="st">Source &amp; Sens sur les réseaux</h2>
+  <p class="ss">Retrouvez nos dernières publications — conseils bien-être, actualités du cabinet et témoignages.</p>
+  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+  <script type="text/javascript">
+  (function(){var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+  i.src="https://cdn.curator.io/published/d25d9307-b1f6-4b26-99e2-7d7a064d28d0.js";
+  e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i,e);})();
+  </script>
+  <div class="social-links" style="margin-top:20px">
+    <a href="https://www.instagram.com/jenniferlecuziat" target="_blank" rel="noopener" class="social-link">📸 Instagram</a>
+    <a href="https://facebook.com/JenniferLeCuziat" target="_blank" rel="noopener" class="social-link">👥 Facebook</a>
+    <a href="https://linkedin.com/in/jennifer-le-cuziat" target="_blank" rel="noopener" class="social-link">💼 LinkedIn</a>
+    <a href="https://g.page/r/CeIkTvc0TL8fEBM/review" target="_blank" rel="noopener" class="social-link">⭐ Google</a>
+  </div>
+</section>
+
+
+
+
+
+<!-- BLOG -->
+
+
+
+
+
+<!-- MENTIONS LÉGALES -->
+<section class="section sw" id="mentions" style="padding:36px 64px">
+  <details>
+    <summary>📋 Mentions légales &amp; Politique de confidentialité (RGPD / CNIL)</summary>
+    <div class="legal-text">
+      <p><strong>Dénomination commerciale :</strong> Source &amp; Sens — Cabinet sensoriel corps &amp; esprit</p>
+      <p><strong>Responsable de traitement :</strong> Jennifer Le Cuziat, sophrologue libérale — SIRET 534 405 386 00028 — 33 bis Avenue Michel Poniatowski, 95290 L'Isle-Adam — jennifer.lecuziat@gmail.com</p>
+      <p><strong>Hébergement :</strong> sourcesens.fr — hébergement recommandé en France (OVH / o2switch) pour conformité RGPD.</p>
+      <p><strong>Données collectées :</strong> Uniquement les données transmises volontairement via le formulaire de contact. Utilisées exclusivement pour répondre à votre demande de RDV.</p>
       <p><strong>Base légale (RGPD art. 6) :</strong> Consentement explicite de la personne concernée.</p>
-      <br>
-      <p><strong>Durée de conservation :</strong> Les données sont conservées le temps nécessaire au traitement de votre demande, puis supprimées dans un délai de 3 ans maximum conformément aux recommandations de la CNIL.</p>
-      <br>
-      <p><strong>Vos droits :</strong> Conformément au RGPD (Règlement UE 2016/679) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Pour exercer ces droits : contact@sophrologuelisleadam.fr. Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--teal)">CNIL</a>.</p>
-      <br>
-      <p><strong>Témoignages :</strong> Les avis publiés sur ce site ne comportent que des prénoms, avec consentement explicite de chaque patient. Aucune donnée permettant l'identification complète d'une personne n'est publiée.</p>
-      <br>
-      <p><strong>Cookies :</strong> Ce site n'utilise pas de cookies de tracking ou publicitaires. Seuls des cookies fonctionnels strictement nécessaires peuvent être utilisés (session, préférences).</p>
-      <br>
-      <p><strong>Hébergement :</strong> Site hébergé en France. Recommandation de migrer vers OVH / o2switch pour garantir l'hébergement des données sur le territoire français (conformité RGPD).</p>
+      <p><strong>Durée de conservation :</strong> 3 ans maximum (recommandation CNIL).</p>
+      <p><strong>Vos droits :</strong> Accès, rectification, effacement, limitation, opposition, portabilité. Contact : jennifer.lecuziat@gmail.com — <a href="https://www.cnil.fr" target="_blank" rel="noopener">Réclamation CNIL</a></p>
+      <p><strong>Secret professionnel :</strong> Tous les échanges en séance sont strictement confidentiels.</p>
+      <p><strong>Témoignages :</strong> Prénoms uniquement, avec consentement explicite de chaque patient.</p>
+      <p><strong>Cookies :</strong> Aucun cookie de tracking. Cookies fonctionnels uniquement.</p>
+      <p><strong>Certification :</strong> Quali Sophro — Organisme certifié NF S99-805 par la Chambre Syndicale de la Sophrologie.</p>
     </div>
   </details>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div>
-      <div class="f-brand">Jennifer Le Cuziat · Sophrologue</div>
-      <div class="f-sub">Cabinet sensoriel · 33 bis Avenue Michel Poniatowski<br>95290 L'Isle-Adam (Val d'Oise) · Sur rendez-vous<br>SIRET 534 405 386 00028 · Chambre Syndicale de la Sophrologie</div>
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px;flex-wrap:wrap">
+        <img style="width:52px;height:52px;object-fit:contain" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/logo-source-sens-new.png" alt="Source &amp; Sens">
+        <img style="width:52px;height:52px;object-fit:contain" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/logo-qualiophro-new.png" alt="Quali Sophro NF S99-805">
+        <img style="width:52px;height:52px;object-fit:contain" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/logo-chambre-syndicale.png" alt="Chambre Syndicale">
+      </div>
+      <div class="f-brand">Source &amp; Sens</div>
+      <div class="f-sub" style="margin-bottom:5px">Jennifer Le Cuziat · Sophrologue</div>
+      <div class="f-sub">Cabinet sensoriel corps &amp; esprit<br>33 bis Av. Michel Poniatowski<br>95290 L'Isle-Adam · SIRET 534 405 386 00028</div>
+      <div class="f-socials">
+        <a href="https://www.instagram.com/jenniferlecuziat" target="_blank" rel="noopener" title="Instagram">📸</a>
+        <a href="https://facebook.com/JenniferLeCuziat" target="_blank" rel="noopener" title="Facebook">f</a>
+        <a href="https://linkedin.com/in/jennifer-le-cuziat" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <a href="https://www.tiktok.com/@sophrologuelisleadam.fr" target="_blank" rel="noopener" title="TikTok">🎵</a>
+        <a href="https://wa.me/33699740527" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div>
+      <div class="f-col-title">Expériences</div>
+      <div class="f-links">
+        <a href="#experiences">🌿 L'Escale 30 min</a>
+        <a href="#experiences">🌊 L'Immersion 60 min</a>
+        <a href="#experiences">✨ La Source 90 min</a>
+        <a href="#experiences">📱 L'Escale Visio</a>
+        <a href="#experiences">🎁 Chèque cadeau</a>
+      </div>
     </div>
     <div>
       <div class="f-col-title">Navigation</div>
       <div class="f-links">
-        <a href="#accompagnement">Accompagnement</a>
-        <a href="#prestations">Prestations</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#temoignages">Témoignages</a>
-        <a href="#tarifs">Tarifs</a>
+        <a href="#jennifer">À propos</a>
+        <a href="#temoignages">Avis clients</a>
+        <a href="#entreprises">Entreprises</a>
         <a href="#blog">Blog</a>
-        <a href="#rdv">Prendre RDV</a>
       </div>
     </div>
     <div>
       <div class="f-col-title">Contact</div>
       <div class="f-links">
         <a href="tel:0699740527">📞 06 99 74 05 27</a>
-        <a href="mailto:contact@sophrologuelisleadam.fr">✉️ Email</a>
+        <a href="mailto:jennifer.lecuziat@gmail.com">✉️ Gmail</a>
+        <a href="https://calendar.google.com/calendar/appointments" target="_blank" rel="noopener">📅 Google Agenda</a>
+        <a href="https://wa.me/c/33699740527" target="_blank" rel="noopener">🛍 Catalogue WhatsApp</a>
         <a href="#mentions">Mentions légales</a>
-        <a href="#mentions">Politique RGPD</a>
-        <a href="#mentions">Cookies</a>
+        <a href="#mentions">RGPD &amp; Cookies</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Jennifer Le Cuziat · Profession libérale non réglementée</span>
-    <span>Conforme RGPD · CNIL · Chambre Syndicale de la Sophrologie</span>
+    <span>© 2026 Source &amp; Sens — Jennifer Le Cuziat · Profession libérale non réglementée</span>
+    <span>Conforme RGPD · CNIL · Quali Sophro · sourcesens.fr</span>
   </div>
 </footer>
 
-<!-- ===== PANNEAU ADMIN ===== -->
+<!-- ADMIN PANEL -->
 <div id="admin-overlay" onclick="closeAdmin()"></div>
 <div id="admin-panel">
-  <div class="admin-header">
-    <div class="admin-title">🌿 Espace Modérateur — Jennifer</div>
+  <div class="admin-head">
+    <div class="admin-head-title">Source &amp; Sens — Modérateur</div>
     <button class="admin-close" onclick="closeAdmin()">×</button>
   </div>
   <div class="admin-tabs">
-    <div class="admin-tab active" onclick="adminTab('rdvs')">📅 RDV</div>
-    <div class="admin-tab" onclick="adminTab('agenda')">🗓 Agenda</div>
-    <div class="admin-tab" onclick="adminTab('contenu')">✏️ Contenu</div>
-    <div class="admin-tab" onclick="adminTab('posts')">📱 Posts</div>
-    <div class="admin-tab" onclick="adminTab('stats')">📊 Stats</div>
+    <div class="admin-tab active" onclick="aTab('rdvs')">📅 RDV</div>
+    <div class="admin-tab" onclick="aTab('agenda')">🗓 Agenda</div>
+    <div class="admin-tab" onclick="aTab('rappels')">📧 Rappels</div>
+    <div class="admin-tab" onclick="aTab('facture')">🧾 Facture</div>
+    <div class="admin-tab" onclick="aTab('contenu')">✏️ Site</div>
+    <div class="admin-tab" onclick="aTab('stats')">📊 Stats</div>
   </div>
-  <div class="admin-content">
+  <div class="admin-body">
 
-    <!-- ONGLET RDV -->
-    <div class="admin-section active" id="tab-rdvs">
-      <div class="admin-s-title">📬 Demandes de rendez-vous</div>
+    <!-- RDV -->
+    <div class="admin-sec active" id="tab-rdvs">
+      <div class="admin-sec-title">📬 Demandes reçues</div>
       <div id="rdv-list">
         <div class="rdv-item">
           <div class="rdv-info">
             <div class="rdv-name">Marie D.</div>
-            <div class="rdv-detail">📞 06 12 34 56 78 · Forfait Bien-Être · Matin</div>
-            <div class="rdv-detail" style="color:#999;font-size:11px">Reçu le 21/04/2026 à 10h32</div>
-            <div class="rdv-detail" style="margin-top:6px;font-size:12px;color:#333">"Stress au travail depuis 6 mois, difficultés de sommeil"</div>
+            <div class="rdv-detail">📞 06 12 34 56 78 · 🌊 L'Immersion · Matin</div>
+            <div class="rdv-detail" style="font-size:10px;color:#bbb">Reçu le 02/06/2026 à 10h32</div>
+            <div class="rdv-detail" style="margin-top:4px;font-size:11px">"Stress au travail, insomnies depuis 6 mois"</div>
           </div>
-          <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
-            <span class="rdv-badge badge-new">Nouveau</span>
-            <button class="admin-btn" style="font-size:11px;padding:6px 12px" onclick="markConf(this)">✓ Confirmer</button>
-            <button class="admin-btn-del" onclick="this.closest('.rdv-item').remove()">Supprimer</button>
-          </div>
-        </div>
-        <div class="rdv-item">
-          <div class="rdv-info">
-            <div class="rdv-name">Thomas R.</div>
-            <div class="rdv-detail">📞 06 98 76 54 32 · Séance individuelle · Soirée</div>
-            <div class="rdv-detail" style="color:#999;font-size:11px">Reçu le 20/04/2026 à 18h15</div>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
-            <span class="rdv-badge badge-conf">Confirmé</span>
-            <button class="admin-btn-del" onclick="this.closest('.rdv-item').remove()">Archiver</button>
+          <div style="display:flex;flex-direction:column;gap:5px;align-items:flex-end">
+            <span class="rdv-badge b-new">Nouveau</span>
+            <button class="admin-btn" style="font-size:10px;padding:5px 10px" onclick="confirmRDV(this)">✓ Confirmer</button>
+            <button class="admin-btn-del" onclick="this.closest('.rdv-item').remove()">Suppr.</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ONGLET AGENDA -->
-    <div class="admin-section" id="tab-agenda">
-      <div class="admin-s-title">🗓 Gérer les créneaux</div>
+    <!-- AGENDA -->
+    <div class="admin-sec" id="tab-agenda">
+      <div class="admin-sec-title">🗓 Gérer les créneaux</div>
       <div class="admin-card">
-        <div class="admin-s-title" style="font-size:13px;margin-bottom:10px">Ajouter un créneau disponible</div>
+        <div style="font-size:12px;font-weight:700;margin-bottom:10px">Ajouter un créneau</div>
         <div class="slot-form">
           <div><label class="admin-lbl">Date</label><input class="admin-inp" type="date" id="slot-date"></div>
-          <div><label class="admin-lbl">Heure début</label><input class="admin-inp" type="time" id="slot-heure" value="09:00"></div>
-          <div><label class="admin-lbl">Type</label>
-            <select class="admin-inp" id="slot-type">
-              <option value="libre">Disponible</option>
-              <option value="occupe">Occupé</option>
-              <option value="indispo">Indisponible</option>
-            </select>
-          </div>
-          <div><label class="admin-lbl">Durée</label>
-            <select class="admin-inp">
-              <option>1 heure</option>
-              <option>1h30</option>
-              <option>2 heures</option>
-              <option>Journée</option>
-            </select>
-          </div>
+          <div><label class="admin-lbl">Heure</label><input class="admin-inp" type="time" id="slot-h" value="09:00"></div>
+          <div><label class="admin-lbl">Type</label><select class="admin-inp" id="slot-type"><option value="libre">Disponible</option><option value="occupe">Occupé</option></select></div>
+          <div><label class="admin-lbl">Expérience</label><select class="admin-inp"><option>L'Escale 30min</option><option>L'Immersion 60min</option><option>La Source 90min</option><option>Escale Visio 30min</option></select></div>
         </div>
-        <button class="admin-btn" onclick="addSlot()">+ Ajouter ce créneau</button>
+        <button class="admin-btn" onclick="addSlot()">+ Ajouter</button>
       </div>
-      <div class="admin-s-title" style="font-size:13px;margin-top:16px;margin-bottom:10px">Créneaux de la semaine</div>
+      <div class="admin-card" style="background:#EAF5F5;border-color:var(--cyan)">
+        <div style="font-size:12px;font-weight:700;margin-bottom:6px;color:var(--cyan3)">📅 Google Agenda — Lien de réservation</div>
+        <div style="font-size:11px;color:var(--muted);line-height:1.55">
+          Pour activer la réservation en ligne via Google Agenda :<br>
+          1. Ouvrir <strong>Google Agenda</strong> sur jennifer.lecuziat@gmail.com<br>
+          2. Cliquer <strong>"+ Créer" → "Rendez-vous"</strong><br>
+          3. Configurer les 4 types (L'Escale, L'Immersion, La Source, Escale Visio)<br>
+          4. Copier le lien de partage → le coller dans le site
+        </div>
+      </div>
       <div id="slots-list">
-        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px">
-          <div><div style="font-size:13px;font-weight:700">Lun 22/04 — 9h00</div><div style="font-size:12px;color:var(--muted)">1 heure · Disponible</div></div>
-          <div style="display:flex;gap:8px"><span style="background:#E1F5EE;color:var(--teal);font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">Libre</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>
-        </div>
-        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px">
-          <div><div style="font-size:13px;font-weight:700">Mar 23/04 — 14h00</div><div style="font-size:12px;color:var(--muted)">1 heure · Occupé</div></div>
-          <div style="display:flex;gap:8px"><span style="background:#FAECE7;color:#993C1D;font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">Occupé</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>
-        </div>
-        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px">
-          <div><div style="font-size:13px;font-weight:700">Jeu 25/04 — 10h00</div><div style="font-size:12px;color:var(--muted)">1 heure · Disponible</div></div>
-          <div style="display:flex;gap:8px"><span style="background:#E1F5EE;color:var(--teal);font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">Libre</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>
-        </div>
+        <div class="admin-card" style="display:flex;justify-content:space-between;align-items:center;padding:11px 14px"><div><div style="font-size:12px;font-weight:700">Lun 02/06 — 9h00 · L'Escale</div><div style="font-size:11px;color:var(--muted)">Disponible</div></div><div style="display:flex;gap:7px"><span style="background:#EAF5F5;color:var(--cyan3);font-size:10px;padding:3px 9px;border-radius:6px;font-weight:700">Libre</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div></div>
       </div>
     </div>
 
-    <!-- ONGLET CONTENU -->
-    <div class="admin-section" id="tab-contenu">
-      <div class="admin-s-title">✏️ Modifier le contenu du site</div>
+    <!-- RAPPELS GMAIL -->
+    <div class="admin-sec" id="tab-rappels">
+      <div class="admin-sec-title">📧 Trames Gmail — Rappels patients</div>
+      <p style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.55">Copiez ces trames dans Gmail → Paramètres → Réponses types (activer les réponses types d'abord). Phase 2 : automatisation par Google Apps Script.</p>
+
+      <div class="trame-card">
+        <div class="trame-title">⏰ J-3 — Rappel RDV</div>
+        <div class="trame-body">Objet : Votre séance Source & Sens — dans 3 jours 🌿
+
+Bonjour [Prénom],
+
+Je vous rappelle votre séance [Expérience] le [Date] à [Heure].
+
+📍 Cabinet : 33 bis Av. Michel Poniatowski, L'Isle-Adam
+🕐 Durée : [Durée]
+💳 Paiement : [Mode de paiement choisi]
+
+Pour annuler ou reporter : jennifer.lecuziat@gmail.com ou 06 99 74 05 27 (jusqu'à 48h avant).
+
+À très bientôt,
+Jennifer Le Cuziat
+Source & Sens · 06 99 74 05 27</div>
+        <button class="admin-btn-copy" onclick="copyTrame(this)">📋 Copier</button>
+      </div>
+
+      <div class="trame-card">
+        <div class="trame-title">🧘 J-2 — Préparation au RDV</div>
+        <div class="trame-body">Objet : Préparez votre séance Source & Sens ✨
+
+Bonjour [Prénom],
+
+Votre séance [Expérience] approche (demain [Date] à [Heure]). Quelques conseils pour en tirer le meilleur :
+
+✦ Portez des vêtements confortables et amples
+✦ Évitez un repas lourd dans l'heure précédant la séance
+✦ Si possible, prenez quelques minutes au calme avant d'arriver
+✦ Venez simplement tel(le) que vous êtes — pas de préparation particulière
+
+Votre intention pour cette séance (optionnel) : qu'aimeriez-vous laisser derrière vous aujourd'hui ?
+
+À demain avec plaisir,
+Jennifer Le Cuziat
+Source & Sens · 06 99 74 05 27</div>
+        <button class="admin-btn-copy" onclick="copyTrame(this)">📋 Copier</button>
+      </div>
+
+      <div class="trame-card">
+        <div class="trame-title">🌿 Post-RDV — Consignes + Note d'honoraires</div>
+        <div class="trame-body">Objet : Merci pour votre séance — vos ressources Source & Sens 🌿
+
+Bonjour [Prénom],
+
+Merci pour ce beau moment partagé aujourd'hui. J'espère que vous repartez un peu plus léger(e).
+
+🌿 Ce que je vous invite à retenir :
+✦ [Exercice 1 personnalisé]
+✦ [Exercice 2 personnalisé]
+✦ [Conseil spécifique]
+
+📋 Pratiquez au moins 5 minutes par jour les prochains jours — c'est là que la transformation s'ancre.
+
+⭐ Si vous avez apprécié cette séance, un avis Google m'aide beaucoup :
+→ https://g.page/r/CeIkTvc0TL8fEBM/review
+
+🧾 Vous trouverez en pièce jointe votre note d'honoraires (n° [Numéro]) pour votre mutuelle.
+
+À bientôt,
+Jennifer Le Cuziat
+Source & Sens · 06 99 74 05 27</div>
+        <button class="admin-btn-copy" onclick="copyTrame(this)">📋 Copier</button>
+      </div>
+
+      <div class="warn-script">
+        ⏳ <strong>Phase 2 — Automatisation Google Apps Script</strong> (à activer plus tard)<br>
+        Un script Google Apps Script peut envoyer ces 3 emails automatiquement à partir de votre Google Agenda. Totalement gratuit, sans aucun abonnement. À configurer quand Jennifer est prête → guide disponible dans les stats.
+      </div>
+    </div>
+
+    <!-- FACTURE -->
+    <div class="admin-sec" id="tab-facture">
+      <div class="admin-sec-title">🧾 Note d'honoraires</div>
+      <p style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.55">Modèle à copier dans Google Docs (Fichier → Faire une copie). Numérotation : 2026-001, 2026-002…</p>
+      <div class="facture-preview">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px">
+          <div>
+            <div style="font-size:15px;font-weight:700;color:var(--cyan3)">Source &amp; Sens</div>
+            <div style="font-size:11px;color:var(--muted)">Jennifer Le Cuziat — Sophrologue</div>
+            <div style="font-size:11px;color:var(--muted)">33 bis Av. Michel Poniatowski<br>95290 L'Isle-Adam</div>
+            <div style="font-size:11px;color:var(--muted)">SIRET : 534 405 386 00028<br>APE : 8690F</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:14px;font-weight:700;color:var(--text)">NOTE D'HONORAIRES</div>
+            <div style="font-size:11px;color:var(--muted)">N° 2026-001</div>
+            <div style="font-size:11px;color:var(--muted)">Date : [JJ/MM/AAAA]</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:10px">
+          <strong>Patient :</strong> [Prénom NOM] — [Ville]
+        </div>
+        <table>
+          <thead><tr><th>Description</th><th>Durée</th><th>Montant</th></tr></thead>
+          <tbody>
+            <tr><td>Séance de sophrologie — [Nom expérience]</td><td>[30/60/90] min</td><td>[45/65/105] €</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="2" style="font-weight:700;text-align:right">Total TTC</td><td style="font-weight:700">[XX] €</td></tr>
+          </tfoot>
+        </table>
+        <div style="font-size:10px;color:var(--muted);margin-top:10px">TVA non applicable — Art. 293B du CGI · Payé par : [Wero / Virement / Espèces / Chèque]</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:4px">Document à conserver pour le remboursement de votre complémentaire santé.</div>
+      </div>
+      <button class="admin-btn" style="margin-top:14px;width:100%" onclick="window.open('https://docs.google.com/document/create','_blank')">Créer dans Google Docs →</button>
+      <div class="warn-cnil" style="margin-top:10px">💡 <strong>Conseil :</strong> Créer un modèle Google Docs → Le dupliquer pour chaque patient → Exporter en PDF → Joindre à l'email post-RDV.</div>
+    </div>
+
+    <!-- CONTENU SITE -->
+    <div class="admin-sec" id="tab-contenu">
+      <div class="admin-sec-title">✏️ Modifier le site</div>
       <div class="admin-card">
-        <div class="admin-s-title" style="font-size:13px">Phrase d'accroche principale</div>
-        <div class="admin-field"><label class="admin-lbl">Titre hero</label><input class="admin-inp" value="Retrouvez votre équilibre, vivez pleinement."></div>
-        <div class="admin-field"><label class="admin-lbl">Sous-titre</label><textarea class="admin-ta">Sophrologue certifiée, j'accompagne adultes, enfants et adolescents à libérer le stress, les phobies et la douleur — avec des outils concrets dès la première séance.</textarea></div>
-        <button class="admin-btn">Sauvegarder</button>
+        <div style="font-size:12px;font-weight:700;margin-bottom:10px">Ajouter un témoignage</div>
+        <div class="admin-f"><label class="admin-lbl">Prénom (RGPD)</label><input class="admin-inp" id="new-t-name" placeholder="Ex: Sophie"></div>
+        <div class="admin-f"><label class="admin-lbl">Avis</label><textarea class="admin-ta" id="new-t-txt" placeholder="Texte du témoignage…"></textarea></div>
+        <div class="warn-cnil">⚠️ <strong>CNIL :</strong> Consentement écrit obligatoire avant publication. Prénom uniquement.</div>
+        <button class="admin-btn" style="margin-top:10px" onclick="addTesti()">+ Publier</button>
       </div>
-      <div class="admin-card" style="margin-top:14px">
-        <div class="admin-s-title" style="font-size:13px">Ajouter un témoignage</div>
-        <div class="admin-field"><label class="admin-lbl">Prénom (RGPD : prénom uniquement)</label><input class="admin-inp" placeholder="Ex: Marie" id="new-testi-name"></div>
-        <div class="admin-field"><label class="admin-lbl">Avis</label><textarea class="admin-ta" placeholder="Texte du témoignage…" id="new-testi-txt"></textarea></div>
-        <div class="admin-field" style="background:#fff8e8;padding:10px;border-radius:8px;font-size:12px;color:#666">⚠️ <strong>CNIL / RGPD :</strong> Assurez-vous d'avoir le consentement écrit du patient avant de publier son témoignage. Utilisez uniquement le prénom. Ne publiez pas de données permettant l'identification (nom complet, ville précise, âge exact, profession).</div>
-        <button class="admin-btn" onclick="addTesti()">+ Publier le témoignage</button>
+      <div class="admin-card" style="margin-top:12px">
+        <div style="font-size:12px;font-weight:700;margin-bottom:12px">Paramètres d'affichage</div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Bandeau RGPD</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Agenda public</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Formulaire RDV</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">WhatsApp flottant</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
+        <div class="toggle-row"><div><div style="font-size:12px;font-weight:600">Chèque cadeau</div></div><div class="toggle-sw on" onclick="this.classList.toggle('on')"></div></div>
       </div>
-      <div class="admin-card" style="margin-top:14px">
-        <div class="admin-s-title" style="font-size:13px">Paramètres affichage</div>
-        <div class="toggle-row"><div><div class="toggle-lbl">Bandeau RGPD</div><div class="toggle-sub">Afficher le bandeau cookies</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div class="toggle-lbl">Agenda public</div><div class="toggle-sub">Afficher les disponibilités</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div class="toggle-lbl">Formulaire RDV</div><div class="toggle-sub">Accepter les demandes en ligne</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="toggle-row"><div><div class="toggle-lbl">Blog</div><div class="toggle-sub">Afficher la section blog</div></div><div class="switch on" onclick="this.classList.toggle('on')"></div></div>
-      </div>
-    </div>
-
-    <!-- ONGLET POSTS RÉSEAUX -->
-    <div class="admin-section" id="tab-posts">
-      <div class="admin-s-title">📱 Posts réseaux sociaux prêts à copier</div>
-      <div class="post-card">
-        <div class="post-net">📸 Instagram · Conseil du lundi</div>
-        <div class="post-txt">🌬️ Technique du 4-7-8 pour calmer l'anxiété en 30 secondes :<br>→ Inspirez 4 sec → Retenez 7 sec → Expirez 8 sec<br>Répétez 3 fois. Essayez maintenant et dites-moi en commentaire 💬<br>#sophrologie #anxiété #bienetre #isleadam #valdoise #sophrologue95</div>
-        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">Idéal : lundi 9h ou 12h</span></div>
-      </div>
-      <div class="post-card">
-        <div class="post-net">👥 Facebook · Témoignage mercredi</div>
-        <div class="post-txt">💚 "Bienveillance, écoute, empathie, professionnalisme et sourires sont les clés de Jennifer." — Valérie<br><br>🗓 Prochains créneaux disponibles cette semaine — 06 99 74 05 27<br>📍 Cabinet sensoriel L'Isle-Adam (95) · À domicile · Entreprises</div>
-        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">Idéal : mercredi 18h</span></div>
-      </div>
-      <div class="post-card">
-        <div class="post-net">📸 Instagram · Story vendredi</div>
-        <div class="post-txt">🌿 DISPONIBILITÉS CETTE SEMAINE 🌿<br><br>✅ Lundi 9h00<br>✅ Jeudi 14h30<br>✅ Samedi 10h00<br><br>👉 Réservez au 06 99 74 05 27 ou via le lien en bio<br>Premier échange offert 🎁<br>#sophrologue #isleadam #bienetre</div>
-        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">À mettre à jour avec vrais créneaux</span></div>
-      </div>
-      <div class="post-card">
-        <div class="post-net">💼 LinkedIn · Entreprises</div>
-        <div class="post-txt">📊 2,5 millions de Français en burn-out sévère chaque année. (INRS)<br><br>En tant que sophrologue certifiée et consultante RH, j'interviens en entreprise pour :<br>✅ Ateliers gestion du stress · ✅ QVT · ✅ Prévention burn-out<br><br>📩 contact@sophrologuelisleadam.fr · #QVT #bienetre #RH #sophrologue</div>
-        <div class="post-actions"><button class="post-copy" onclick="copyPost(this)">📋 Copier</button><span style="font-size:11px;color:var(--muted);margin-left:8px">Idéal : mardi 8h</span></div>
-      </div>
-      <div style="background:#fff8e8;padding:12px 16px;border-radius:8px;font-size:12px;color:#666;margin-top:8px">
-        ⚠️ <strong>Rappel CNIL :</strong> Ne publiez jamais de données personnelles identifiables sur les réseaux sociaux. Utilisez uniquement les prénoms pour les témoignages. Obtenez toujours le consentement écrit avant de citer un patient.
+      <div class="admin-card" style="margin-top:12px;background:#EAF5F5;border-color:var(--cyan)">
+        <div style="font-size:12px;font-weight:700;margin-bottom:8px;color:var(--cyan3)">📱 Curator.io — Flux réseaux sociaux</div>
+        <div style="font-size:11px;color:var(--muted);line-height:1.65">
+          1. Créer compte gratuit sur <strong>curator.io</strong><br>
+          2. Connecter : Instagram + Facebook + Google My Business + LinkedIn<br>
+          3. Copier le Feed ID fourni par Curator<br>
+          4. Dans le HTML du site : décommenter la ligne script dans &lt;head&gt; et remplacer YOUR_FEED_ID<br>
+          5. Supprimer le bloc ".curator-placeholder"
+        </div>
       </div>
     </div>
 
-    <!-- ONGLET STATS -->
-    <div class="admin-section" id="tab-stats">
-      <div class="admin-s-title">📊 Tableau de bord</div>
+    <!-- STATS -->
+    <div class="admin-sec" id="tab-stats">
+      <div class="admin-sec-title">📊 Tableau de bord</div>
       <div class="stat-grid">
-        <div class="stat-card"><div class="stat-n">3</div><div class="stat-l">RDV ce mois</div></div>
+        <div class="stat-card"><div class="stat-n">4</div><div class="stat-l">Expériences</div></div>
         <div class="stat-card"><div class="stat-n">7</div><div class="stat-l">Avis patients</div></div>
-        <div class="stat-card"><div class="stat-n">5★</div><div class="stat-l">Note moyenne</div></div>
-        <div class="stat-card"><div class="stat-n">2</div><div class="stat-l">Créneaux libres</div></div>
+        <div class="stat-card"><div class="stat-n">5★</div><div class="stat-l">Note Google</div></div>
+        <div class="stat-card"><div class="stat-n">2026</div><div class="stat-l">Facture N° 001</div></div>
       </div>
       <div class="admin-card">
-        <div class="admin-s-title" style="font-size:13px">Actions recommandées cette semaine</div>
-        <div style="font-size:13px;color:#333;line-height:1.7">
-          ✅ Publier le post Instagram lundi matin<br>
-          ✅ Mettre à jour les créneaux agenda<br>
-          ✅ Répondre aux 2 nouvelles demandes RDV<br>
-          📝 Rédiger 1 article de blog (objectif SEO)<br>
-          📸 Photographier le cabinet pour Instagram<br>
-          ⭐ Demander un avis Google à vos patients satisfaits
+        <div style="font-size:12px;font-weight:700;margin-bottom:10px">✅ Actions prioritaires</div>
+        <div style="font-size:11px;color:var(--text);line-height:1.9;font-weight:300">
+          🔴 <strong>Réserver sourcesens.fr</strong> sur OVH (~7€/an) — urgent<br>
+          🔴 <strong>Migrer hébergement</strong> vers o2switch/OVH (RGPD)<br>
+          🟠 Configurer Google Agenda → Rendez-vous (4 types)<br>
+          🟠 Activer Gmail → Réponses types (3 trames)<br>
+          🟠 Créer modèle Note d'honoraires dans Google Docs<br>
+          🟡 Créer compte Curator.io → connecter les 4 réseaux<br>
+          🟡 Récolter 10 avis Google en 30 jours<br>
+          🟢 Phase 2 : activer Google Apps Script (rappels auto)
         </div>
       </div>
-      <div class="admin-card" style="margin-top:14px">
-        <div class="admin-s-title" style="font-size:13px">Recommandations techniques prioritaires</div>
-        <div style="font-size:13px;color:#333;line-height:1.8">
-          🔴 <strong>Urgent :</strong> Migrer l'hébergement depuis 000webhostapp vers OVH ou o2switch (hébergement FR, ~3€/mois, conformité RGPD)<br>
-          🟡 <strong>Important :</strong> Créer / compléter Google Business Profile avec photos du cabinet<br>
-          🟡 <strong>Important :</strong> Activer un lien de prise de RDV en ligne (Doctolib ou Cal.com gratuit)<br>
-          🟢 <strong>Bonus :</strong> Créer un compte Instagram professionnel lié à la page Facebook
+      <div class="admin-card" style="margin-top:12px;background:#EAF5F5;border-color:var(--cyan)">
+        <div style="font-size:12px;font-weight:700;margin-bottom:8px;color:var(--cyan3)">🤖 Phase 2 — Google Apps Script (rappels automatiques)</div>
+        <div style="font-size:11px;color:var(--muted);line-height:1.65;margin-bottom:8px">
+          Quand Jennifer sera prête, ce script Google Apps Script (100% gratuit) enverra les 3 emails automatiquement depuis Gmail, en lisant les événements de Google Agenda.
         </div>
+        <div class="script-box">// Google Apps Script — À coller dans
+// script.google.com (compte jennifer.lecuziat@gmail.com)
+// Menu : Déclencheurs → "envoyerRappels" → Toutes les heures
+
+function envoyerRappels() {
+  var now = new Date();
+  var j3 = new Date(now.getTime() + 3*24*60*60*1000);
+  var j2 = new Date(now.getTime() + 2*24*60*60*1000);
+  
+  var cal = CalendarApp.getDefaultCalendar();
+  var events3 = cal.getEventsForDay(j3);
+  var events2 = cal.getEventsForDay(j2);
+  
+  events3.forEach(function(e) {
+    var guest = e.getGuestList()[0];
+    if(guest) {
+      GmailApp.sendEmail(guest.getEmail(),
+        "Votre séance Source & Sens dans 3 jours 🌿",
+        "Bonjour,\n\nRappel de votre séance : "
+        + e.getTitle() + " le "
+        + Utilities.formatDate(e.getStartTime(),'Europe/Paris','dd/MM à HH:mm')
+        + "\n\n📍 33 bis Av. Michel Poniatowski, L'Isle-Adam"
+        + "\n\nÀ bientôt,\nJennifer Le Cuziat · Source & Sens");
+    }
+  });
+  // Même logique pour j2 et post-RDV...
+}</div>
+        <button class="admin-btn-copy" style="margin-top:8px" onclick="this.textContent='✓ Copié !';navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>setTimeout(()=>this.textContent='📋 Copier le script',2000))">📋 Copier le script</button>
       </div>
     </div>
 
-  </div><!-- /admin-content -->
-</div><!-- /admin-panel -->
+  </div>
+</div>
 
 <script>
-// ===== DONNÉES AGENDA =====
-let agendaYear = 2026, agendaMonth = 3; // 0-indexed, 3=avril
-const slots = {
-  '2026-04-22': [{h:'09:00',type:'libre'},{h:'11:00',type:'libre'}],
-  '2026-04-23': [{h:'14:00',type:'occupe'}],
-  '2026-04-24': [{h:'10:00',type:'libre'}],
-  '2026-04-25': [{h:'09:00',type:'libre'},{h:'15:00',type:'libre'}],
-  '2026-04-28': [{h:'10:00',type:'libre'}],
-  '2026-04-29': [{h:'14:00',type:'occupe'},{h:'16:00',type:'occupe'}],
-  '2026-04-30': [{h:'09:00',type:'libre'}],
-};
-
-function buildAgenda(){
-  const grid = document.getElementById('agenda-grid');
-  // Remove day cells (keep headers)
-  const cells = grid.querySelectorAll('.ag-day');
-  cells.forEach(c=>c.remove());
-
-  const mNames=['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
-  document.getElementById('agenda-month-label').textContent = mNames[agendaMonth]+' '+agendaYear;
-
-  const first = new Date(agendaYear, agendaMonth, 1);
-  let dow = first.getDay(); // 0=dim
-  dow = dow===0?6:dow-1; // Monday=0
-
-  const daysInMonth = new Date(agendaYear, agendaMonth+1, 0).getDate();
-  const today = new Date();
-
-  // Blank cells
-  for(let i=0;i<dow;i++){
+/* AGENDA */
+let aY=2026,aM=5;
+const slots={'2026-06-02':[{h:'09:00',t:'l'},{h:'14:00',t:'l'}],'2026-06-03':[{h:'10:00',t:'o'}],'2026-06-04':[{h:'09:00',t:'l'},{h:'11:00',t:'l'}],'2026-06-09':[{h:'14:00',t:'l'},{h:'16:00',t:'l'}],'2026-06-10':[{h:'09:00',t:'o'}],'2026-06-11':[{h:'10:00',t:'l'}],'2026-06-16':[{h:'09:00',t:'l'}],'2026-06-17':[{h:'14:00',t:'o'}],'2026-06-18':[{h:'10:00',t:'l'},{h:'15:00',t:'l'}]};
+const mN=['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+function buildAg(){
+  const g=document.getElementById('ag-grid');
+  g.querySelectorAll('.ag-day').forEach(c=>c.remove());
+  document.getElementById('ag-lbl').textContent=mN[aM]+' '+aY;
+  const first=new Date(aY,aM,1);
+  let dow=first.getDay();dow=dow===0?6:dow-1;
+  const dim=new Date(aY,aM+1,0).getDate();
+  const today=new Date();
+  for(let i=0;i<dow;i++){const d=document.createElement('div');d.className='ag-day autre';g.appendChild(d);}
+  for(let day=1;day<=dim;day++){
     const d=document.createElement('div');
-    d.className='ag-day autre-mois';
-    grid.appendChild(d);
-  }
-  for(let day=1;day<=daysInMonth;day++){
-    const d=document.createElement('div');
-    const dateStr = `${agendaYear}-${String(agendaMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
-    const daySlots = slots[dateStr]||[];
-    const hasLibre = daySlots.some(s=>s.type==='libre');
-    const hasOccupe = daySlots.some(s=>s.type==='occupe');
-    const isToday = today.getFullYear()===agendaYear && today.getMonth()===agendaMonth && today.getDate()===day;
-
-    d.className='ag-day'+(isToday?' today':'')+(hasLibre?' libre':hasOccupe?' occupe':'');
-    let html=`<div class="ag-day-num">${day}</div>`;
-    daySlots.forEach(s=>{
-      html+=`<div class="ag-slot slot-${s.type}">${s.h}</div>`;
-    });
-    d.innerHTML=html;
-    if(hasLibre){
-      d.onclick=()=>{
-        const presta=document.getElementById('f-presta');
-        if(presta)presta.value='Séance individuelle adulte (60€)';
-        const msg=document.getElementById('f-msg');
-        if(msg)msg.value=`Je souhaite réserver le créneau du ${day}/${agendaMonth+1}/${agendaYear}.`;
-        document.getElementById('rdv').scrollIntoView({behavior:'smooth'});
-      };
-    }
-    grid.appendChild(d);
+    const ds=`${aY}-${String(aM+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const sl=slots[ds]||[];
+    const lib=sl.some(s=>s.t==='l'),occ=sl.some(s=>s.t==='o');
+    const isTod=today.getFullYear()===aY&&today.getMonth()===aM&&today.getDate()===day;
+    d.className='ag-day'+(isTod?' today':'')+(lib?' libre':occ?' occupe':'');
+    let h=`<div class="ag-num">${day}</div>`;
+    sl.forEach(s=>{h+=`<div class="ag-slot sl-${s.t}">${s.h}</div>`;});
+    d.innerHTML=h;
+    if(lib){d.onclick=()=>{
+      const p=document.getElementById('f-presta');if(p)p.value="🌊 L'Immersion — 60 min (65€)";
+      const m=document.getElementById('f-msg');if(m)m.value=`Je souhaite réserver le créneau du ${day}/${aM+1}/${aY}.`;
+      document.getElementById('rdv').scrollIntoView({behavior:'smooth'});
+    };}
+    g.appendChild(d);
   }
 }
+function agNav(d){aM+=d;if(aM>11){aM=0;aY++;}if(aM<0){aM=11;aY--;}buildAg();}
+buildAg();
 
-function agendaNav(dir){
-  agendaMonth+=dir;
-  if(agendaMonth>11){agendaMonth=0;agendaYear++;}
-  if(agendaMonth<0){agendaMonth=11;agendaYear--;}
-  buildAgenda();
-}
-buildAgenda();
-
-// ===== ADMIN AUTH =====
-const ADMIN_USER='jennifer', ADMIN_PASS='sophrologie2026!';
+/* ADMIN */
 function openLogin(){document.getElementById('login-modal').classList.add('show');}
 function closeLogin(){document.getElementById('login-modal').classList.remove('show');}
 function doLogin(){
-  const u=document.getElementById('l-user').value;
-  const p=document.getElementById('l-pass').value;
-  if(u===ADMIN_USER&&p===ADMIN_PASS){
-    closeLogin();
-    document.getElementById('admin-overlay').style.display='block';
-    document.getElementById('admin-panel').classList.add('open');
-  } else {
-    document.getElementById('login-err').style.display='block';
-    setTimeout(()=>document.getElementById('login-err').style.display='none',3000);
-  }
+  const u=document.getElementById('l-user').value,p=document.getElementById('l-pass').value;
+  if(u==='jennifer'&&p==='sophrologie2026!'){closeLogin();document.getElementById('admin-overlay').style.display='block';document.getElementById('admin-panel').classList.add('open');}
+  else{const e=document.getElementById('login-err');e.style.display='block';setTimeout(()=>e.style.display='none',3000);}
 }
 document.getElementById('l-pass').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
-function closeAdmin(){
-  document.getElementById('admin-overlay').style.display='none';
-  document.getElementById('admin-panel').classList.remove('open');
-}
-function adminTab(name){
-  document.querySelectorAll('.admin-tab').forEach((t,i)=>{
-    const tabs=['rdvs','agenda','contenu','posts','stats'];
-    t.classList.toggle('active',tabs[i]===name);
-  });
-  document.querySelectorAll('.admin-section').forEach(s=>s.classList.remove('active'));
-  const el=document.getElementById('tab-'+name);
-  if(el)el.classList.add('active');
+function closeAdmin(){document.getElementById('admin-overlay').style.display='none';document.getElementById('admin-panel').classList.remove('open');}
+function aTab(n){
+  const tabs=['rdvs','agenda','rappels','facture','contenu','stats'];
+  document.querySelectorAll('.admin-tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===n));
+  document.querySelectorAll('.admin-sec').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById('tab-'+n);if(el)el.classList.add('active');
 }
 
-// ===== ADMIN ACTIONS =====
+/* ADMIN ACTIONS */
 function addSlot(){
-  const date=document.getElementById('slot-date').value;
-  const heure=document.getElementById('slot-heure').value;
-  const type=document.getElementById('slot-type').value;
-  if(!date){alert('Veuillez choisir une date.');return;}
-  if(!slots[date])slots[date]=[];
-  slots[date].push({h:heure,type});
-  buildAgenda();
-
-  const list=document.getElementById('slots-list');
-  const el=document.createElement('div');
-  const colors={libre:'#E1F5EE',occupe:'#FAECE7',indispo:'#f0f0f0'};
-  const tcol={libre:'var(--teal)',occupe:'#993C1D',indispo:'#888'};
-  const labels={libre:'Libre',occupe:'Occupé',indispo:'Indisponible'};
-  el.className='admin-card';
-  el.style.cssText='display:flex;justify-content:space-between;align-items:center;padding:12px 16px';
-  el.innerHTML=`<div><div style="font-size:13px;font-weight:700">${date} — ${heure}</div><div style="font-size:12px;color:var(--muted)">1 heure · ${labels[type]}</div></div><div style="display:flex;gap:8px"><span style="background:${colors[type]};color:${tcol[type]};font-size:11px;padding:3px 10px;border-radius:6px;font-weight:700">${labels[type]}</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>`;
-  list.prepend(el);
+  const date=document.getElementById('slot-date').value,h=document.getElementById('slot-h').value,t=document.getElementById('slot-type').value;
+  if(!date){alert('Choisissez une date.');return;}
+  if(!slots[date])slots[date]=[];slots[date].push({h,t:t==='libre'?'l':'o'});buildAg();
+  const el=document.createElement('div');el.className='admin-card';el.style.cssText='display:flex;justify-content:space-between;align-items:center;padding:11px 14px';
+  const lb=t==='libre'?'Libre':'Occupé',col=t==='libre'?'#EAF5F5':'#FEF0EE',tc=t==='libre'?'var(--cyan3)':'#C0392B';
+  el.innerHTML=`<div><div style="font-size:12px;font-weight:700">${date} — ${h}</div><div style="font-size:11px;color:var(--muted)">${lb}</div></div><div style="display:flex;gap:7px"><span style="background:${col};color:${tc};font-size:10px;padding:3px 9px;border-radius:6px;font-weight:700">${lb}</span><button class="admin-btn-del" onclick="this.closest('.admin-card').remove()">✕</button></div>`;
+  document.getElementById('slots-list').prepend(el);
 }
-function markConf(btn){
-  const badge=btn.closest('.rdv-item').querySelector('.rdv-badge');
-  badge.textContent='Confirmé';badge.className='rdv-badge badge-conf';
-  btn.remove();
-}
+function confirmRDV(btn){const b=btn.closest('.rdv-item').querySelector('.rdv-badge');b.textContent='Confirmé';b.className='rdv-badge b-conf';btn.remove();}
 function addTesti(){
-  const name=document.getElementById('new-testi-name').value.trim();
-  const txt=document.getElementById('new-testi-txt').value.trim();
-  if(!name||!txt){alert('Remplissez le prénom et le texte.');return;}
-  const grid=document.querySelector('.testi-grid');
-  const card=document.createElement('div');
-  card.className='testi-card';
-  card.innerHTML=`<div class="testi-star">★★★★★</div><div class="testi-q">"${txt}"</div><div class="testi-name">— ${name}</div>`;
-  grid.prepend(card);
-  document.getElementById('new-testi-name').value='';
-  document.getElementById('new-testi-txt').value='';
-  alert('Témoignage publié sur le site !');
+  const n=document.getElementById('new-t-name').value.trim(),t=document.getElementById('new-t-txt').value.trim();
+  if(!n||!t){alert('Remplissez le prénom et le texte.');return;}
+  const g=document.querySelector('.testi-grid'),c=document.createElement('div');
+  c.className='testi-card';c.innerHTML=`<div class="testi-stars">★★★★★</div><div class="testi-q">"${t}"</div><div class="testi-name">— ${n}</div>`;
+  g.prepend(c);document.getElementById('new-t-name').value='';document.getElementById('new-t-txt').value='';alert('Témoignage publié !');
 }
-function copyPost(btn){
-  const txt=btn.closest('.post-card').querySelector('.post-txt').innerText;
-  navigator.clipboard.writeText(txt).then(()=>{
-    btn.textContent='✓ Copié !';
-    setTimeout(()=>btn.textContent='📋 Copier',2000);
-  });
+function copyTrame(btn){
+  const txt=btn.previousElementSibling.textContent;
+  navigator.clipboard.writeText(txt).then(()=>{btn.textContent='✓ Copié !';setTimeout(()=>btn.textContent='📋 Copier',2000);});
 }
 
-// ===== FORMULAIRE RDV =====
+/* FORMULAIRE RDV */
 function submitRDV(){
-  const prenom=document.getElementById('f-prenom').value.trim();
-  const tel=document.getElementById('f-tel').value.trim();
-  const rgpd=document.getElementById('f-rgpd').checked;
-  if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre numéro de téléphone.');return;}
-  if(!rgpd){alert('Vous devez accepter la politique de confidentialité pour envoyer votre demande.');return;}
-
-  // Préparation données (envoi réel à connecter à un backend ou Formspree)
-  const data={
-    prenom, nom:document.getElementById('f-nom').value,
-    tel, email:document.getElementById('f-email').value,
-    presta:document.getElementById('f-presta').value,
-    creneau:document.getElementById('f-creneau').value,
-    message:document.getElementById('f-msg').value,
-    date_envoi:new Date().toLocaleString('fr-FR')
-  };
-  console.log('[RDV demande]', data); // À connecter à Formspree / EmailJS / backend
-
-  // Ajout dans l'interface admin
-  const list=document.getElementById('rdv-list');
-  const el=document.createElement('div');
-  el.className='rdv-item';
-  el.innerHTML=`<div class="rdv-info"><div class="rdv-name">${data.prenom} ${data.nom||''}</div><div class="rdv-detail">📞 ${data.tel} · ${data.presta||'Non précisé'} · ${data.creneau}</div><div class="rdv-detail" style="color:#999;font-size:11px">Reçu le ${data.date_envoi}</div>${data.message?`<div class="rdv-detail" style="margin-top:6px;font-size:12px;color:#333">"${data.message}"</div>`:''}</div><div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end"><span class="rdv-badge badge-new">Nouveau</span><button class="admin-btn" style="font-size:11px;padding:6px 12px" onclick="markConf(this)">✓ Confirmer</button></div>`;
-  list.prepend(el);
-
-  // Feedback utilisateur
-  document.querySelector('#rdv .rdv-box').innerHTML=`<div style="text-align:center;padding:40px 20px"><div style="font-size:48px;margin-bottom:16px">🌿</div><div style="font-size:22px;font-weight:700;color:var(--teal);margin-bottom:10px">Demande envoyée !</div><p style="font-size:15px;color:var(--muted);line-height:1.6">Merci ${data.prenom}, je vous recontacterai sous 24h au <strong>${data.tel}</strong> pour confirmer votre rendez-vous.</p><p style="font-size:13px;color:#999;margin-top:16px">Conformément au RGPD, vos données ne seront utilisées que pour traiter cette demande.</p></div>`;
+  const prenom=document.getElementById('f-prenom').value.trim(),tel=document.getElementById('f-tel').value.trim(),rgpd=document.getElementById('f-rgpd').checked;
+  if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre téléphone.');return;}
+  if(!rgpd){alert('Vous devez accepter la politique de confidentialité.');return;}
+  const data={prenom,nom:document.getElementById('f-nom').value,tel,email:document.getElementById('f-email').value,presta:document.getElementById('f-presta').value,creneau:document.getElementById('f-creneau').value,message:document.getElementById('f-msg').value,date:new Date().toLocaleString('fr-FR')};
+  const el=document.createElement('div');el.className='rdv-item';
+  el.innerHTML=`<div class="rdv-info"><div class="rdv-name">${data.prenom} ${data.nom||''}</div><div class="rdv-detail">📞 ${data.tel} · ${data.presta||'Non précisé'}</div><div class="rdv-detail" style="font-size:10px;color:#bbb">Reçu le ${data.date}</div>${data.message?`<div class="rdv-detail" style="margin-top:4px;font-size:11px">"${data.message}"</div>`:''}</div><div style="display:flex;flex-direction:column;gap:5px;align-items:flex-end"><span class="rdv-badge b-new">Nouveau</span><button class="admin-btn" style="font-size:10px;padding:5px 10px" onclick="confirmRDV(this)">✓ Confirmer</button></div>`;
+  document.getElementById('rdv-list').prepend(el);
+  // Redirection vers Gmail pour envoi manuel
+  const gmailUrl=`https://mail.google.com/mail/?view=cm&fs=1&to=${data.email}&su=Demande RDV reçue — Source %26 Sens&body=Bonjour ${data.prenom},%0A%0AJ'ai bien reçu votre demande pour ${data.presta}.%0AJe vous recontacte très vite.%0A%0AJennifer`;
+  document.querySelector('#rdv .rdv-wrap').innerHTML=`<div style="text-align:center;padding:52px 20px"><div style="font-size:52px;margin-bottom:16px">🌿</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--cyan3);margin-bottom:12px;font-weight:400">Demande envoyée !</h3><p style="font-size:14px;color:var(--muted);line-height:1.7;font-weight:300">Merci ${data.prenom}, Jennifer vous recontacte sous 24h au <strong style="color:var(--text)">${data.tel}</strong>.</p><p style="font-size:12px;color:#bbb;margin-top:12px">Vos données sont protégées conformément au RGPD.</p></div>`;
 }
 
-// ===== RGPD BANNER =====
-function closeBanner(){document.getElementById('rgpd-banner').style.display='none';}
-function acceptCookies(){
-  localStorage.setItem('cookies-accepted','true');
-  closeBanner();
-}
-if(localStorage.getItem('cookies-accepted'))closeBanner();
+/* RGPD */
+function closeRGPD(){document.getElementById('rgpd').style.display='none';}
+function acceptRGPD(){localStorage.setItem('ss-rgpd-v41','1');closeRGPD();}
+if(localStorage.getItem('ss-rgpd-v41'))closeRGPD();
 
-// ===== MOBILE MENU =====
-function toggleMobileMenu(){
-  const menu=document.querySelector('.nav-menu');
-  if(menu.style.display==='flex'){menu.style.display='none';}
-  else{menu.style.cssText='display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#fff;padding:20px;border-bottom:1px solid var(--border);z-index:199;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,.1)';}
+/* HERO BG */
+const bg=document.getElementById('hero-bg');
+const img=new Image();
+img.onload=()=>{bg.style.backgroundImage=`url('${img.src}')`};
+img.onerror=()=>{bg.style.background='linear-gradient(135deg,#2A3535 0%,#3D8A8A 60%,#A9D7D7 100%)'};
+img.src='https://sophrologuelisleadam.000webhostapp.com/wp-content/uploads/2024/02/cropped-soap-bubble-2403673_1920.jpg';
+
+/* MOBILE MENU */
+function toggleMenu(){
+  const m=document.querySelector('.nav-links');
+  if(m.style.display==='flex'){m.style.display='none';}
+  else{m.style.cssText='display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:rgba(248,246,242,.98);padding:16px 20px;border-bottom:1px solid var(--border);z-index:199;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.08);backdrop-filter:blur(12px)';}
 }
+</script>
+
+
+<script>
+document.querySelectorAll('.engagement-vignette,.jennifer-hover-wrap').forEach(function(el){
+  el.addEventListener('click',function(){
+    var ov = el.querySelector('.engagement-overlay,.jennifer-overlay');
+    if(ov){ var open = ov.style.opacity==='1'; ov.style.opacity = open?'':'1'; ov.style.pointerEvents = open?'':'auto'; }
+  });
+});
 </script>
 </body>
 </html>
