@@ -570,23 +570,26 @@ img{max-width:100%;height:auto}
 .jennifer-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(42,90,90,.95),rgba(30,60,60,.97));opacity:0;transition:opacity .4s ease;display:flex;align-items:flex-start;overflow-y:auto}
 .jennifer-hover-wrap:hover .jennifer-overlay{opacity:1}
 .jennifer-overlay-inner{padding:24px 26px}
-.jennifer-overlay-inner .about-body p{margin-bottom:9px;font-size:11.5px;line-height:1.55;font-weight:300}
-.jennifer-overlay-inner .st{font-size:22px!important;margin-bottom:8px}
-.jennifer-overlay-inner .pquote p{font-size:13px}
+.jennifer-overlay-inner .about-body p{margin-bottom:11px;font-size:13px;line-height:1.6;font-weight:300}
+.jennifer-overlay-inner .st{font-size:24px!important;margin-bottom:8px}
+.jennifer-overlay-inner .pquote p{font-size:14px;text-align:center}
+.jennifer-overlay-inner u{text-decoration:underline;font-weight:400}
 .jennifer-overlay::-webkit-scrollbar{width:6px}
 .jennifer-overlay::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
 @media(max-width:640px){.jennifer-overlay-inner{padding:20px}.jennifer-hover-wrap{max-width:340px}}
 
-/* Vignette Engagement — hero */
-.engagement-vignette{position:relative;margin-top:16px;border-radius:14px;cursor:pointer}
-.engagement-label{padding:14px 20px;color:#fff;font-weight:600;font-size:14px;text-align:center;letter-spacing:.3px;background:linear-gradient(135deg,var(--cyan3),var(--cyan2));border-radius:14px;transition:.3s}
-.engagement-vignette:hover .engagement-label{opacity:0}
-.engagement-overlay{position:absolute;top:0;left:0;right:0;background:linear-gradient(160deg,rgba(42,90,90,.98),rgba(30,60,60,.99));opacity:0;pointer-events:none;transition:opacity .35s ease;overflow-y:auto;height:420px;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.3);z-index:20}
-.engagement-vignette:hover .engagement-overlay{opacity:1;pointer-events:auto}
-.engagement-overlay-inner{padding:24px 26px;color:rgba(255,255,255,.92)}
-.engagement-overlay::-webkit-scrollbar{width:6px}
-.engagement-overlay::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
-@media(max-width:640px){.engagement-overlay{height:340px}}
+/* Panneau Engagement — hero (liste fixe) */
+.engagement-panel{width:340px;flex-shrink:0;background:linear-gradient(160deg,rgba(42,90,90,.97),rgba(30,60,60,.98));border-radius:18px;padding:24px 22px;color:#fff;box-shadow:0 12px 40px rgba(0,0,0,.2);align-self:stretch;display:flex;flex-direction:column}
+.engagement-panel-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--cyan);margin-bottom:16px;text-align:center;line-height:1.2}
+.engagement-panel-list{display:flex;flex-direction:column;gap:11px;overflow-y:auto}
+.eng-item{display:flex;gap:11px;align-items:flex-start}
+.eng-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--cyan);color:var(--footer,#2A3535);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.eng-txt{font-size:11.5px;line-height:1.4}
+.eng-txt strong{display:block;color:#fff;margin-bottom:1px;font-size:12px}
+.eng-txt span{color:rgba(255,255,255,.78);font-weight:300}
+.engagement-panel-list::-webkit-scrollbar{width:5px}
+.engagement-panel-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
+@media(max-width:900px){.engagement-panel{width:100%;max-width:440px;margin:16px auto 0}}
 </style>
 </head>
 <body>
@@ -660,11 +663,11 @@ img{max-width:100%;height:auto}
     <img class="jennifer-photo" src="https://nsschloss.github.io/jennifer-lecuziat-sophrologue/assets/photo-cadeau-main.webp" alt="Source &amp; Sens — Jennifer Le Cuziat">
     <div class="jennifer-overlay">
       <div class="jennifer-overlay-inner">
-        <div class="ey" style="color:var(--cyan)">Jennifer Le Cuziat</div>
-        <h2 class="st" style="color:#fff">Bienvenue chez Source &amp; Sens</h2>
+        <div class="ey" style="color:var(--cyan);text-align:center">Jennifer Le Cuziat</div>
+        <h2 class="st" style="color:#fff;text-align:center;margin-bottom:14px">Bienvenue chez Source &amp; Sens</h2>
         <div class="pquote" style="color:rgba(255,255,255,.85)"><p>"Là où le corps, le cœur et l'esprit s'accordent enfin."</p></div>
         <div class="about-body" style="color:rgba(255,255,255,.92)">
-          <p>Je suis Jennifer Le Cuziat, <strong>sophrologue</strong> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
+          <p>Je suis Jennifer Le Cuziat, <u>sophrologue</u> installée à L'Isle-Adam. J'accompagne enfants, adolescents et adultes vers un mieux-être durable, dans un espace bienveillant et sécurisant.</p>
           <p>Certifiée Quali Sophro pour Sophrologie &amp; Psychopraticienne 2019 via EFDS, puis PNL et EFT en 2021 pour apporter mon aide et soutien pour certaines pathologies tel que bipolarité, schizophrénie, TDHA et/ou trauma attentats et somatisations.</p>
           <p><em>En cours : Livre Méthode des 4T pour exercer son estime sur +de 540 l'ont testé, et certification de Sexologue – aide aux victimes – inceste – trauma pour 2027.</em></p>
           <p>Profondément humaniste, chaque personne accueillie jusqu'ici m'a donnée la motivation de me former en continue…</p>
@@ -673,21 +676,41 @@ img{max-width:100%;height:auto}
     </div>
   </div>
     </div>
-      <div class="engagement-vignette">
-        <div class="engagement-label">🤝 Notre engagement</div>
-        <div class="engagement-overlay">
-          <div class="engagement-overlay-inner">
-            <h3 style="font-family:'Cormorant Garamond',serif;color:#fff;font-size:22px;margin-bottom:14px">Notre engagement déontologique</h3>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">01 · Respect de la personne</strong><br><span style="font-size:12.5px;opacity:.9">Chaque personne est accueillie avec bienveillance, sans jugement, dans le respect de son histoire et de ses besoins.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">02 · Consentement &amp; cadre clair</strong><br><span style="font-size:12.5px;opacity:.9">Toute séance est réalisée avec le consentement libre et éclairé du client. Il peut interrompre à tout moment.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">03 · Pratique non médicale</strong><br><span style="font-size:12.5px;opacity:.9">Les accompagnements proposés relèvent du bien-être et ne remplacent aucun suivi médical.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">04 · Confidentialité</strong><br><span style="font-size:12.5px;opacity:.9">Les échanges sont strictement confidentiels. Secret professionnel total.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">05 · Respect du corps &amp; de l'intimité</strong><br><span style="font-size:12.5px;opacity:.9">Les pratiques sont réalisées dans le respect total de la personne. Aucune pratique ambiguë n'est tolérée.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">06 · Professionnalisme</strong><br><span style="font-size:12.5px;opacity:.9">Je m'engage à exercer dans le respect de mes compétences et à orienter si nécessaire.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">07 · Hygiène &amp; sécurité</strong><br><span style="font-size:12.5px;opacity:.9">Les conditions d'accueil respectent les règles d'hygiène et de sécurité.</span></div>
-            <div style="margin-bottom:13px"><strong style="color:var(--cyan)">08 · Engagement du client</strong><br><span style="font-size:12.5px;opacity:.9">Le client est acteur de son mieux-être et s'inscrit dans une démarche volontaire.</span></div>
-            <p style="font-size:12px;font-style:italic;color:var(--cyan);margin-top:8px">Toute prise de rendez-vous vaut acceptation de ce cadre.</p>
-          </div>
+      <div class="engagement-panel">
+        <div class="engagement-panel-title">🤝 Notre engagement déontologique</div>
+        <div class="engagement-panel-list">
+        <div class="eng-item">
+          <div class="eng-num">01</div>
+          <div class="eng-txt"><strong>Respect de la personne</strong><span>Chaque personne est accueillie avec bienveillance, sans jugement, dans le respect de son histoire et de ses besoins.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">02</div>
+          <div class="eng-txt"><strong>Consentement &amp; cadre clair</strong><span>Toute séance est réalisée avec le consentement libre et éclairé du client. Il peut interrompre à tout moment.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">03</div>
+          <div class="eng-txt"><strong>Pratique non médicale</strong><span>Les accompagnements proposés relèvent du bien-être et ne remplacent aucun suivi médical.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">04</div>
+          <div class="eng-txt"><strong>Confidentialité</strong><span>Les échanges sont strictement confidentiels. Secret professionnel total.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">05</div>
+          <div class="eng-txt"><strong>Respect du corps &amp; de l'intimité</strong><span>Les pratiques sont réalisées dans le respect total de la personne. Aucune pratique ambiguë n'est tolérée.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">06</div>
+          <div class="eng-txt"><strong>Professionnalisme</strong><span>Je m'engage à exercer dans le respect de mes compétences et à orienter si nécessaire.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">07</div>
+          <div class="eng-txt"><strong>Hygiène &amp; sécurité</strong><span>Les conditions d'accueil respectent les règles d'hygiène et de sécurité.</span></div>
+        </div>
+        <div class="eng-item">
+          <div class="eng-num">08</div>
+          <div class="eng-txt"><strong>Engagement du client</strong><span>Le client est acteur de son mieux-être et s'inscrit dans une démarche volontaire.</span></div>
+        </div>
         </div>
       </div>
   </div>
@@ -832,6 +855,65 @@ img{max-width:100%;height:auto}
   <div class="pay-note">💚 <strong>32 mutuelles remboursent</strong> tout ou partie de vos séances. Une <strong>note d'honoraires</strong> vous est remise après chaque séance, prête à envoyer à votre complémentaire santé. <a href="https://www.resalib.fr/remboursement/mutuelle/specialite/34-sophrologue" target="_blank" rel="noopener" style="color:var(--cyan3);font-weight:600">Vérifier si ma mutuelle rembourse →</a></div>
 </section>
 
+<!-- FORMULAIRE RDV -->
+<section class="section sa" id="rdv">
+  <div class="ey">Prise de contact</div>
+  <h2 class="st">Commençons ensemble</h2>
+  <p class="ss">Je vous réponds sous 24h via Gmail. Premier échange <strong>offert</strong> pour définir votre besoin, sans engagement.</p>
+  <div class="rdv-wrap">
+    <div class="form-row">
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Prénom *</label><input class="form-inp" id="f-prenom" type="text" placeholder="Votre prénom" autocomplete="given-name"></div>
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Nom *</label><input class="form-inp" id="f-nom" type="text" placeholder="Votre nom" autocomplete="family-name"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Téléphone *</label><input class="form-inp" id="f-tel" type="tel" placeholder="06 XX XX XX XX" autocomplete="tel"></div>
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Email</label><input class="form-inp" id="f-email" type="email" placeholder="votre@email.fr" autocomplete="email"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field" style="margin-bottom:0">
+        <label class="form-lbl">Expérience souhaitée</label>
+        <select class="form-sel" id="f-presta">
+          <option value="">— Choisissez —</option>
+          <option>🌿 L'Escale — 30 min (45€)</option>
+          <option>🌊 L'Immersion — 60 min (65€)</option>
+          <option>✨ La Source — 90 min (105€)</option>
+          <option>📱 L'Escale Visio WhatsApp — 30 min (40€)</option>
+          <option>🎁 Chèque cadeau</option>
+          <option>🏢 Atelier entreprise (sur devis)</option>
+          <option>Je ne sais pas encore</option>
+        </select>
+      </div>
+      <div class="form-field" style="margin-bottom:0">
+        <label class="form-lbl">Créneau préféré</label>
+        <select class="form-sel" id="f-creneau">
+          <option>Matin (9h–12h)</option>
+          <option>Après-midi (13h–17h)</option>
+          <option>En soirée (17h–20h)</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-field">
+      <label class="form-lbl">Votre message (optionnel)</label>
+      <textarea class="form-ta" id="f-msg" rows="4" placeholder="Décrivez brièvement ce que vous traversez, pour que je puisse mieux vous accueillir lors de notre premier échange…"></textarea>
+    </div>
+    <div class="form-rgpd">
+      <input type="checkbox" id="f-rgpd" required>
+      <label for="f-rgpd">J'accepte que mes données (nom, téléphone, email) soient utilisées par Jennifer Le Cuziat uniquement pour traiter ma demande, conformément au <a href="#mentions">RGPD et à la politique de confidentialité</a>. Données non transmises à des tiers. <strong>*</strong></label>
+    </div>
+    <button class="form-submit" onclick="submitRDV()">Envoyer ma demande →</button>
+    <div class="form-note">🔒 Réponse sous 24h via Gmail · jennifer.lecuziat@gmail.com · SIRET 534 405 386 00028</div>
+    <div class="alt-contact">
+      Vous préférez un contact direct ? →
+      <a href="mailto:jennifer.lecuziat@gmail.com?subject=Prise de RDV Source %26 Sens">✉️ jennifer.lecuziat@gmail.com</a>
+      &nbsp;|&nbsp;
+      <a href="tel:0699740527">📞 06 99 74 05 27</a>
+      &nbsp;|&nbsp;
+      <a href="https://wa.me/33699740527" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section" style="padding-top:0" id="contact">
   <div class="cta-bloc">
@@ -895,86 +977,11 @@ img{max-width:100%;height:auto}
 
 
 
-<!-- DÉONTOLOGIE -->
-<section class="section sa" id="deontologie">
-  <div class="ey">Engagement</div>
-  <h2 class="st">Code de déontologie</h2>
-  <p class="ss">Cabinet sensoriel — Accompagnement corps &amp; esprit. Chaque séance est réalisée dans un consentement libre et éclairé.</p>
-  <div class="deon-grid">
-    <div class="deon-card"><div class="deon-n">01</div><div class="deon-title">Respect de la personne</div><div class="deon-desc">Chaque personne est accueillie avec bienveillance, sans jugement, dans le respect de son histoire et de ses besoins.</div></div>
-    <div class="deon-card"><div class="deon-n">02</div><div class="deon-title">Consentement &amp; cadre clair</div><div class="deon-desc">Toute séance est réalisée avec le consentement libre et éclairé du client. Il peut interrompre à tout moment.</div></div>
-    <div class="deon-card"><div class="deon-n">03</div><div class="deon-title">Pratique non médicale</div><div class="deon-desc">Les accompagnements proposés relèvent du bien-être et ne remplacent aucun suivi médical.</div></div>
-    <div class="deon-card"><div class="deon-n">04</div><div class="deon-title">Confidentialité</div><div class="deon-desc">Les échanges sont strictement confidentiels. Secret professionnel total.</div></div>
-    <div class="deon-card"><div class="deon-n">05</div><div class="deon-title">Respect du corps &amp; de l'intimité</div><div class="deon-desc">Les pratiques sont réalisées dans le respect total de la personne. Aucune pratique ambiguë n'est tolérée.</div></div>
-    <div class="deon-card"><div class="deon-n">06</div><div class="deon-title">Professionnalisme</div><div class="deon-desc">Je m'engage à exercer dans le respect de mes compétences et à orienter si nécessaire.</div></div>
-    <div class="deon-card"><div class="deon-n">07</div><div class="deon-title">Hygiène &amp; sécurité</div><div class="deon-desc">Les conditions d'accueil respectent les règles d'hygiène et de sécurité.</div></div>
-    <div class="deon-card"><div class="deon-n">08</div><div class="deon-title">Engagement du client</div><div class="deon-desc">Le client est acteur de son mieux-être et s'inscrit dans une démarche volontaire.</div></div>
-  </div>
-  <div style="background:var(--cyan-pale,#EAF5F5);border-radius:10px;padding:14px 20px;margin-top:18px;text-align:center;font-size:13px;color:var(--cyan3);font-style:italic;font-family:'Cormorant Garamond',serif;font-size:16px">
-    Toute prise de rendez-vous vaut acceptation de ce cadre.
-  </div>
-</section>
+
 
 <!-- BLOG -->
 
-<!-- FORMULAIRE RDV -->
-<section class="section sa" id="rdv">
-  <div class="ey">Prise de contact</div>
-  <h2 class="st">Commençons ensemble</h2>
-  <p class="ss">Je vous réponds sous 24h via Gmail. Premier échange <strong>offert</strong> pour définir votre besoin, sans engagement.</p>
-  <div class="rdv-wrap">
-    <div class="form-row">
-      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Prénom *</label><input class="form-inp" id="f-prenom" type="text" placeholder="Votre prénom" autocomplete="given-name"></div>
-      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Nom *</label><input class="form-inp" id="f-nom" type="text" placeholder="Votre nom" autocomplete="family-name"></div>
-    </div>
-    <div class="form-row">
-      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Téléphone *</label><input class="form-inp" id="f-tel" type="tel" placeholder="06 XX XX XX XX" autocomplete="tel"></div>
-      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Email</label><input class="form-inp" id="f-email" type="email" placeholder="votre@email.fr" autocomplete="email"></div>
-    </div>
-    <div class="form-row">
-      <div class="form-field" style="margin-bottom:0">
-        <label class="form-lbl">Expérience souhaitée</label>
-        <select class="form-sel" id="f-presta">
-          <option value="">— Choisissez —</option>
-          <option>🌿 L'Escale — 30 min (45€)</option>
-          <option>🌊 L'Immersion — 60 min (65€)</option>
-          <option>✨ La Source — 90 min (105€)</option>
-          <option>📱 L'Escale Visio WhatsApp — 30 min (40€)</option>
-          <option>🎁 Chèque cadeau</option>
-          <option>🏢 Atelier entreprise (sur devis)</option>
-          <option>Je ne sais pas encore</option>
-        </select>
-      </div>
-      <div class="form-field" style="margin-bottom:0">
-        <label class="form-lbl">Créneau préféré</label>
-        <select class="form-sel" id="f-creneau">
-          <option>Matin (9h–12h)</option>
-          <option>Après-midi (13h–17h)</option>
-          <option>En soirée (17h–20h)</option>
-          <option>Flexible</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-field">
-      <label class="form-lbl">Votre message (optionnel)</label>
-      <textarea class="form-ta" id="f-msg" rows="4" placeholder="Décrivez brièvement ce que vous traversez, pour que je puisse mieux vous accueillir lors de notre premier échange…"></textarea>
-    </div>
-    <div class="form-rgpd">
-      <input type="checkbox" id="f-rgpd" required>
-      <label for="f-rgpd">J'accepte que mes données (nom, téléphone, email) soient utilisées par Jennifer Le Cuziat uniquement pour traiter ma demande, conformément au <a href="#mentions">RGPD et à la politique de confidentialité</a>. Données non transmises à des tiers. <strong>*</strong></label>
-    </div>
-    <button class="form-submit" onclick="submitRDV()">Envoyer ma demande →</button>
-    <div class="form-note">🔒 Réponse sous 24h via Gmail · jennifer.lecuziat@gmail.com · SIRET 534 405 386 00028</div>
-    <div class="alt-contact">
-      Vous préférez un contact direct ? →
-      <a href="mailto:jennifer.lecuziat@gmail.com?subject=Prise de RDV Source %26 Sens">✉️ jennifer.lecuziat@gmail.com</a>
-      &nbsp;|&nbsp;
-      <a href="tel:0699740527">📞 06 99 74 05 27</a>
-      &nbsp;|&nbsp;
-      <a href="https://wa.me/33699740527" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
-  </div>
-</section>
+
 
 
 
