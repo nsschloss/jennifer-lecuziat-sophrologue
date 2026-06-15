@@ -306,10 +306,11 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-
 .alt-contact{background:var(--beige);border-radius:10px;padding:14px 18px;font-size:13px;color:var(--text);margin-top:18px;text-align:center}
 /* Réduction ciblée section "Commençons ensemble" (#rdv) — sans perte d'info */
 #rdv{padding-top:32px;padding-bottom:36px}
-#rdv .ss{margin-bottom:16px}
+#rdv .ss{margin-bottom:16px;max-width:none;white-space:nowrap}
 #rdv .rdv-wrap{padding:26px}
 #rdv .form-row{margin-bottom:12px;gap:14px}
 #rdv .form-field{margin-bottom:12px}
+@media(max-width:840px){#rdv .ss{white-space:normal}}
 .alt-contact a{color:var(--cyan3);font-weight:600;text-decoration:none}
 
 /* CTA */
