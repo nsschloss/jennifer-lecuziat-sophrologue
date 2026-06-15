@@ -606,7 +606,7 @@ img{max-width:100%;height:auto}
 /* Scroll reveal en cascade (effet type Apple) */
 html.js-reveal .section > *:not(.exp-grid):not(.pay-grid),
 html.js-reveal .exp-grid > *,
-html.js-reveal .pay-grid > *{opacity:0;transform:translateY(40px);transition:opacity .85s cubic-bezier(.16,.84,.44,1),transform .85s cubic-bezier(.16,.84,.44,1)}
+html.js-reveal .pay-grid > *{opacity:0;transform:translateY(72px);transition:opacity 1s cubic-bezier(.16,.84,.44,1),transform 1s cubic-bezier(.16,.84,.44,1)}
 html.js-reveal .section.revealed > *:not(.exp-grid):not(.pay-grid),
 html.js-reveal .section.revealed .exp-grid > *,
 html.js-reveal .section.revealed .pay-grid > *{opacity:1;transform:none}
@@ -1447,12 +1447,12 @@ document.querySelectorAll('.engagement-vignette,.jennifer-hover-wrap').forEach(f
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){
       if(e.isIntersecting){
-        items(e.target).forEach(function(it,i){it.style.transitionDelay=(i*90)+'ms';});
+        items(e.target).forEach(function(it,i){it.style.transitionDelay=(i*130)+'ms';});
         e.target.classList.add('revealed');
         io.unobserve(e.target);
       }
     });
-  },{threshold:0.05,rootMargin:'0px 0px -15% 0px'});
+  },{threshold:0.05,rootMargin:'0px 0px -20% 0px'});
   document.querySelectorAll('.section').forEach(function(s){io.observe(s);});
 })();
 </script>
