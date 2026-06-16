@@ -1446,10 +1446,13 @@ document.querySelectorAll('.engagement-vignette,.jennifer-hover-wrap').forEach(f
   }
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){
+      var its=items(e.target);
       if(e.isIntersecting){
-        items(e.target).forEach(function(it,i){it.style.transitionDelay=(i*150)+'ms';});
+        its.forEach(function(it,i){it.style.transitionDelay=(i*150)+'ms';});
         e.target.classList.add('revealed');
-        io.unobserve(e.target);
+      } else {
+        e.target.classList.remove('revealed');
+        its.forEach(function(it){it.style.transitionDelay='0ms';});
       }
     });
   },{threshold:0.05,rootMargin:'0px 0px -20% 0px'});
