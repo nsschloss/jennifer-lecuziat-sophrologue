@@ -851,7 +851,7 @@ html.js-reveal .section.revealed .pay-grid > *{opacity:1;transform:none;filter:n
     </div>
     <div class="form-row">
       <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Téléphone *</label><input class="form-inp" id="f-tel" type="tel" placeholder="06 XX XX XX XX" autocomplete="tel"></div>
-      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Email</label><input class="form-inp" id="f-email" type="email" placeholder="votre@email.fr" autocomplete="email"></div>
+      <div class="form-field" style="margin-bottom:0"><label class="form-lbl">Email *</label><input class="form-inp" id="f-email" type="email" placeholder="votre@email.fr" autocomplete="email" required></div>
     </div>
     <div class="form-row">
       <div class="form-field" style="margin-bottom:0">
@@ -1384,8 +1384,9 @@ function pickExp(motcle){
 function submitRDV(){
   var hp=document.getElementById('f-website');
   if(hp&&hp.value){return;} // anti-bot : champ piège rempli => on ignore silencieusement
-  const prenom=document.getElementById('f-prenom').value.trim(),tel=document.getElementById('f-tel').value.trim(),rgpd=document.getElementById('f-rgpd').checked;
-  if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre téléphone.');return;}
+  const prenom=document.getElementById('f-prenom').value.trim(),tel=document.getElementById('f-tel').value.trim(),email=document.getElementById('f-email').value.trim(),rgpd=document.getElementById('f-rgpd').checked;
+  if(!prenom||!tel||!email){alert('Merci de renseigner votre prénom, votre téléphone et votre email.');return;}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){alert('Merci de saisir une adresse email valide.');return;}
   if(!rgpd){alert('Vous devez accepter la politique de confidentialité.');return;}
   const data={prenom,nom:document.getElementById('f-nom').value,tel,email:document.getElementById('f-email').value,presta:document.getElementById('f-presta').value,creneau:document.getElementById('f-creneau').value,message:document.getElementById('f-msg').value,date:new Date().toLocaleString('fr-FR'),website:(hp?hp.value:''),token:'src-sens-2026'};
   const el=document.createElement('div');el.className='rdv-item';
