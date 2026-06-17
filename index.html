@@ -1398,9 +1398,17 @@ function submitRDV(){
   const el=document.createElement('div');el.className='rdv-item';
   el.innerHTML=`<div class="rdv-info"><div class="rdv-name">${data.prenom} ${data.nom||''}</div><div class="rdv-detail">📞 ${data.tel} · ${data.presta||'Non précisé'}</div><div class="rdv-detail" style="font-size:10px;color:#bbb">Reçu le ${data.date}</div>${data.message?`<div class="rdv-detail" style="margin-top:4px;font-size:11px">"${data.message}"</div>`:''}</div><div style="display:flex;flex-direction:column;gap:5px;align-items:flex-end"><span class="rdv-badge b-new">Nouveau</span><button class="admin-btn" style="font-size:10px;padding:5px 10px" onclick="confirmRDV(this)">✓ Confirmer</button></div>`;
   document.getElementById('rdv-list').prepend(el);
-  // Redirection vers Gmail pour envoi manuel
-  const gmailUrl=`https://mail.google.com/mail/?view=cm&fs=1&to=${data.email}&su=Demande RDV reçue — Source %26 Sens&body=Bonjour ${data.prenom},%0A%0AJ'ai bien reçu votre demande pour ${data.presta}.%0AJe vous recontacte très vite.%0A%0AJennifer`;
-  document.querySelector('#rdv .rdv-wrap').innerHTML=`<div style="text-align:center;padding:52px 20px"><div style="font-size:52px;margin-bottom:16px">🌿</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--cyan3);margin-bottom:12px;font-weight:400">Demande envoyée !</h3><p style="font-size:14px;color:var(--muted);line-height:1.7;font-weight:300">Merci ${data.prenom}, Jennifer vous recontacte sous 24h au <strong style="color:var(--text)">${data.tel}</strong>.</p><p style="font-size:12px;color:#bbb;margin-top:12px">Vos données sont protégées conformément au RGPD.</p></div>`;
+  // Envoi réel vers Jennifer via Google Apps Script
+  const SCRIPT_URL="https://script.google.com/macros/s/AKfycbwjqhYSCZ93pjKPV62W_lLGXv2yIm0BbFjq7ht0k-j1MQEHe2nlkT1hogf2F9lgH148/exec";
+  const wrap=document.querySelector('#rdv .rdv-wrap');
+  wrap.innerHTML=`<div style="text-align:center;padding:52px 20px"><div style="font-size:40px;margin-bottom:16px">⏳</div><p style="font-size:14px;color:var(--muted)">Envoi en cours…</p></div>`;
+  fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(data)})
+    .then(function(){
+      wrap.innerHTML=`<div style="text-align:center;padding:52px 20px"><div style="font-size:52px;margin-bottom:16px">🌿</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--cyan3);margin-bottom:12px;font-weight:400">Demande envoyée !</h3><p style="font-size:14px;color:var(--muted);line-height:1.7;font-weight:300">Merci ${data.prenom}, Jennifer vous recontacte sous 24h au <strong style="color:var(--text)">${data.tel}</strong>.</p><p style="font-size:12px;color:#bbb;margin-top:12px">Vos données sont protégées conformément au RGPD.</p></div>`;
+    })
+    .catch(function(){
+      wrap.innerHTML=`<div style="text-align:center;padding:44px 20px"><div style="font-size:44px;margin-bottom:14px">📞</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--cyan3);margin-bottom:10px;font-weight:400">Un souci d'envoi</h3><p style="font-size:14px;color:var(--muted);line-height:1.7">Merci ${data.prenom}. Vous pouvez joindre Jennifer directement au <strong style="color:var(--text)">06 99 74 05 27</strong> ou à <a href="mailto:jennifer.lecuziat@gmail.com" style="color:var(--cyan3)">jennifer.lecuziat@gmail.com</a>.</p></div>`;
+    });
 }
 
 /* RGPD */
