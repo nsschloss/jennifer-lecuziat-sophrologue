@@ -657,7 +657,7 @@ html.js-reveal .section.revealed .pay-grid > *{opacity:1;transform:none;filter:n
     <li><a href="#experiences">Expériences</a></li>
     <li><a href="#entreprises">Entreprises</a></li>
     <li><a href="#reseaux">Publications</a></li>
-    <li><a href="#rdv" class="nav-cta">Contact</a></li>
+    <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0oifKpEUfJseLwIXabm_eUCuherdoJonoptu1v94iqYWSiagXWCE37LZ9HixU1bXpkyeBg6qxJ" target="_blank" rel="noopener" class="nav-cta">Prise de RdV</a></li>
   </ul>
   <div style="display:flex;align-items:center">
     <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
@@ -941,12 +941,6 @@ html.js-reveal .section.revealed .pay-grid > *{opacity:1;transform:none;filter:n
   i.src="https://cdn.curator.io/published/d25d9307-b1f6-4b26-99e2-7d7a064d28d0.js";
   e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i,e);})();
   </script>
-  <div class="social-links" style="margin-top:20px">
-    <a href="https://www.instagram.com/jenniferlecuziat" target="_blank" rel="noopener" class="social-link">📸 Instagram</a>
-    <a href="https://facebook.com/JenniferLeCuziat" target="_blank" rel="noopener" class="social-link">👥 Facebook</a>
-    <a href="https://linkedin.com/in/jennifer-le-cuziat" target="_blank" rel="noopener" class="social-link">💼 LinkedIn</a>
-    <a href="https://g.page/r/CeIkTvc0TL8fEBM/review" target="_blank" rel="noopener" class="social-link">⭐ Google</a>
-  </div>
 </section>
 
 
@@ -992,10 +986,6 @@ html.js-reveal .section.revealed .pay-grid > *{opacity:1;transform:none;filter:n
       <div class="f-sub" style="margin-bottom:5px">Jennifer Le Cuziat · Sophrologue</div>
       <div class="f-sub">Cabinet sensoriel corps &amp; esprit<br>33 bis Av. Michel Poniatowski<br>95290 L'Isle-Adam · SIRET 534 405 386 00028</div>
       <div class="f-socials">
-        <a href="https://www.instagram.com/jenniferlecuziat" target="_blank" rel="noopener" title="Instagram">📸</a>
-        <a href="https://facebook.com/JenniferLeCuziat" target="_blank" rel="noopener" title="Facebook">f</a>
-        <a href="https://linkedin.com/in/jennifer-le-cuziat" target="_blank" rel="noopener" title="LinkedIn">in</a>
-        <a href="https://www.tiktok.com/@sophrologuelisleadam.fr" target="_blank" rel="noopener" title="TikTok">🎵</a>
         <a href="https://wa.me/33699740527" target="_blank" rel="noopener" title="WhatsApp">💬</a>
       </div>
     </div>
@@ -1397,7 +1387,7 @@ function submitRDV(){
   const prenom=document.getElementById('f-prenom').value.trim(),tel=document.getElementById('f-tel').value.trim(),rgpd=document.getElementById('f-rgpd').checked;
   if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre téléphone.');return;}
   if(!rgpd){alert('Vous devez accepter la politique de confidentialité.');return;}
-  const data={prenom,nom:document.getElementById('f-nom').value,tel,email:document.getElementById('f-email').value,presta:document.getElementById('f-presta').value,creneau:document.getElementById('f-creneau').value,message:document.getElementById('f-msg').value,date:new Date().toLocaleString('fr-FR')};
+  const data={prenom,nom:document.getElementById('f-nom').value,tel,email:document.getElementById('f-email').value,presta:document.getElementById('f-presta').value,creneau:document.getElementById('f-creneau').value,message:document.getElementById('f-msg').value,date:new Date().toLocaleString('fr-FR'),website:(hp?hp.value:''),token:'src-sens-2026'};
   const el=document.createElement('div');el.className='rdv-item';
   el.innerHTML=`<div class="rdv-info"><div class="rdv-name">${data.prenom} ${data.nom||''}</div><div class="rdv-detail">📞 ${data.tel} · ${data.presta||'Non précisé'}</div><div class="rdv-detail" style="font-size:10px;color:#bbb">Reçu le ${data.date}</div>${data.message?`<div class="rdv-detail" style="margin-top:4px;font-size:11px">"${data.message}"</div>`:''}</div><div style="display:flex;flex-direction:column;gap:5px;align-items:flex-end"><span class="rdv-badge b-new">Nouveau</span><button class="admin-btn" style="font-size:10px;padding:5px 10px" onclick="confirmRDV(this)">✓ Confirmer</button></div>`;
   document.getElementById('rdv-list').prepend(el);
