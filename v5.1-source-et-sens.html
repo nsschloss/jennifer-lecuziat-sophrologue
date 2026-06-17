@@ -879,6 +879,7 @@ html.js-reveal .section.revealed .pay-grid > *{opacity:1;transform:none;filter:n
     </div>
     <div class="form-field">
       <label class="form-lbl">Votre message (optionnel)</label>
+      <div aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden"><label>Ne pas remplir ce champ<input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off"></label></div>
       <textarea class="form-ta" id="f-msg" rows="3" placeholder="Décrivez brièvement ce que vous traversez, pour que je puisse mieux vous accueillir lors de notre premier échange…"></textarea>
     </div>
     <div class="form-rgpd">
@@ -1391,6 +1392,8 @@ function pickExp(motcle){
   if(r)r.scrollIntoView({behavior:'smooth'});
 }
 function submitRDV(){
+  var hp=document.getElementById('f-website');
+  if(hp&&hp.value){return;} // anti-bot : champ piège rempli => on ignore silencieusement
   const prenom=document.getElementById('f-prenom').value.trim(),tel=document.getElementById('f-tel').value.trim(),rgpd=document.getElementById('f-rgpd').checked;
   if(!prenom||!tel){alert('Merci de renseigner au moins votre prénom et votre téléphone.');return;}
   if(!rgpd){alert('Vous devez accepter la politique de confidentialité.');return;}
